@@ -1,0 +1,44 @@
+.logform  {
+    text-align:center;
+}
+
+.logform .form {
+    margin:0 auto;
+     width: 200px;
+}
+.logform .pick {
+    display:block;
+}
+.logform .pick img  {
+    max-width:100%;
+    height:auto;
+    margin:0px 0px 30px 0px;
+}
+.logform .form input[type=text] {
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #470000;
+    display: inline-block;
+    font-family: 'PT Sans';
+    font-size: 13px;
+    height: 20px;
+    padding: 3px 12px 3px 12px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    width:100%;
+    margin:0 auto 9px auto;
+    box-sizing:border-box;
+}
+.logform .form input[type=submit] {
+    border:1px solid #470000;
+    background-color: #E6E6E6;
+    display:inline-block;
+    border-radius: 5px;
+    color: #470000;
+    display: block;
+    font-size: 14px;
+    text-transform:uppercase;
+    padding:3px 48px;
+    margin: 13px auto 0 auto;
+}
