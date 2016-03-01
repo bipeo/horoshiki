@@ -1,10 +1,20 @@
+body.login_page {
+    background-color:#f4f4f4;
+}
+
 .logform  {
+    margin:115px 0px 0px 0px;
     text-align:center;
 }
 
 .logform .form {
+    background:transparent url('../img/logbox_bg.png') no-repeat;
+    border-radius:2px;
+    padding:81px 0px 0px 0px;
     margin:0 auto;
-     width: 200px;
+    width: 415px;
+    height:318px;
+    box-sizing:border-box;
 }
 .logform .pick {
     display:block;
@@ -14,31 +24,98 @@
     height:auto;
     margin:0px 0px 30px 0px;
 }
+
 .logform .form input[type=text] {
-    border: 1px solid #000;
+    font-family: 'Conv_helveticaneuecyr-light';
+    border: 1px solid #e9e9e9;
     border-radius: 5px;
-    color: #470000;
+    color: #54666f;
     display: inline-block;
-    font-family: 'PT Sans';
-    font-size: 13px;
-    height: 20px;
-    padding: 3px 12px 3px 12px;
+    font-size: 14px;
+    height: 42px;
+    padding: 9px 20px 9px 43px;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
+    max-width:255px;
     width:100%;
     margin:0 auto 9px auto;
     box-sizing:border-box;
+  
+    
+    
 }
+.logform .form input[type=text]:focus {
+      -webkit-box-shadow:0px 1px 1px rgba(182,194,204, .74);
+    -moz-box-shadow:0px 1px 1px rgba(182,194,204, .74);
+    box-shadow:0px 1px 1px rgba(182,194,204, .74);
+}
+.logform .form input[type=text].error {
+    -webkit-box-shadow:0px 1px 1px rgba(233,172,172,.74);
+    -moz-box-shadow:0px 1px 1px rgba(233,172,172,.74);
+    box-shadow:0px 1px 1px rgba(233,172,172,.74);
+    border-color:#e9acac;
+}
+.logform .form input[type=text] {
+    background-repeat: no-repeat;   
+}
+.logform .form input[type=text].ulogin {
+    background-image:url('../img/user_ic.png');
+    background-position:19px center;
+}
+.logform .form input[type=text].upass {
+    background-image:url('../img/pass_ic.png');
+    background-position:19px center;
+
+}
+.logform .form::-webkit-input-placeholder {color:#54666f;}
+.logform .form::-moz-placeholder          {color:#54666f;}/* Firefox 19+ */
+.logform .form:-moz-placeholder           {color:#54666f;}/* Firefox 18- */
+.logform .form:-ms-input-placeholder      {color:#54666f;}
 .logform .form input[type=submit] {
-    border:1px solid #470000;
-    background-color: #E6E6E6;
+    border:1px solid #e3e9ed;
+    max-width:255px;
     display:inline-block;
+    width:100%;
     border-radius: 5px;
-    color: #470000;
+    color: #fff;
     display: block;
     font-size: 14px;
-    text-transform:uppercase;
-    padding:3px 48px;
+    padding:12px 48px 14px 48px;
     margin: 13px auto 0 auto;
+
+    background: #d1d9e0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d1d9e0 0%, #becad3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #d1d9e0 0%,#becad3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #d1d9e0 0%,#becad3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d9e0', endColorstr='#becad3',GradientType=0 ); /* IE6-9 */
+
+    
+
+}
+    .logform .form input[type=submit]:focus, .logform .form input[type=submit]:active  {
+    background: #b3bdc5; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b3bdc5 1%, #a4afb8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b3bdc5 1%,#a4afb8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b3bdc5 1%,#a4afb8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3bdc5', endColorstr='#a4afb8',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    .logform .form input[type=submit]:hover {
+        background: #ecf0f2; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ecf0f2 0%, #c7d1d9 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #ecf0f2 0%,#c7d1d9 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #ecf0f2 0%,#c7d1d9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf0f2', endColorstr='#c7d1d9',GradientType=0 ); /* IE6-9 */
+
+    }
+
+.logform .subt {
+    text-transform: uppercase;
+    display:block;
+    margin:12px 0px;
+    font-size:12px;
+   font-family: 'PFDinTextCondProMedium';
+    color:#d2d2d2;
 }
