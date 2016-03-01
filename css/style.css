@@ -29,7 +29,7 @@ body.login_page {
     letter-spacing: 1px;
     font-family: 'helveticaneuecyrlight';
     border: 1px solid #e9e9e9;
-    border-radius: 5px;
+    border-radius: 3px;
     color: #e9e9e9; 
     display: inline-block;
     font-size: 14px;
@@ -42,16 +42,10 @@ body.login_page {
     width:100%;
     margin:0 auto 9px auto;
     box-sizing:border-box;
-  
-    
-    
 }
-.logform .form input[type=text]:focus {
+.logform .form input[type=text]:focus  {
       color:#919191;
       border-color:#bdc9d3;
-      -webkit-box-shadow:0px 1px 1px rgba(182,194,204, .74);
-    -moz-box-shadow:0px 1px 1px rgba(182,194,204, .74);
-    box-shadow:0px 1px 1px rgba(182,194,204, .74);
 }
 .logform .form input[type=text]:focus::-webkit-input-placeholder {
      color:#919191;
@@ -84,7 +78,7 @@ body.login_page {
     max-width:255px;
     display:inline-block;
     width:100%;
-    border-radius: 5px;
+    border-radius: 3px;
     color: #fff;
     display: block;
     font-size: 14px;
@@ -101,7 +95,7 @@ body.login_page {
 
 }
     .logform .form input[type=submit]:focus   {
-    background: #b3bdc5; 
+    background: #b3bdc5 !important; 
     background: -moz-linear-gradient(top,  #b3bdc5 1%, #a4afb8 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  #b3bdc5 1%,#a4afb8 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #b3bdc5 1%,#a4afb8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -119,7 +113,6 @@ body.login_page {
     }
 
 .logform .subt {
-    text-transform: uppercase;
     display:block;
     margin:12px 0px;
     font-size:12px;
