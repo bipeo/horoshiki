@@ -14,24 +14,38 @@
 <!-- wrapper -->
 <div class="wrapper">
     
+    <div class="content spone">
     <div class="logform">
     <a href="#" class="pick"><img  src="img/logo_mini.png" /></a>
     <form class="form">
-        <input class="ulogin error" type="text" placeholder="Введите логин" value="">
-        <input class="upass"  type="text" placeholder="Пароль" value="">
+        <div class="line">   
+        <input class="ulogin" type="text" placeholder="Введите логин" value="">
+        <span class="note error">Неверный пароль,  <br>
+попробуйте еще раз</span>
+        </div>
+         <div class="line">
+        <input class="upass"  type="password" placeholder="******" value="">
+          <span class="note error">Неверный пароль,  <br>
+попробуйте еще раз</span>
+         </div>
         <input type="submit" value="Вход">
-        <span class="subt">IS Horoshiki 0.1</span>      
+            
     </form>
      
      </div>
+        </div>
 
+    <div class="footer spone">
+        <span class="subtplace"><a href=#>IS Horoshiki 0.1</a></span>
+        
+    </div> 
 
 </div><!-- END wrapper -->
 
   <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
   <script type="text/javascript">
 	$(function(){
-                    // $.pixlayout({clip: true, src: "design/login.png", show:true, center:true, top:0, left:0, pervious: false});
+                   //  $.pixlayout({clip: true, src: "design/vxod_v2_error.png", show:true, center:true, top:0, left:0, pervious: false});
         }); 
 </script>
 </body>
