@@ -129,10 +129,6 @@ body.login_page {
    
     background-position:16px center;
 }
-.logform .form input.upass {
-    background-image:url('../img/pass_ic.png');
-    background-position: right 9px  center;
-
 }
 .logform .form input[type=text]::-webkit-input-placeholder, .logform .form input[type=password]::-webkit-input-placeholder {color:#b8c3c9;   opacity:1;}
 .logform .form input[type=text]::-moz-placeholder, .logform .form input[type=password]::-moz-placeholder           {color:#b8c3c9;   opacity:1;}/* Firefox 19+ */
