@@ -4,6 +4,9 @@ html, body {
 body {
     font-family: 'Conv_SFUIText-RegularG3'; 
 }
+h2 {
+    font-size:18px;
+}
 body.login_page {
     background-color:#f4f4f4;
     background-image:url('../img/bg.png');
@@ -433,7 +436,7 @@ body.login_page {
     font-size:14px;
 }
 .cabtop .logout .outlink {
-     margin-right:20px;
+     margin-right:15px;
      float:left;
      display:block;
      width:20px;
@@ -443,10 +446,120 @@ body.login_page {
 }
 
 .mainside {
+    margin-right:10px;
     overflow:hidden;
 }
 
 .emptypick {
     margin:210px 25px;
     text-align:center;
+}
+
+.crubs {
+    
+}
+h2 {
+    font-size:18px;
+}
+.crubs {
+    padding:23px 0px 14px 0px;
+}
+.crubs h2 {
+    padding:0px 0px 0px 0px;
+    font-family: 'Conv_SFUIText-BoldG1';
+    color:#2e3240;
+}
+.crubs .ht {
+    font-size:12px;
+    margin:0px 0px 10px 0px;
+    color:#3f4352;
+    font-family: 'Conv_helveticaneuecyr-roman';
+    display:block;
+}
+.tabcit  {
+    border-collapse: separate;
+    border-spacing: 0;
+    color:#82889c;
+    text-align:center;
+    font-size:14px;
+    font-family: 'Conv_helveticaneuecyr-roman';
+    width:100%;
+}
+.tabrad tr th:first-child  {
+    border-radius: 4px 0px 0px 0px;
+}
+.tabrad tr th:last-child  {
+   border-radius: 0px 4px 0px 0px;
+}
+.tabrad tr td:first-child {
+    border-left:1px solid #d5dde9;
+}
+.tabrad tr td:last-child {
+    border-right:1px solid #d5dde9;
+}
+.tabrad tr:last-child td {
+     border-bottom:1px solid #d5dde9
+}
+.tabrad tr:last-child td:first-child {
+    border-radius: 0px 0px 0px 4px;
+    border-bottom:1px solid #d5dde9
+}
+.tabrad tr:last-child td:last-child {
+    border-radius: 0px 0px 4px 0px;
+    border-bottom:1px solid #d5dde9
+}
+
+.tabcit th {
+    font-family: 'Conv_SFUIText-BoldG1';
+    color:#515669;
+    background-color:#d5dde9;
+    padding:14px 0px;
+}
+.tabrad tr.cval td {
+     border-top:1px solid #d5dde9;
+}
+.tabrad tr.cmon td {
+    border-top:1px solid #d5dde9;
+}
+.tabcit  tr.cmon {
+    background-color:#f9fafc;
+}
+
+.tabcit tr td {
+    padding:10px 0px;
+}
+.tabcit tr td  a {
+  color:#82889c;
+}
+.tabcit tr td  a:hover {
+  color:#3fa4f9;
+  text-decoration: none;
+}
+.tabcit.tc_1  tr td:nth-child(1), .tabcit.tc_1  tr th:nth-child(1) {
+    text-align:left;
+    padding:0px 0px 0px 15px;
+    width:1%;
+    white-space: nowrap;
+}
+.tabcit.tc_1  tr td:nth-child(2) {
+        font-family: 'Conv_SFUIText-BoldG1';
+}
+.tabcit.tc_1  tr th:nth-child(4) {
+    text-align:left;
+}
+.tabcit.tc_1  tr td:nth-child(4) {
+    width:140px;
+    text-align:left;
+}
+
+.tabcit.tc_1  tr {
+   
+}
+.tabcit .st_1 {
+    color:#fff;
+    background-color:#b3cdfb;
+}
+.tabcit .st_2 {
+    color:#fff;
+    background-color:#97b5ea;
 }
