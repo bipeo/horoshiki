@@ -139,7 +139,7 @@ body.login_page {
 .logform .form input[type=text]:-moz-placeholder, .logform .form input[type=password]:-moz-placeholder            {color:#b8c3c9;   opacity:1;}/* Firefox 18- */
 .logform .form input[type=text]:-ms-input-placeholder, .logform .form input[type=password]:-ms-input-placeholder      {color:#b8c3c9;   opacity:1;}
 .logform .form input[type=submit] {
-    border-top:2px solid #263f79;
+    border-bottom:2px solid #263f79;
     display:inline-block;
     border-radius: 4px;
     color: #fff;
