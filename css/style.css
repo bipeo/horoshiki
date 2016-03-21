@@ -29,6 +29,8 @@ body.login_page {
 
 .wrapper {
     min-width:1024px;
+    max-width:1800px;
+    margin:0 auto;
     min-height: 100%;
     position: relative;
 }
