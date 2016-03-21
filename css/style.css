@@ -29,7 +29,7 @@ body.login_page {
 
 .wrapper {
     min-width:1024px;
-    max-width:1800px;
+    max-width:1600px;
     margin:0 auto;
     min-height: 100%;
     position: relative;
@@ -526,13 +526,13 @@ h2 {
     padding:23px 0px 14px 0px;
 }
 .crubs h2 {
-    padding:0px 0px 0px 0px;
+    padding:10px 0px 0px 0px;
     font-family: 'Conv_SFUIText-BoldG1';
     color:#2e3240;
 }
 .crubs .ht {
     font-size:12px;
-    margin:0px 0px 10px 0px;
+    margin:0px 0px 0px 0px;
     color:#3f4352;
     font-family: 'Conv_helveticaneuecyr-roman';
     display:block;
@@ -779,6 +779,30 @@ h2 {
     margin:20px 1% 20px 12px;
     width:40%;
     float:left;
+    display:block;
+}
+
+.list_5 .icos {
+    cursor:pointer;
+    margin:10px 12px 20px 12px;
+    display:block;
+    width:24px;
+    height:24px;
+}
+.list_5 .icos.plus {
+    background:url(../img/plus_icos.png) no-repeat;
+}
+.list_5 .tit.st_01 {
+    margin-top:21px;
+    margin-bottom:6px;
+}
+.list_5 .tit.st_02 {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.csstbl  .tit.full {
+     width:100%;
 }
 .csstbl  .tit, .panenet .tit {
     line-height: 1.3em;
@@ -826,7 +850,7 @@ h2 {
     margin-left:5px;
 }
 .csstbl .tit.w2 {
-    width:33%;
+    width:32%;
 }
 .csstbl .tit.w3 {
     width:54%;
@@ -878,6 +902,14 @@ h2 {
 .csstbl .input_01 {
     margin:12px 10px 7px 12px; 
 }
+.input_wrap {
+    margin-left:12px;
+}
+.input_wrap .input_01 {
+    margin-left:0px;
+    margin-right:0px;
+    width:100%;
+}
 .input_01 {
     color:#82889c;
     box-sizing:border-box;
@@ -885,6 +917,12 @@ h2 {
     border-radius: 3px;
     padding:8px 12px;
     border:1px solid #d5dde9;
+}
+.input_01.st_02 {
+    padding:7px 12px;
+}
+.input_01.long {
+   
 }
 .input_01.big {
     margin:0px 0px 15px 0px;
