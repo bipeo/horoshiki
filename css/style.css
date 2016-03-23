@@ -442,7 +442,7 @@ body.login_page {
 .opsidebar ul li.cur  a {
     background-color:#565c69;
 }
-.opsidebar ul li.cur:before {
+.opsidebar ul li.cur a:before {
     content:'';
     right:-7px;
     -ms-transform: rotate(45deg) ;
@@ -465,6 +465,7 @@ body.login_page {
     padding-bottom:12px;
 }
 .opsidebar ul li a {
+    position: relative;
     line-height: 1.3em;
     padding:10px 0px 10px 12px;
     display:block;
