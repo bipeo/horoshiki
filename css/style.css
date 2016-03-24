@@ -749,6 +749,9 @@ h2 {
 .cnt .row .col.one_six {
     width:16.6%;
 }
+.cnt .row .col.two_six {
+    width:33.2%
+}
 .cnt .row .col.full {
     width:100%;
 }
@@ -859,9 +862,10 @@ h2 {
 }
 
 .csstbl  .tit {
+    line-height: 1.3em;
     font-weight: normal;
-    margin:20px 1% 20px 12px;
-    width:40%;
+    margin:20px 2% 20px 12px;
+    width:60%;
     float:left;
     display:block;
 }
@@ -902,8 +906,15 @@ h2 {
     width:70%;
 }
 
+.tit.w70 {
+    width:70%
+}
+
 .csstbl.b_01 .col:first-child .tit, .csstbl.b_01 .cbsbox.vert {
      margin-left:15px;
+}
+.cbsbox.inline.tit {
+    width:40%;
 }
 .csstbl .row.stmin_03 .input_01 {
     margin-top:0px;
@@ -927,16 +938,18 @@ h2 {
     margin-bottom:0px;
 }
 
+.cnt .row .col.three_ten .tit, .cnt .row .col.third .tit{
+    width:auto;
+}
+
 .csstbl  .tit.full {
      width:100%;
 }
 .csstbl  .tit, .panenet .tit {
-    line-height: 1.3em;
+    
      color:#515669;
 }
-.csstbl .col.full .tit {
-   
-}
+
 .csstbl  .col .bttn_2 {
     
     margin-top: 14px;
@@ -986,8 +999,14 @@ h2 {
 .csstbl  .tit.font_1 {
     color:#515669;
 }
+.csstbl  .tit.font_3 {
+    color:#d5dde9;
+}
 .csstbl  .tit.st_1.st_03 {
     margin-left:5px;
+}
+.csstbl .tit.w1 {
+    width:31%;
 }
 .csstbl .tit.w2 {
     width:32%;
@@ -1099,6 +1118,9 @@ h2 {
 }
 .csstbl .tleft {
     text-align:left;
+}
+.csstbl .tcenter {
+    text-align:center;
 }
 
 .soclist .subpane {
