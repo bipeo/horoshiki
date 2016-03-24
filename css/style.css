@@ -865,12 +865,15 @@ h2 {
     line-height: 1.3em;
     font-weight: normal;
     margin:20px 2% 20px 12px;
-    width:60%;
     float:left;
     display:block;
 }
 .csstbl  .u {
     text-decoration: underline;
+}
+.csstbl  .italic {
+  font-family: 'Conv_SFUIText-Italic';
+
 }
 .one_fourth .tit {
     width:auto;
@@ -906,8 +909,57 @@ h2 {
     width:70%;
 }
 
+.cnt .row .col.w_05 {
+    width:5%;
+}
+.cnt .row .col.w_06 {
+    width:6%;
+}
+.cnt .row .col.w_10 {
+    width:10%;
+}
+.cnt .row .col.w_24 {
+    width:24%;
+}
+.cnt .row .col.w_25 {
+    width:25%;
+}
+.cnt .row .col.w_26 {
+    width:26%;
+}
+
+.cnt .row .col.w_76 {
+    width:76%;
+}
+.cnt .row .col.w_33 {
+    width:33%;
+}
+.cnt .row .col.w_15 {
+    width:12%;
+}
+
+
 .tit.w70 {
     width:70%
+}
+
+
+.csstbl.off_02  .row .col:first-child .tit:first-child {
+    margin-left:18px;
+}
+.csstbl.off_02 .tit {
+    margin-top:14px;
+    margin-bottom:14px;
+}
+.csstbl.off_02 .input_01 {
+    margin-top:10px;
+    margin-bottom:9px;
+    padding:6px 12px;
+}
+
+.csstbl.off_02  .cicon {
+    margin-top:12px;
+    margin-bottom:11px;
 }
 
 .csstbl.b_01 .col:first-child .tit, .csstbl.b_01 .cbsbox.vert {
@@ -1243,3 +1295,91 @@ h2 {
 .uspopup {
     width:581px;
 }
+
+.useico {
+    display:block;
+    color:#515669;
+    font-size:28px;
+    
+}
+
+.csstbl .cicon {
+   margin: 17px 12px 17px 12px;
+}
+
+.cicon {
+    cursor:pointer;
+    border:1px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50%;  
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+.cicon.hidden, .cicon.hidden:before, .cicon.hidden:after  {
+    visibility: hidden;
+}
+
+.cicon:before, .cicon:after {
+    content:"";
+    position: absolute;
+}
+
+.cicon.icon-plus {
+    background-color: #444756;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+.cicon.icon-minus {
+    background-color: #444756;
+   
+}
+
+     
+.cicon.icon-plus:after {
+background-color: #fff;
+width: 10px;
+height: 2px;
+top:10px;
+left: 6.1px;
+}
+.cicon.icon-plus:before {
+background-color: #fff;
+width: 2px;
+height: 10px;
+top:5.8px;
+left:10.2px;
+}
+.cicon.icon-minus:after {
+    background-color: #fff;
+    width: 6px;
+    height: 2px;
+    top: 10px;
+    left: 7.4px;
+    z-index: 4;
+}
+
+.cicon.icon-plus.white {
+    background-color: transparent;
+    border:1px solid #444756;
+}
+.cicon.icon-plus.white:before {
+     background-color: #515669;
+}
+.cicon.icon-plus.white:after {
+    background-color: #515669;
+}
+
+.cicon.icon-minus.white {
+    background-color: transparent;
+    border:1px solid #444756;
+}
+.cicon.icon-minus.white:after {
+    background-color: #515669;
+}
+
+
