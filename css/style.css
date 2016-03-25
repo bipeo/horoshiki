@@ -689,7 +689,7 @@ h2 {
     background-color:#97b5ea;
 }
 
-.uspopup {
+.uspopup, .depo_popup {
     display:none;
 }
 .csstbl {
@@ -943,6 +943,13 @@ h2 {
     width:70%
 }
 
+.wp_140 {
+    width:140px;
+}
+.wp_22 {
+    width:208px;
+}
+
 
 .csstbl.off_02  .row .col:first-child .tit:first-child {
     margin-left:18px;
@@ -951,6 +958,18 @@ h2 {
     margin-top:14px;
     margin-bottom:14px;
 }
+.csstbl .withc  {
+    text-align:center;
+}
+.csstbl .withc  .input_01{
+    margin-right:0px;
+    
+}
+.csstbl .withc  .cbsbox.vert {
+    margin-left:2px;
+}
+
+
 .csstbl.off_02 .input_01 {
     margin-top:10px;
     margin-bottom:9px;
@@ -1148,11 +1167,17 @@ h2 {
 .input_01.st_02 {
     padding:7px 12px;
 }
+.input_01.under_st  {
+    margin-bottom:0px;
+}
 .input_01.st_03 {
     padding:7px 12px 6px 12px;
 }
-.input_01.long {
-   
+.input_01.small {
+   width:83px;
+}
+.input_01.small_2 {
+    width:151px;
 }
 .input_01.big {
     margin:0px 0px 15px 0px;
@@ -1218,18 +1243,39 @@ h2 {
    
 }
 
+.photo-fancy.fancybox-opened  .fancybox-skin {
+    background-color:#fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:none;
+}
 
 .hs3 {
-    margin:10px 0px;
-    padding:5px 0px 15px 0px;
+    margin:0px 0px;
+    padding:15px 0px 15px 0px;
     display:block;
     text-align:center;
-   
     background-color:#f9fafc;
     font-family: 'Conv_helveticaneuecyr-roman';
     color:#515669;
     border-bottom: 1px solid #d5dde9;
 }
+.hs3, .hs3_r {
+    border-radius: 4px 4px 0px 0px; 
+}
+.depo_popup .csstbl .row, .depo_popup .csstbl {
+    border:0px;
+}
+.csstbl .row.hs3_r {
+    border-bottom: 1px solid #d5dde9;
+    background:#f9fafc;
+}
+.csstbl .row.hs3_r .tit {
+    margin-top:14px;
+    margin-bottom:11px;
+    font-size:18px;
+}
+
 
 .checkbox {
   vertical-align: top;
@@ -1295,6 +1341,25 @@ h2 {
 .uspopup {
     width:581px;
 }
+.depo_popup {
+    width:525px;
+}
+
+.depo_popup .csstbl .row .col.one .tit, 
+.depo_popup .csstbl .row .col.one .input_01 {
+   margin-left:25px;
+   /*56*/
+}
+.depo_popup .csstbl .row .col.one {
+    width:28.3%;
+}
+.depo_popup .csstbl .row .col.two {
+    width:32.6%;
+}
+.depo_popup .tit {
+    font-size:16px;
+}
+
 
 .useico {
     display:block;

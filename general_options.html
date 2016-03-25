@@ -8,7 +8,16 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="fonts/style.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="libs/jquery-1.8.3.min.js"></script> 
+    <script src="libs/jquery-1.8.3.min.js"></script>
+    <script src="js/horosh.js"></script>
+    <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
+    <script type="text/javascript">
+	$(function(){
+            
+                   //  $.pixlayout({clip: true, src: "design/general_options_v2.png", show:true, center:true, top:0, left:0, pervious: false});
+                   //  $.pixlayout({clip: true, src: "design/general_options_v3.png", show:true, center:true, top:0, left:0, pervious: false});
+        }); 
+    </script>
 </head>
 <body class="options_page">
 <!-- wrapper -->
@@ -143,76 +152,9 @@
 
 </div><!-- END wrapper -->
 
-  <script type="text/javascript">
-      
-	$(function(){
-            $('.navtogg').on('click',function() {
-                
-                $('.navtogg').toggleClass('open');
-                
-                 $(".opsidebar.uncollapse").toggle('fast');
-                
-                  $(".opsidebar.collapsed").animate({
-                width: "toggle"
-            });
-
-            });
-            
-            
-         
-           
-            
-           
-                 
-        
-    }); 
-    
-    
-     $(document).ready(function()
-        {
-
-            $(window).load(function()
-                {
-                    getWidthAndHeight()
-                }
-            );
 
 
-            $(window).resize(function()
-                {
-                    getWidthAndHeight()
-                }
-            );
-
-
-            function getWidthAndHeight() {
-                var ass = $('.ass_box').show();
-                var scrollHeight = document.documentElement.scrollHeight,
-                clientHeight = document.documentElement.clientHeight;
-                scrollHeight = Math.max(scrollHeight, clientHeight);
-
-                    var wpbar = $('.cabtop').outerHeight();
-                   scrollHeight -=   wpbar;
-                $(".opsidebar").css("min-height", scrollHeight + "px");
-                
-            }
-
-        }
-    );
-    
-    
-
-
-</script>
-
-  <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
-  <script type="text/javascript">
-	$(function(){
-            
-                   //  $.pixlayout({clip: true, src: "design/general_options_v2.png", show:true, center:true, top:0, left:0, pervious: false});
-                   //  $.pixlayout({clip: true, src: "design/general_options_v3.png", show:true, center:true, top:0, left:0, pervious: false});
-        }); 
-</script>
+  
 </body>
 </html>
 

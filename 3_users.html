@@ -11,7 +11,30 @@
     <script src="libs/jquery-1.8.3.min.js"></script> 
     <script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
     <link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" media="screen" />
+    
+ <script type="text/javascript">
+            $(document).ready(function() {
+	$(".fancybox").fancybox({
+            wrapCSS : 'photo-fancy',
+            padding: 0,
+            helpers : {
+                overlay: {
+                 css: {'background': 'rgba(63,67,82, 0.8)'} 
+                }
+            } 
+            
+	});
+        });
+        </script>
 
+  <script src="js/horosh.js"></script>
+  <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
+  <script type="text/javascript">
+	$(function(){
+            
+          // $.pixlayout({clip: true, src: "design/users.png", show:true, center:true, top:0, left:0, pervious: false});
+        }); 
+</script>
 </head>
 <body class="options_page">
 <!-- wrapper -->
@@ -355,28 +378,28 @@
                  <div class="row">
                     <div class="col third">
                       
-                           <span class="tit bold">ID</span>
+                           <strong class="tit bold">ID</strong>
                            
                        
                        
                     </div>
                     <div class="col third midcol ">
                         
-                            <strong class="tit mar_03 bold">ФИО</strong>
+                            <strong class="tit mar_03">ФИО</strong>
                        
                     </div>
                   
                      
                      <div class="col  three_ten right">
                         
-                            <strong class="tit  bold">Должность</strong>
+                            <strong class="tit">Должность</strong>
                        
                     </div>
                 </div>
                  <div class="row">
                     <div class="col third">
                       
-                           <span class="tit bold">3</span>
+                           <strong class="tit" >3</strong>
                            
                        
                        
@@ -427,32 +450,10 @@
                     </div>
                 </div>
                 
-                <div class="row stmin_03">
-                    <div class="col seven_ten">
-                           <span class="tit font_2">Всегда телефон сотрудника</span>
-                    </div>
-                     <div class="col  three_ten">
-                        
-                          <input class="input_01 st_02 left" type="text" value="">
-                       
-                    </div>
-                </div>
+               
                 
                 
-                <div class="row">
-                    
-                    <div class="cbsbox vert">
-                        <div class="item">
-                <input type="checkbox" class="checkbox" id="check01" />
-                <label for="check01">Отправить пароль в смс</label>
-                </div>
-                        
-                        <div class="item">
-                <input type="checkbox" class="checkbox" checked="checked" id="check02" />
-                <label for="check02">Закрыть доступ</label>
-                        </div>
-                    </div>
-                </div>
+               
                 
                 
                 
@@ -468,30 +469,6 @@
       </div>
 
 
- <script type="text/javascript">
-            $(document).ready(function() {
-	$(".fancybox").fancybox({
-            wrapCSS : 'photo-fancy',
-            padding: 0,
-           // maxWidth: 821,
-            helpers : {
-                overlay: {
-                 css: {'background': 'rgba(63,67,82, 0.9)'} 
-                }
-            } 
-            
-	});
-        });
-        </script>
-
-  <script src="js/horosh.js"></script>
-  <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
-  <script type="text/javascript">
-	$(function(){
-            
-          // $.pixlayout({clip: true, src: "design/users.png", show:true, center:true, top:0, left:0, pervious: false});
-        }); 
-</script>
 </body>
 </html>
 
