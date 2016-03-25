@@ -204,9 +204,10 @@ body.login_page {
         background:#6c91d1;
     }
     
-    .buts.alcenter {
+    .buts.alcenter, .cntp {
         text-align:center;
     }
+  
     
     .buts.alleft {
         text-align:left;
@@ -227,6 +228,10 @@ body.login_page {
         display:inline-block;
     }
     .buts .bttn:last-child {
+        margin-right:0px;
+    }
+    .buts.cmarg .bttn {
+        margin-left:0px;
         margin-right:0px;
     }
     .bttn.black:hover {
@@ -684,12 +689,31 @@ h2 {
     color:#fff;
     background-color:#b3cdfb;
 }
+.tabcit th .sh {
+    font-size:12px;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    position:absolute;
+    height:96%;
+    width:100%;
+    top:1.3px;
+    color:#fff;
+    padding-top:13px;
+    display:block;
+    border-right:1px solid #fff;
+    box-sizing: border-box;
+    background-color:#5fc74b;
+    text-decoration: none;
+}
+.tabcit .wbtn {
+    position:relative;
+}
 .tabcit .st_2 {
     color:#fff;
     background-color:#97b5ea;
 }
 
-.uspopup, .depo_popup {
+.uspopup, .depo_popup, .addcpopup {
     display:none;
 }
 .csstbl {
@@ -842,10 +866,41 @@ h2 {
 }
   /*custom select end */
 
-.csstbl .col {
+  .outer-sel.center  .select{
+      height:41px;
+      border-radius: 3px;
+      border:1px solid #b8c3c9;
+  }
+  .outer-sel.center .options {
+      top:49px;
+      width:231px;
+      margin-bottom:20px;
+      margin-right:-1px;
+  }
+
+  .outer-sel.w2 {
+      width:270px;
+  }
+  .outer-sel.w2 .select {
+      width:90%;
+  }
+  .outer-sel.center .styledSelect:after {
+      background:url(../img/center_sel_ic.png) no-repeat;
+      border:0px;
+      top:17px;
+      right:12px;
+      width:10px;
+      height:8px;
+      /*w10 h 8*/
+  }
+  .outer-sel.center .styledSelect {
     
-    
-}
+    font-family: 'Conv_helveticaneuecyr-roman';
+     padding:12px 12px 2px 12px;
+  }
+ 
+  
+
 .csstbl .row {
     box-sizing:border-box;
     border-bottom:1px solid #d5dde9;
@@ -890,9 +945,13 @@ h2 {
      margin-top:1px;
 }
 .csstbl.b_01 .outer-sel {
-    margin-top:9px;
-    margin-bottom:10px;
+    margin:9px auto 10px auto;
 }
+ .csstbl .outer-sel.mar04 {
+      margin-top:28px;
+      margin-bottom:19px;
+      padding-left:12px;
+  }  
 .csstbl.b_01 .midcol .outer-sel, .csstbl.b_01 .midcol .tit {
     
 }
@@ -989,6 +1048,12 @@ h2 {
 }
 .csstbl .row.stmin_03 .input_01 {
     margin-top:0px;
+}
+.csstbl .input_01.long_3 {
+    margin-top:28px;
+    margin-bottom:19px;
+    width:270px;
+    height:41px;
 }
 .list_5 .icos {
     cursor:pointer;
@@ -1340,6 +1405,9 @@ h2 {
 
 .uspopup {
     width:581px;
+}
+.addcpopup {
+    width:520px;
 }
 .depo_popup {
     width:525px;
