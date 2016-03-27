@@ -155,7 +155,8 @@ body.login_page {
 .logform .form input[type=text]:-moz-placeholder, .logform .form input[type=password]:-moz-placeholder            {color:#b8c3c9;   opacity:1;}/* Firefox 18- */
 .logform .form input[type=text]:-ms-input-placeholder, .logform .form input[type=password]:-ms-input-placeholder      {color:#b8c3c9;   opacity:1;}
 .logform .form input[type=submit], .bttn {
-    border-bottom:2px solid #263f79;
+    -webkit-box-shadow:0px 2px 0px #263f79;
+    box-shadow:0px 2px 0px #263f79;
     display:inline-block;
     border-radius: 4px;
     color: #fff;
@@ -187,7 +188,9 @@ body.login_page {
         border:1px solid #97b5ea; 
     }
     .bttn.black {
-        border-bottom-color:#191c26;
+        -webkit-box-shadow:0px 2px 0px #191c26;
+        box-shadow:0px 2px 0px #191c26;
+       
         background:#3f4352;
     }
     .logform .form input[type=submit]:focus, .bttn:focus   {
@@ -202,6 +205,10 @@ body.login_page {
 
     .logform .form input[type=submit]:hover, .bttn:hover {
         background:#6c91d1;
+    }
+    .logform .form input[type=submit]:focus {
+        -webkit-box-shadow:0px -2px 0px #263f79;
+        box-shadow:0px -2px 0px #263f79;
     }
     
     .buts.alcenter, .cntp {
@@ -705,6 +712,12 @@ h2 {
     background-color:#5fc74b;
     text-decoration: none;
 }
+.tabcit th .sh {
+        background-color: #b3cdfb;
+}
+.tabcit th .sh:hover,.tabcit th .sh:focus {
+        background-color: #97b5ea;
+}
 .tabcit .wbtn {
     position:relative;
 }
@@ -911,6 +924,10 @@ h2 {
 .csstbl .row.st_04 {
     border-bottom:1px solid #d5dde9;
 }
+.csstbl .row.bg_2:first-child {
+    background-color:#d5dde9;
+    border-radius: 4px 4px 0px 0px;
+}
 .csstbl  .row:last-child .col {
     border-bottom:0px;
     
@@ -1016,6 +1033,20 @@ h2 {
 .csstbl.off_02 .tit {
     margin-top:14px;
     margin-bottom:14px;
+}
+.csstbl.off_03 .tit {
+    margin-top:10px;
+    margin-bottom:10px; 
+}
+.csstbl .row.bg_2:first-child {
+    
+}
+.csstbl.off_03  .row.bg_2 .tit {
+    margin-top:12px;
+    margin-bottom:12px; 
+}
+.csstbl.off_03  .row:nth-child(3) {
+    background-color:#f9fafc;
 }
 .csstbl .withc  {
     text-align:center;
