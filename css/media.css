@@ -1,4 +1,4 @@
-@media only screen and (min-width: 400px ) {
+@media only screen and (min-width: 300px ) {
 
     
     .tab_st5 tr th {
@@ -29,18 +29,8 @@
     
 }
 @media only screen and (min-width: 1200px ) {
-    
         .tab_st5 {
         font-size:23px;
         }   
 }
-@media only screen and (max-width: 1300px ) {
-    
-    .zpane.logist  {
-    font-size: 16px; 
-    }
-    .zpane.logist  .item {
-      margin: 0px 1.2% 0px 1.2%;
-    }
-       
-}
+

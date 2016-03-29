@@ -115,7 +115,12 @@ $('select.cus-sel').each(function () {
                 $(".opsidebar").css("min-height", scrollHeight + "px");
                 
             }
-
+            
+            
+            
+          
+            
+            
         }
     );
     

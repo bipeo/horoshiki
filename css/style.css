@@ -39,6 +39,13 @@ body.login_page {
     min-width:1200px;
     max-width:inherit;
 }
+.wrap02 {
+     margin:0 auto;
+     min-height: 100%;
+}
+.wrap02.plan {
+    /* min-width:1200px; */
+}
 
 .content.spone {
     padding-bottom:60px;
@@ -655,6 +662,7 @@ h2 {
  }
 
 .tab_st5  tr td {
+    vertical-align: middle;
     border-right:1px solid #eaeef4;
     position:relative;
 }
@@ -671,9 +679,7 @@ h2 {
     padding-left:18px;
     padding-right:18px;
 }
-.tab_st5 tr td:first-child {
-    background-color:#fff; 
-}
+
 .tab_st5 th:last-child {
     border-right:0px;
 }
@@ -681,9 +687,13 @@ h2 {
 .tab_st5 tr:nth-child(2n + 1) {
     background-color:#f9fafc;
 }
-.tab_st5.logist tr:nth-child(5n + 1) {
-    border-bottom:1px solid #eaeef4;
+.tab_st5 tr.firstrow {
+    border-top:1px solid #eaeef4;
 }
+.tab_st5 tr td.bg_st, .tab_st5 tr td[rowspan] {
+     background-color:#fff;
+}
+
 .tab_st5 tr  th {
     color:#83879a;
     white-space: nowrap;
@@ -831,7 +841,7 @@ h2 {
     float:left;
 }
 
-.zpane .item.bhide {
+.zpane .item.bhide, .zpane.fpoint .item.bhide {
     margin-right:0%;
     padding-left:2%;
     padding-right:2%;
