@@ -1,7 +1,7 @@
 $(function(){
             $('.navtogg').on('click',function() {
                 
-                $('.navtogg').toggleClass('open');
+                $('.navtogg, body').toggleClass('open');
                 
                  $(".opsidebar.uncollapse").toggle('fast');
                 

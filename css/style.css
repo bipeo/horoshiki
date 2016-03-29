@@ -35,6 +35,11 @@ body.login_page {
     position: relative;
 }
 
+.wrapper.cust_w1 {
+    min-width:1200px;
+    max-width:inherit;
+}
+
 .content.spone {
     padding-bottom:60px;
 }
@@ -636,6 +641,87 @@ h2 {
     background-color:#d5dde9;
     padding:14px 0px;
 }
+
+.out_st5 {
+    overflow-x:auto;
+}
+
+.tab_st5 {
+    text-align:center;
+    width:100%;
+    color:#83879a;
+    font-family: 'Conv_helveticaneuecyr-roman';
+    font-size:22px;   
+ }
+
+.tab_st5  tr td {
+    border-right:1px solid #eaeef4;
+    position:relative;
+}
+.tab_st5  tr td, .tab_st5 .tzone span {
+    padding-top: 20px;
+    padding-bottom:20px; 
+}
+.tab_st5 th {
+    border-right:1px solid #fff;
+    background-color:#d5dde9;
+   
+}
+.tab_st5  tr td, .tab_st5 tr th {
+    padding-left:18px;
+    padding-right:18px;
+}
+.tab_st5 tr td:first-child {
+    background-color:#fff; 
+}
+.tab_st5 th:last-child {
+    border-right:0px;
+}
+
+.tab_st5 tr:nth-child(2n + 1) {
+    background-color:#f9fafc;
+}
+.tab_st5.logist tr:nth-child(5n + 1) {
+    border-bottom:1px solid #eaeef4;
+}
+.tab_st5 tr  th {
+    color:#83879a;
+    white-space: nowrap;
+    padding-top:34px;
+    padding-bottom:34px
+}
+.tab_st5 strong {
+   font-family: 'Conv_SFUIText-BoldG1';
+}
+.tab_st5 .font_4 {
+    color:#8e382a;
+}
+.tab_st5 td.bg_1 {
+    
+}
+
+.tzone span {
+    top:0px;
+    display:block;
+    position:absolute;
+    width:50%;
+    height:100%;
+    padding:10px 0px;
+    box-sizing: border-box;
+}
+.tzone span.act {
+    background-color:#EAEEF4;
+}
+
+.tzone span:first-child {
+    left:0px;
+}
+.tzone span:last-child {
+    right:0px;
+}   
+
+
+
 .tabrad tr.cval td {
      border-top:1px solid #d5dde9;
 }
@@ -661,10 +747,6 @@ h2 {
     padding:0px 0px 0px 15px;
     width:1%;
     white-space: nowrap;
-}
-
-.tabcit.tc_2 th {
-    
 }
 .tabcit.tc_2  tr td:nth-child(1) {
     text-align:left;
@@ -724,6 +806,44 @@ h2 {
 .tabcit .st_2 {
     color:#fff;
     background-color:#97b5ea;
+}
+
+.tabcit .panetop {
+    
+}
+
+
+
+.zpane {
+        
+        padding:0px 0px 0px 0%;
+        color:#fff;
+        overflow:hidden;
+        background:#2e3240;
+        font-size:17px;
+    	font-family: 'Conv_SFUIText-BoldG1';
+}
+
+.zpane .item {
+    text-transform: uppercase;
+    margin:0px 1.7% 0px 1.7%;
+    padding:30px 0px;
+    float:left;
+}
+
+.zpane .item.bhide {
+    margin-right:0%;
+    padding-left:2%;
+    padding-right:2%;
+    float:right;
+    background-color:rgba(63,67,82,1);  
+}
+.zpane .item.bhide:hover {
+     background-color:rgba(63,67,82,.8);
+}
+.zpane .item.bhide a {
+    text-decoration: none;
+    color:#fff;
 }
 
 .uspopup, .depo_popup, .addcpopup {
