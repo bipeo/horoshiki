@@ -82,6 +82,7 @@ body.login_page {
     position:relative;
     padding:0px 0px 0px 0px;
     margin:0 auto;
+    width:484px;
     width: 251px;
     box-sizing:border-box;
 }
@@ -112,26 +113,38 @@ body.login_page {
     box-sizing:border-box;
     background-repeat: no-repeat;
     vertical-align: middle;
+    
+   
 }
 .logform .form input[type=password] {
     font-size:14px;
 }
 .logform .form .note {
+    width:calc(100% - 287px);
+    float:left;
+    margin:0px 0px 0px 0px;
+    position: static;
+   
+}
+.logform .form .note .innote {
     color:#ff9797;
     font-size:11px;
     font-family: 'Conv_SFUIText-Italic';
     padding:8px 10px;
     text-align:left;
-    display:block;
-    position:absolute;
-    right:-142px;
-    top:15px;
     border:1px solid #ff9797;
     border-radius:3px;
     line-height: 1.2em;
-    
+        
+    width:162px;
+    position: absolute;
+    top: 50%;
+    left:260px;
+    -webkit-transform: translate(-0%,-50%); 
+    transform: translate(-0%, -50%) 
 }
-.logform .form .note:before {
+
+.logform .form .innote:before {
     content:'';
     position:absolute;
     top:50%;
@@ -141,6 +154,12 @@ body.login_page {
     width:8px;
     height:14px;
     background:url(../img/mescorn.png) 0 0px no-repeat;
+}
+.logform .form .ic_pswd {
+      cursor: pointer;
+      position: absolute;
+      top: 29px;
+      right: 9px;
 }
 .logform .form .line {
     position:relative;

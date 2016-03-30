@@ -18,15 +18,25 @@
     <div class="logform">
     <a href="#" class="pick"><img  src="img/logo_mini.png" /></a>
     <form class="form">
-        <div class="line">   
+        <div class="line row">
+         <div class="pinp">        
         <input class="ulogin" type="text" placeholder="Введите логин" value="">
-        <span class="note error">Неверный пароль,  <br>попробуйте еще раз</span>
-        </div>
-         <div class="line">
-        <input class="upass" type="password" placeholder="******" value="">
-		  <span style="cursor: pointer; position: absolute; top: 28px; right: 9px;"><img src="/img/pass_ic.png"></span>
-          <span class="note error">Неверный пароль,  <br>попробуйте еще раз</span>
          </div>
+        <div class="note error">
+            <span class="innote">Неверный пароль, и возможно он будет очень длинный, попробуйте еще раз</span>
+        </div>
+        </div>
+        
+         <div class="line row">
+         <div class="pinp">            
+        <input class="upass" type="password" placeholder="******" value="">
+	 <div class="ic_pswd"><img src="img/pass_ic.png"></div> 
+         </div>
+          <div class="note error">
+              <span class="innote">Неверный пароль,  попробуйте еще раз</span>
+          </div>
+         </div>
+        
         <input type="submit" value="Вход">
     </form>
      
