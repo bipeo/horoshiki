@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>1.3.2_lists_and_workers</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="fonts/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="libs/jquery-1.8.3.min.js"></script>
+    <script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
+    <link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" media="screen" />
+    
+    <script src="js/horosh.js"></script>
+    <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
+    <script type="text/javascript">
+          $(function(){
+
+               //  $.pixlayout({clip: true, src: "design/user_options.png", show:true, center:true, top:0, left:0, pervious: false});
+             //  $.pixlayout({clip: true, src: "design/1.3.1pupups.png", show:true, center:true, top:0, left:0, pervious: false});
+          }); 
+  </script>
+   <script type="text/javascript">
+            $(document).ready(function() {
+	$(".fancybox").fancybox({
+            wrapCSS : 'photo-fancy',
+            padding: 0,
+            helpers : {
+                overlay: {
+                 css: {'background': 'rgba(63,67,82, 0.8)'} 
+                }
+            } 
+            
+	});
+        });
+        </script>
+</head>
+<body class="options_page">
+<!-- wrapper -->
+<div class="wrapper ">
+    
+    <div class="content">
+        <div class="cabtop">
+            <span class="navtogg open"></span>
+            <div class="uprof">
+                <img src="img/profava.png">
+                <div class="space">
+                    <span class="fio"><a href="#">Мария  Лупенкова</a></span>
+                <span class="job">Директор</span>
+                </div>
+            </div>
+            <div class="logout">
+                <span><a href="#">Выйти</a></span>
+                <a class="outlink" href="#"></a>
+            </div>
+        </div>
+        
+        <div class="barrower">
+            
+       
+        <div class="opsidebar collapsed">
+            <div class="inner">
+            <div class="key"><span>ОБЩИЕ НАСТРОЙКИ</span></div>
+            <ul>
+                <li><a href="#">Города и площадки</a></li>
+                <li><a href=#>Пользователи</a></li>
+                <li class="cur"><a href=#>Справочники</a></li>
+                <li><a href=#>Настройки площадки</a></li>
+                <li><a href=#>Зоны доставки</a></li>
+            </ul>
+            <div class="key"><span>Персонал</span></div>
+            <ul>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href=#>Карта возможностей</a></li>
+                <li><a href=#>График работы</a></li>
+          
+            </ul>
+            <div class="key"><span>ТРЕКИНГ</span></div>
+            <ul>
+                <li><a href="#">Журнал заказов</a></li>
+                <li><a href=#>План производства</a></li>
+                <li><a href=#>Заказы у курьеров</a></li>
+          
+            </ul>
+            <div class="key"><span>МАРКЕТИНГ</span></div>
+            <ul>
+                <li><a href="#">План продаж</a></li>
+                <li><a href=#>Меню</a></li>
+                <li><a href=#>Клиенты</a></li>
+                <li><a href=#>Отзывы</a></li>
+          
+            </ul>
+            <div class="key"><span>Отчеты</span></div>
+            <ul>
+                <li><a href="#">Показатели работы</a></li>
+                <li><a href=#>Отчет по курьерам</a></li>
+                <li><a href=#>Отзывы</a></li>
+                <li><a href=#>Карта доставленных 
+                заказов</a></li>
+          
+            </ul>
+            </div>
+        </div>
+        
+        <div class="opsidebar uncollapse">
+            <div class="key">
+                
+                <span>
+                    <a href=# class="sprite sprite-1_ic"></a>
+                    <a href=# class="sprite sprite-2_ic"></a>
+                    <a href=# class="sprite sprite-3_ic"></a>
+                    <a href=# class="sprite sprite-4_ic"></a>
+                    <a href=# class="sprite sprite-5_ic"></a>
+                    
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href=# class="sprite sprite-6_ic"></a>
+                    <a href=# class="sprite sprite-7_ic"></a>
+                    <a href=# class="sprite sprite-8_ic"></a>
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-9_ic"></a>
+                    <a href="#" class="sprite sprite-10_ic"></a>
+                    <a href="#" class="sprite sprite-11_ic"></a>
+                </span>
+            </div>
+             <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-12_ic"></a>
+                    <a href="#"  class="sprite sprite-13_ic"></a>
+                    <a href="#" class="sprite sprite-14_ic"></a>
+                    <a href="#" class="sprite sprite-15_ic"></a>
+                </span>
+            </div>
+             <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-16_ic"></a>
+                    <a href="#" class="sprite sprite-17_ic"></a>
+                    <a href="#" class="sprite sprite-18_ic"></a>
+                    <a href="#" class="sprite sprite-19_ic"></a>
+                </span>
+            </div>
+            
+            
+        </div>
+             </div>
+        
+        <div class="mainside">
+            <div class="crubs">
+                <span class="ht">Общие настройки</span>
+               
+            </div>
+           
+            
+            <div class="csstbl cnt  off_02 mar_02">
+                <div class="row">
+                    <div class="col half th first">Основные</div>
+                    <div class="col half th">Сотрудники (настройки)</div>
+                </div>
+                <div class="row">
+                <div class="col full">
+                        <strong class="tit full">Должности <a href="#edit_user_1" class="fancybox">Popup1</a></strong>
+                    </div>
+                 </div>
+                <div class="row">
+                    <div class="col w_05">
+                        <strong class="tit">№</strong>
+                    </div>
+                    <div class="col w_33">
+                        <strong class="tit">Название должности <a href="#edit_user_2" class="fancybox">Popup2</a> </strong>
+                    </div>
+                    <div class="col w_15">
+                        
+                      
+                        <div class="cicon icon-plus white"></div>
+                            
+                        
+            
+                        
+                    </div>
+                   
+                </div>
+                    <div class="row">
+                    <div class="col w_05">
+                        <span class="tit">1</span>
+                    </div>
+                    <div class="col w_33">
+                        <span class="tit ">Генеральный директор <a href="#edit_user_3" class="fancybox">Popup3</a> </span>
+                    </div>
+                    <div class="col w_15">
+                        <div class="cicon icon-minus">
+</div>
+                        
+              
+                        
+                    </div>
+                    
+                </div>
+              
+              
+                
+                 
+                
+             
+                
+          
+                
+                <div class="row">
+                <div class="col w_76" >
+                        <strong class="tit" >Статусы сотрудника</strong>
+                    </div>
+                
+                 </div>
+                
+                <div class="row">
+                    <div class="col w_05">
+                        <strong class="tit">№</strong>
+                    </div>
+                    <div class="col w_33">
+                        <strong class="tit">Статус</strong>
+                    </div>
+                    <div class="col w_15">
+                        
+                        <div class="cicon icon-plus"></div>
+                        
+                        
+                    </div>
+                    
+                   
+                    
+                </div>
+                
+                <div class="row">
+                    <div class="col w_05">
+                        <span class="tit">1</span>
+                    </div>
+                    <div class="col w_33">
+                        <span class="tit">Стажер</span>
+                    </div>
+                    <div class="col w_15">
+                        
+                        <div class="cicon icon-minus white"></div>
+                        
+                        
+                    </div>
+                  
+                    
+                    
+                </div>
+                
+                 <div class="row">
+                    <div class="col w_05">
+                        <span class="tit">2</span>
+                    </div>
+                    <div class="col w_33">
+                        <span class="tit">В штате</span>
+                    </div>
+                    <div class="col w_15">
+                        
+                        <div class="cicon icon-minus white"></div>
+                        
+                        
+                    </div>
+                
+                    
+                    
+                </div>
+                 <div class="row">
+                    <div class="col w_05">
+                        <span class="tit">3</span>
+                    </div>
+                    <div class="col w_33">
+                        <span class="tit">Уволен</span>
+                    </div>
+                    <div class="col w_15">
+                        
+                        <div class="cicon icon-minus white"></div>
+                        
+                        
+                    </div>
+                   
+                    
+                    
+                </div>
+                
+                
+        
+                
+                
+                <div class="row">
+                <div class="col full">
+                        <strong class="tit full">Причины увольнения</strong>
+                    </div>
+                 </div>
+                
+                
+                <div class="row">
+                    <div class="col w_05">
+                        <strong class="tit">№</strong>
+                    </div>
+                    <div class="col w_33">
+                        <strong class="tit">Причина</strong>
+                    </div>
+                    <div class="col w_15">
+                        
+                        <div class="cicon icon-minus"></div>
+                        
+                        
+                    </div>
+                
+                    
+                </div>
+                
+                
+                
+            </div>
+            
+            
+            <div class="buts alright">
+                <input class="bttn" type="submit" value="Редактировать">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      
+      
+         
+            
+       
+            </div>
+
+        </div>
+    <!--content -->
+
+  
+
+</div><!-- END wrapper -->
+
+
+
+<div class="depo_popup" id="edit_user_1" >
+            <div class="csstbl cnt  ">
+              <h2 class="hs3">Название должности</h2>
+                
+                 <div class="row">
+                    <div class="col full">
+                        <div class="w60 st_44">
+                           <input class="input_01    st_02" type="text" placeholder="Название" value="">
+                           </div>
+                    </div>
+                
+                </div>
+              
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+<div class="depo_popup" id="edit_user_2" >
+            <div class="csstbl cnt  ">
+              <h2 class="hs3">Статус сотрудника</h2>
+                
+                 <div class="row">
+                    <div class="col full">
+                        <div class="w60 st_44">
+                           <input class="input_01    st_02" type="text" placeholder="Название" value="">
+                           </div>
+                    </div>
+                
+                </div>
+              
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+    <div class="depo_popup" id="edit_user_3" >
+            <div class="csstbl cnt  ">
+              <h2 class="hs3">Причина увольнения</h2>
+                
+                 <div class="row">
+                    <div class="col full">
+                        <div class="w60 st_44">
+                           <input class="input_01    st_02" type="text" placeholder="Название" value="">
+                           </div>
+                    </div>
+                
+                </div>
+              
+                
+            </div>
+            <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+ 
+
+
+
+
+</body>
+</html>
+
