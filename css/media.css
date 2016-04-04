@@ -2,13 +2,15 @@
 
     
     .tab_st5 tr th {
-    padding-top: 30px;
-    padding-bottom: 28px;
+    padding-top: 22px;
+    padding-bottom: 20px;
         }
   
         
     .tab_st5 {
-        font-size:20px;
+        
+       /* font-size:20px; */
+       font-size:12px;
     }
     
    
@@ -17,12 +19,12 @@
 @media only screen and (min-width: 800px ) {
     
     .tab_st5 tr th {
-    padding-top: 35px;
-    padding-bottom: 33px;
+/*    padding-top: 35px;
+    padding-bottom: 33px;*/
         }
         
      .tab_st5 {
-        font-size:22px;
+/*        font-size:22px;*/
       }   
         
      
@@ -30,7 +32,7 @@
 }
 @media only screen and (min-width: 1200px ) {
         .tab_st5 {
-        font-size:23px;
+/*        font-size:23px;*/
         }   
 }
 

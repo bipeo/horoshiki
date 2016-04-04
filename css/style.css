@@ -258,6 +258,9 @@ body.login_page {
     .buts.mar_02 {
         margin:0px 0px 20px 0px;
     }
+    .buts.mar_04 {
+        margin:0px 0px 40px 0px;
+    }
     .buts .bttn {
         letter-spacing: 1px;
         padding:12px 20px 14px 20px;
@@ -604,7 +607,7 @@ h2 {
     font-size:18px;
 }
 .crubs {
-    padding:21px 0px 14px 0px;
+    padding:21px 0px 15px 0px;
 }
 .crubs.st_01  h2 {
     padding:24px 0px 0px 0px;
@@ -683,10 +686,11 @@ h2 {
     vertical-align: middle;
     border-right:1px solid #eaeef4;
     position:relative;
+    
 }
 .tab_st5  tr td, .tab_st5 .tzone span {
-    padding-top: 20px;
-    padding-bottom:20px; 
+    padding-top: 11px;
+    padding-bottom:11px; 
 }
 .tab_st5 th {
     border-right:1px solid #fff;
@@ -694,8 +698,9 @@ h2 {
    
 }
 .tab_st5  tr td, .tab_st5 tr th {
-    padding-left:18px;
-    padding-right:18px;
+    padding-left:8px;
+    padding-right:8px;
+
 }
 
 .tab_st5 th:last-child {
@@ -718,8 +723,21 @@ h2 {
     padding-top:34px;
     padding-bottom:34px
 }
-.tab_st5 strong {
-   font-family: 'Conv_SFUIText-BoldG1';
+.tab_st5 tr  th:first-child {
+    width:8%;
+}
+.tab_st5 tr  th:nth-child(2) {
+    width:10%;
+}
+
+.tab_st5 th strong {
+    color:#2e3240;
+    font-family: 'helveticaneuecyrblack';
+}
+.tab_st5 td strong  {
+    color:#83879a;
+    font-family: 'Conv_SFUIText-BoldG1';
+
 }
 .tab_st5 .font_4 {
     color:#8e382a;
@@ -727,7 +745,13 @@ h2 {
 .tab_st5 td.bg_1 {
     
 }
-
+.out_st5 .actd {
+      background-color:#EAEEF4;
+}
+.out_st5 .actd.act {
+     color:#8e382a;
+     background-color:#EAEEF4;
+}
 .tzone span {
     top:0px;
     display:block;
@@ -843,19 +867,18 @@ h2 {
 
 
 .zpane {
-        
         padding:0px 0px 0px 0%;
         color:#fff;
         overflow:hidden;
         background:#2e3240;
-        font-size:17px;
+        font-size:12px;
     	font-family: 'Conv_SFUIText-BoldG1';
 }
 
 .zpane .item {
     text-transform: uppercase;
     margin:0px 1.7% 0px 1.7%;
-    padding:30px 0px;
+    padding:12px 0px 14px 0;
     float:left;
 }
 
@@ -874,7 +897,7 @@ h2 {
     color:#fff;
 }
 
-.uspopup, .depo_popup, .addcpopup, .op_place {
+.uspopup, .depo_popup, .addcpopup, .op_place, .worksmap {
     display:none;
 }
 .csstbl {
@@ -1116,11 +1139,70 @@ h2 {
     margin-top:10px;
     margin-bottom:10px;
 }
+.csstbl.b_01 .row.r35  .tit {
+    margin-top:18px;
+    margin-bottom:20px;
+}
+.csstbl.b_01   .row.r35 .outer-sel {
+    margin-top:20px;
+}
+.csstbl.b_01   .row.r35 .input_01 {
+    margin-left:12%;
+}
+.csstbl.b_01 .r24 {
+    
+}
 .csstbl .stmin_03  .tit {
      margin-top:1px;
 }
 .csstbl.b_01 .outer-sel {
     margin:9px auto 10px auto;
+}
+.csstbl.b_01 .outer-sel.st_74 {
+    margin-left:12px;
+    margin-bottom:12px;
+}
+.csstbl .row.rz31 {
+    padding-top:10px;
+    padding-bottom:23px;
+    margin-bottom:30px;
+    border-bottom: 1px solid #d5dde9;
+}
+.csstbl  .ts3.tit {
+    margin-top:19px;
+}
+
+.outer-sel.minpad .options  {
+    left:-0px;
+}
+.outer-sel.minpad .options:after {
+    right:30px;
+}
+
+.csstbl .row.rz32 .outer-sel {
+    margin-top:18px;
+}
+.csstbl .row.rz31.left {
+    width: 55%;
+    float: left;
+} 
+.csstbl .row.rz31.right {
+   width:45%;
+   float:right;
+} 
+.csstbl .row.rz32.left {
+    float:left;
+    width:55%;
+}
+.csstbl .row.rz32.right {
+     width:45%;
+     float:right;
+}
+.csstbl .row.rz31 .col:first-child .outer-sel, .csstbl .row.rz32 .col:first-child .outer-sel {
+    margin-left:15px;
+}
+.csstbl .row .col.hide {
+    visibility: hidden;
 }
  .csstbl .outer-sel.mar04 {
       margin-top:28px;
@@ -1149,14 +1231,71 @@ h2 {
     width:70%;
 }
 
+.cnt .row .col.w_03 {
+    width:3%;
+}
+.cnt .row .col.w_04 {
+    width:4%;
+}
 .cnt .row .col.w_05 {
     width:5%;
+}
+.cnt .row .col.w_055 {
+    width:5.5%;
 }
 .cnt .row .col.w_06 {
     width:6%;
 }
+.cnt .row .col.w_07 {
+    width:7%;
+}
+.cnt .row .col.w_08 {
+    width:8%;
+}
+.cnt .row .col.w_09 {
+    width:9%;
+}
 .cnt .row .col.w_10 {
     width:10%;
+}
+.cnt .row .col.w_11 {
+    width:11%;
+}
+.cnt .row .col.w_12 {
+    width:12%;
+}
+.cnt .row .col.w_13 {
+    width:13%;
+}
+.cnt .row .col.w_14 {
+    width:14%;
+}
+.cnt .row .col.w_15 {
+    width:15%;
+}
+.cnt .row .col.w_16 {
+    width:16%;
+}
+.cnt .row .col.w_17 {
+    width:17%;
+}
+.cnt .row .col.w_18 {
+    width:18%;
+}
+.cnt .row .col.w_19 {
+    width:19%;
+}
+.cnt .row .col.w_20 {
+    width:20%;
+}
+.cnt .row .col.w_21 {
+    width:21%;
+}
+.cnt .row .col.w_22 {
+    width:22%;
+}
+.cnt .row .col.w_23 {
+    width:23%;
 }
 .cnt .row .col.w_24 {
     width:24%;
@@ -1167,26 +1306,232 @@ h2 {
 .cnt .row .col.w_26 {
     width:26%;
 }
-
-.cnt .row .col.w_76 {
-    width:76%;
+.cnt .row .col.w_27 {
+    width:27%;
+}
+.cnt .row .col.w_28 {
+    width:28%;
+}
+.cnt .row .col.w_29 {
+    width:29%;
+}
+.cnt .row .col.w_30 {
+    width:30%;
+}
+.cnt .row .col.w_31 {
+    width:31%;
+}
+.cnt .row .col.w_32 {
+    width:32%;
 }
 .cnt .row .col.w_33 {
     width:33%;
 }
-.cnt .row .col.w_15 {
-    width:12%;
+.cnt .row .col.w_34 {
+    width:34%;
 }
-.cnt .row .col.w_10 {
-    width:10%;
+.cnt .row .col.w_35 {
+    width:35%;
+}
+.cnt .row .col.w_36 {
+    width:36%;
+}
+.cnt .row .col.w_37 {
+    width:37%;
+}
+.cnt .row .col.w_38 {
+    width:38%;
+}
+.cnt .row .col.w_39 {
+    width:39%;
+}
+.cnt .row .col.w_40 {
+    width:40%;
+}
+.cnt .row .col.w_41 {
+    width:41%;
+}
+.cnt .row .col.w_42 {
+    width:42%;
+}
+.cnt .row .col.w_43 {
+    width:43%;
+}
+.cnt .row .col.w_44 {
+    width:44%;
+}
+.cnt .row .col.w_45 {
+    width:45%;
+}
+.cnt .row .col.w_46 {
+    width:46%;
+}
+.cnt .row .col.w_47 {
+    width:47%;
+}
+.cnt .row .col.w_48 {
+    width:48%;
+}
+.cnt .row .col.w_49 {
+    width:49%;
+}
+.cnt .row .col.w_50 {
+    width:50%;
+}
+.cnt .row .col.w_51 {
+    width:51%;
+}
+.cnt .row .col.w_52 {
+    width:52%;
+}
+.cnt .row .col.w_53 {
+    width:53%;
+}
+.cnt .row .col.w_54 {
+    width:54%;
+}
+.cnt .row .col.w_55 {
+    width:55%;
+}
+.cnt .row .col.w_56 {
+    width:56%;
+}
+.cnt .row .col.w_57 {
+    width:57%;
+}
+.cnt .row .col.w_58 {
+    width:58%;
+}
+.cnt .row .col.w_59 {
+    width:59%;
+}
+.cnt .row .col.w_60 {
+    width:60%;
+}
+.cnt .row .col.w_61 {
+    width:61%;
+}
+.cnt .row .col.w_62 {
+    width:62%;
+}
+.cnt .row .col.w_63 {
+    width:63%;
+}
+.cnt .row .col.w_64 {
+    width:64%;
+}
+.cnt .row .col.w_65 {
+    width:65%;
+}
+.cnt .row .col.w_66 {
+    width:66%;
+}
+.cnt .row .col.w_67 {
+    width:67%;
+}
+.cnt .row .col.w_68 {
+    width:68%;
+}
+.cnt .row .col.w_69 {
+    width:69%;
+}
+.cnt .row .col.w_70 {
+    width:70%;
+}
+.cnt .row .col.w_71 {
+    width:71%;
+}
+.cnt .row .col.w_72 {
+    width:72%;
+}
+.cnt .row .col.w_73 {
+    width:73%;
+}
+.cnt .row .col.w_74 {
+    width:74%;
+}
+.cnt .row .col.w_75 {
+    width:75%;
+}
+.cnt .row .col.w_76 {
+    width:76%;
+}
+.cnt .row .col.w_77 {
+    width:77%;
+}
+.cnt .row .col.w_78 {
+    width:78%;
+}
+.cnt .row .col.w_79 {
+    width:79%;
+}
+.cnt .row .col.w_80 {
+    width:80%;
+}
+.cnt .row .col.w_81 {
+    width:81%;
+}
+.cnt .row .col.w_82 {
+    width:82%;
+}
+.cnt .row .col.w_83 {
+    width:83%;
+}
+.cnt .row .col.w_84 {
+    width:84%;
+}
+.cnt .row .col.w_85 {
+    width:85%;
+}
+.cnt .row .col.w_86 {
+    width:86%;
+}
+.cnt .row .col.w_87 {
+    width:87%;
+}
+.cnt .row .col.w_88 {
+    width:88%;
+}
+.cnt .row .col.w_89 {
+    width:89%;
+}
+.cnt .row .col.w_90 {
+    width:90%;
+}
+.cnt .row .col.w_91 {
+    width:91%;
+}
+.cnt .row .col.w_92 {
+    width:92%;
+}
+.cnt .row .col.w_93 {
+    width:93%;
+}
+.cnt .row .col.w_94 {
+    width:94%;
+}
+.cnt .row .col.w_95 {
+    width:95%;
+}
+.cnt .row .col.w_96 {
+    width:96%;
+}
+.cnt .row .col.w_97 {
+    width:97%;
+}
+.cnt .row .col.w_98 {
+    width:98%;
+}
+.cnt .row .col.w_99 {
+    width:99%;
+}
+.cnt .row .col.w_100 {
+    width:100%;
 }
 
-.cnt .row .col.w_08 {
-    width:8%;
-}
-.cnt .row .col.w_055 {
-    width:5.5%;
-}
+
+
+
 
 
 .tit.w70 {
@@ -1245,8 +1590,8 @@ h2 {
     margin-left:18px;
 }
 .csstbl.off_02 .tit {
-    margin-top:14px;
-    margin-bottom:14px;
+    margin-top:15px;
+    margin-bottom:15px;
 }
 .csstbl.off_03 .tit {
     margin-top:10px;
@@ -1293,7 +1638,7 @@ h2 {
 }
 
 .csstbl.off_02  .cicon {
-    margin-top:12px;
+    margin-top:11px;
     margin-bottom:11px;
 }
 .csstbl .box_pl34 .cicon {
@@ -1309,7 +1654,7 @@ h2 {
 }
 
 
-.csstbl.b_01 .col:first-child .tit, .csstbl.b_01 .cbsbox.vert {
+.csstbl.b_01 .col:first-child .tit,   .csstbl.b_01 .cbsbox.vert {
      margin-left:15px;
     
 }
@@ -1330,6 +1675,9 @@ h2 {
     margin-bottom:19px;
     width:270px;
     height:41px;
+}
+.csstbl .input_01.fullinp {
+    width:100%;
 }
 .list_5 .icos {
     cursor:pointer;
@@ -1408,6 +1756,12 @@ h2 {
 .csstbl  .tit.font_2 {
     color:#82889c; 
 }
+.csstbl  label.font_2 {
+    color:#82889c; 
+}
+.csstbl  strong.font_2 {
+    color:#82889c; 
+}
 .csstbl  .tit.font_1 {
     color:#515669;
 }
@@ -1437,6 +1791,10 @@ h2 {
 }
 .tit.mar_03, .outer-sel.mar_03 {
      width:auto;
+     margin-left:12px;
+     margin-right:12px;
+}
+ .csstbl.b_01  .outer-sel.mar_04 {
      margin-left:12px;
      margin-right:12px;
 }
@@ -1667,6 +2025,13 @@ h2 {
   height: 26px;
   background: url(../img/checkbox_ic.png) no-repeat;
 }
+.checkbox.revert:not(checked) + label:before {
+    right:-36px;
+    left:auto;
+}
+.checkbox.revert:not(checked) + label {
+    padding-left:0px;
+}
 
 .checkbox:checked + label:before {
   background-position:0 -26px;
@@ -1710,6 +2075,9 @@ h2 {
 
 .uspopup {
     width:581px;
+}
+.worksmap {
+    width:750px;
 }
 .addcpopup {
     width:520px;
@@ -1823,4 +2191,156 @@ left:10.2px;
     background-color: #515669;
 }
 
+.row_wrks {
+    
+}
+.row_wrks .one {
+    width:16%
+}
+.row_wrks .two {
+    width:40%
+}
+.row_wrks .three {
+    width:17%
+}
+.row_wrks .four {
+    width:16%
+}
+.row_wrks .five {
+    width:10%
+}
 
+.csstbl.off_02 .tit.mar54 {
+    margin-bottom:6px;
+}
+
+.csstbl.off_02 .days_list .input_01 {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.input_01.ntbp {
+    margin-top:0px;
+    margin-bottom:0px;
+} 
+
+.days_list {
+    margin-top:0px;
+    width:280px;
+}
+.days_list .row {
+    border-bottom:0px;
+}
+.days_list .day {
+    margin:2px 2px 0px 0px;
+    float:left;
+    color:#82889c;
+}
+.days_list .dots {
+    color:#82889c;
+    margin:2px 2px;
+    width:3px;
+    float:left;
+}
+.days_list .row .dots.last {
+    
+   color:transparent;
+}
+.days_list .input_01, .csstbl.off_02 .days_list .input_01 {
+   float:left;
+   text-align:center;
+   margin: 0px 5px 8px 5px;
+   width:34px; 
+   border-radius: 4px;
+   padding: 5px 4px 5px 4px;
+}
+
+
+
+
+.dpcust.ui-datepicker {
+     max-width:226px;
+     background:#eef0f0;
+     padding:12px 19px 16px 19px;
+     font-family: 'Conv_helveticaneuecyr-roman'
+}
+
+.dpcust.ui-datepicker .ui-datepicker-next {
+    right: -5px;
+}
+.dpcust.ui-datepicker .ui-datepicker-prev {
+    left:-5px;
+}
+
+.dpcust.ui-datepicker table, .dpcust.ui-datepicker .ui-datepicker-title {
+    font-size:14px;
+}
+.dpcust.ui-datepicker .ui-datepicker-title {
+    font-family: 'helveticaneuecyrbold';
+
+}
+.dpcust .ui-widget-header {
+    background:none;
+    border:0px;
+    color:#49565c;
+    font-weight:normal;
+}
+
+.dpcust.ui-datepicker th {
+    font-size:12px;
+}
+
+
+.dpcust .ui-widget-header .ui-icon {
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+.dpcust.ui-datepicker th, .dpcust .ui-state-default, 
+.dpcust .ui-widget-content .ui-state-default, 
+.dpcust .ui-widget-header .ui-state-defaul {
+      font-weight: normal;
+      border-color:transparent;
+}
+.dpcust .ui-state-hover,
+.dpcust.ui-widget-content .ui-state-hover,
+.dpcust .ui-widget-header .ui-state-hover,
+.dpcust .ui-state-focus,
+.dpcust .ui-widget-content .ui-state-focus,
+.dpcust .ui-widget-header .ui-state-focus {
+	
+        background:#97b5ea;
+	color: #fff;
+}
+.dpcust .ui-state-default, 
+.dpcust .ui-widget-content .ui-state-default, 
+.dpcust .ui-widget-header .ui-state-default {
+    background:none;
+    color:#49565c;
+}
+.dpcust .ui-widget-header  .ui-state-hover  {
+    background: transparent;
+    border-color: transparent;
+}
+
+.dpcust .ui-widget-header  .ui-datepicker-next  .ui-icon.ui-icon-circle-triangle-e,
+.dpcust .ui-widget-header  .ui-datepicker-next.ui-state-hover  .ui-icon.ui-icon-circle-triangle-e
+ {
+    
+    background-image:url(../img/dpicon_right.png);
+}
+.dpcust .ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
+    background-image:url(../img/dpicon_left.png);
+}
+
+.dpcust .ui-state-highlight, .dpcust .ui-widget-content .ui-state-highlight, .dpcust .ui-widget-header .ui-state-highlight {
+    background:#97b5ea;
+    color:#fff;
+    border-color: transparent;
+}
+
+.dpcust.ui-datepicker td span, .dpcust.ui-datepicker td a {
+    text-align:center;
+}
+.dpcust.ui-datepicker td span, .dpcust.ui-datepicker td a {
+    padding:5px 4px; 
+}
