@@ -13,6 +13,38 @@ $(function(){
             
             
             
+            $('.opsidebar .key.toggle').on('click',function() {
+                $(this).next('.hide').slideToggle();
+                 $('html, body').animate({
+        scrollTop: $(".opsidebar  .hide").offset().top
+        }, 2000);
+            });
+            
+            
+            
+            
+     $('.drop.outer-sel .styledSelect').on('click',function() {
+           $('.drop.outer-sel').find('.opts').hide();
+         $(this).toggleClass('active').next('.opts').show();
+        
+     });
+     $('.drop.outer-sel .but').on('click',function() {
+         $('.drop.outer-sel').find('.opts').hide();
+     });
+            
+             $(document).mouseup(function (e)
+    {
+        var container = $(".drop.outer-sel .opts, .drop.outer-sel .select");
+
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            $('.drop.outer-sel .opts').hide();
+         
+        }
+    });
+
+            
             
             // Iterate over each select element
 $('select.cus-sel').each(function () {
