@@ -13,12 +13,7 @@ $(function(){
             
             
             
-            $('.opsidebar .key.toggle').on('click',function() {
-                $(this).next('.hide').slideToggle();
-                 $('html, body').animate({
-        scrollTop: $(".opsidebar  .hide").offset().top
-        }, 2000);
-            });
+          
             
             
             
