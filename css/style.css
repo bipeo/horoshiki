@@ -1768,6 +1768,9 @@ h2 {
 .csstbl.off_03  .row:nth-child(3) {
     background-color:#f9fafc;
 }
+.csstbl.off_03.nst  .row {
+    background:none;
+}
 .csstbl .withc  {
     text-align:center;
 }
