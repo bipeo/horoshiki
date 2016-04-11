@@ -1,38 +1,5 @@
 @media only screen and (min-width: 300px ) {
-
     
-    .tab_st5 tr th {
-    padding-top: 22px;
-    padding-bottom: 20px;
-        }
   
-        
-    .tab_st5 {
-        
-       /* font-size:20px; */
-       font-size:12px;
-    }
-    
-   
-    
-}
-@media only screen and (min-width: 800px ) {
-    
-    .tab_st5 tr th {
-/*    padding-top: 35px;
-    padding-bottom: 33px;*/
-        }
-        
-     .tab_st5 {
-/*        font-size:22px;*/
-      }   
-        
-     
-    
-}
-@media only screen and (min-width: 1200px ) {
-        .tab_st5 {
-/*        font-size:23px;*/
-        }   
 }
 
