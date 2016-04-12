@@ -12,6 +12,11 @@ $(function(){
             });
             
             
+                $(".checkbox").change(function() {
+                    $(this).parent('.chlabel').toggleClass('chkd');
+                });
+
+    
             
           
             

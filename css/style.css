@@ -1593,6 +1593,9 @@ h2 {
 .csstbl.b_01   .row.r35 .input_01 {
     margin-left:12%;
 }
+.csstbl  .m15.input_01 {
+    margin-left:18px;
+}
 .csstbl.b_01 .r24 {
     
 }
@@ -2022,7 +2025,12 @@ h2 {
 .wp_22 {
     width:208px;
 }
-
+.csstbl .wi34  .th {
+    color:#2e3240;
+}
+.csstbl .wi34 .th.disact {
+    color:#d5dde9;
+}
 .csstbl .wi34 .col {
     border-right:1px solid #d5dde9
 }
@@ -2071,6 +2079,10 @@ h2 {
 .csstbl.off_02 .tit {
     margin-top:15px;
     margin-bottom:15px;
+}
+.csstbl.off_04 .tit {
+    margin-top:14px;
+    margin-bottom:14px;
 }
 .csstbl.off_02 .tit.h2 {
     margin-top:16px;
@@ -2172,6 +2184,9 @@ h2 {
 }
 .csstbl .input_01.fullinp {
     width:100%;
+}
+.csstbl .input_01.nar_1 {
+    width:74px;
 }
 .list_5 .icos {
     cursor:pointer;
@@ -2507,7 +2522,7 @@ h2 {
   height: 17px;
 }
 
-.checkbox + label {
+.checkbox + label, .chlabel {
   cursor: pointer;
   
 }
@@ -2518,11 +2533,11 @@ h2 {
   position: absolute;
   opacity: 0;
 }
-.checkbox:not(checked) + label {
+.checkbox:not(checked) + label, .chlabel {
   position: relative; 
   padding: 0 0 0 36px; 
 }
-.checkbox:not(checked) + label:before {
+.checkbox:not(checked) + label:before,  .chlabel:before {
   content: '';
   position: absolute;
   top: -4px;
@@ -2530,16 +2545,18 @@ h2 {
   width: 27px;
   height: 26px;
   background: url(../img/checkbox_ic.png) no-repeat;
+  
 }
-.checkbox.revert:not(checked) + label:before {
+
+.checkbox.revert:not(checked) + label:before, .chlabel.revert:before {
     right:-36px;
     left:auto;
 }
-.checkbox.revert:not(checked) + label {
+.checkbox.revert:not(checked) + label, .chlabel.revert {
     padding-left:0px;
 }
 
-.checkbox:checked + label:before {
+.checkbox:checked + label:before, .chlabel.chkd:before{
   background-position:0 -26px;
 }
 
@@ -2906,4 +2923,8 @@ left:10.2px;
 }   
 .butki .itm:hover,.butki .itm:focus {
      background-color:#97b5ea;
+}
+
+.nothline {
+    
 }
