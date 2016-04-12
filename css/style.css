@@ -703,6 +703,7 @@ h2 {
     border-bottom:1px solid #d5dde9
 }
 
+.tabcit.tc_1 {}
 .tabcit th {
     font-family: 'Conv_SFUIText-BoldG1';
     color:#515669;
@@ -1355,7 +1356,7 @@ h2 {
     width:90%;
 }
 .outer-sel .select {
-   /* width:100%;*/
+    white-space: nowrap;
     height:18px;  
     cursor:pointer;
     display:inline-block;
@@ -1560,10 +1561,30 @@ h2 {
     display:block;
 }
 .csstbl .tit .hir {
+    font-size:13px;
    color:#515669;
 }
 .csstbl  .tit.h2 {
     font-size:16px;
+}
+.csstbl.off_04 .nothline .tit {
+    font-size:12px;
+    margin-top:12px;
+    margin-bottom:3px;
+}
+.csstbl.off_04 .nothline {
+    border-bottom:none;
+}
+.csstbl.off_04 .nothval {
+    border-bottom:none;
+}
+.csstbl.off_04 .tit.g4 {
+    margin-top:0px;
+    margin-bottom:20px;
+}
+.csstbl.off_04 .nothline .h3 {
+    margin-top:10px;
+    font-size:14px;
 }
 .csstbl  .u {
     text-decoration: underline;
@@ -2070,7 +2091,7 @@ h2 {
 }
 
 
-.csstbl.off_02  .row .col:first-child .tit:first-child {
+.csstbl.off_02  .row .col:first-child .tit:first-child, .csstbl.off_04  .row .col:first-child .tit:first-child  {
     margin-left:18px;
 }
 .csstbl.off_02 .cu2 .tit {
@@ -2080,13 +2101,19 @@ h2 {
     margin-top:15px;
     margin-bottom:15px;
 }
+
+
 .csstbl.off_04 .tit {
-    margin-top:14px;
+    margin-top:12px;
     margin-bottom:14px;
 }
 .csstbl.off_02 .tit.h2 {
     margin-top:16px;
     margin-bottom:14px;
+}
+.csstbl.off_04 .tit.h2 {
+    margin-top:13px;
+    margin-bottom:12px;
 }
 .csstbl.off_03 .tit {
     margin-top:10px;
@@ -2147,6 +2174,27 @@ h2 {
     margin-top:11px;
     margin-bottom:11px;
 }
+.csstbl.off_04  .cicon {
+   /* margin-top:8px;
+    margin-bottom:5px; */
+}
+.csstbl.off_04 .row_3 .tit {
+    margin-top:9px;
+    margin-bottom:16px;
+}
+
+.csstbl.off_04 .cicon {
+    margin-top:9px;
+    margin-bottom:13px;
+    padding: 6px 12px;
+}
+.csstbl.off_04  .input_01  {
+    margin-top:8px;
+    margin-bottom:9px;
+    padding: 6px 12px;
+}
+  
+
 .csstbl .box_pl34 .cicon {
     margin-bottom:0px;
 }
@@ -2504,6 +2552,17 @@ h2 {
 .depo_popup .csstbl .row, .depo_popup .csstbl {
     border:0px;
 }
+.depo_popup .csstbl.mb0 {
+    margin-bottom:0px;
+}
+.depo_popup.dpop .csstbl .tit {
+    margin-left:0px;
+    margin-right:0px;
+}
+.depo_popup .csstbl .st_20 {
+    margin-top:10px;
+    margin-bottom:10px;
+}
 .csstbl .row.hs3_r {
     border-bottom: 1px solid #d5dde9;
     background:#f9fafc;
@@ -2607,6 +2666,9 @@ h2 {
 }
 .depo_popup {
     width:525px;
+}
+.depo_popup.dpop {
+    width:471px;
 }
 .op_place {
     width:500px;
@@ -2896,6 +2958,37 @@ left:10.2px;
     padding:5px 4px; 
 }
 
+.outcities .outer-sel.cust_22 {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.outcities.st_22 .tabcit {
+    text-align:left;
+}
+.outcities.st_22 .tabcit tr th:first-child {
+   
+    width:10%;
+}
+.outcities.st_22 .tabcit tr th:nth-child(2) {
+   
+    width:13%;
+}
+.outcities.st_22 .tabcit tr th:nth-child(3) {
+  
+    width:15%;
+}
+.outcities.st_22 .tabcit tr th:nth-child(4) {
+  
+    width:16%;
+}
+.outcities.st_22 .tabcit tr th:nth-child(5) {
+  
+    width:10%;
+}
+.outcities.st_22 .tabcit tr th:nth-child(6) {
+  
+    width:35%;
+}
 
 .space_fix {
     height:200px;
