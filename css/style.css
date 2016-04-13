@@ -679,6 +679,43 @@ h2 {
     font-family: 'Conv_helveticaneuecyr-roman';
     width:100%;
 }
+.tabcit.s_37 {
+    
+    color:#515669;
+}
+.tabcit.s_37 .denied {
+    color:#d5dde9;
+    font-family: 'Conv_SFUIText-Italic';
+
+}
+.tabcit.s_37 tr.cmon td {
+    border-top:0px;
+}
+.tabcit.s_37 tr.cmon td {
+    color: #515669;
+}
+.tabcit.s_37 tr td a {
+    text-decoration:none;
+    color:#515669;
+}
+.tabcit.s_37 td {
+        border-bottom: 1px solid #d5dde9;
+}
+.tabcit.s_37 tr.cval td {
+    border-top:0px;
+}
+.tabcit.s_37  tr td:nth-child(1), .tabrad.s_37  tr th:nth-child(1) {
+    padding-left:15px;
+    width: 1%;
+    text-align:left;
+   
+}
+.tabcit.tc_1.s_37 tr td:nth-child(2) {
+      font-family: 'Conv_helveticaneuecyr-roman';
+}
+.tabcit.s_37 strong {
+     font-family: 'Conv_SFUIText-BoldG1';
+}
 .tabrad tr th:first-child  {
     border-radius: 4px 0px 0px 0px;
 }
@@ -705,7 +742,6 @@ h2 {
 
 .tabcit.tc_1 {}
 .tabcit th {
-    font-family: 'Conv_SFUIText-BoldG1';
     color:#515669;
     background-color:#d5dde9;
     padding:14px 0px;
@@ -826,6 +862,9 @@ h2 {
   
     .tab_st5 {
        font-size:12px;
+    }
+    .tab_st5  {
+        white-space: nowrap;
     }
     .tab_st5.wc_3 {
         font-size:18px;
@@ -1281,6 +1320,9 @@ h2 {
     text-align: left;
     font-size: 14px;
     font-family: 'Conv_helveticaneuecyr-roman';
+}
+.csstbl .th_row .tit {
+    font-family: 'Conv_SFUIText-BoldG1';
 }
 .tblpup.b_01 {
     border:0px;
@@ -2078,6 +2120,12 @@ h2 {
 .csstbl .row.t434 {
     border-bottom: 1px solid #d5dde9;
 }
+.csstbl .row.t34 {
+    border-bottom:0px;
+}
+.csstbl .row.t34 .tit {
+    margin-bottom:0px;
+}
 .csstbl .row.borded {
       border-bottom: 1px solid #d5dde9;
 }
@@ -2088,6 +2136,10 @@ h2 {
     margin-top:14px;
     margin-bottom:24px;
     margin-left:18px;
+    
+}
+.csstbl .row.cu2 .outer-sel.pos2mid .options, .csstbl .row.cu2 .outer-sel.pos2mid .opts {
+    left:0px;
 }
 
 
@@ -2151,7 +2203,9 @@ h2 {
     margin-left:2%;
     text-align:center; 
 }
-
+.tit.ttu {
+    text-transform: uppercase;
+}
 .csstbl.off_02 .input_01 {
     margin-top:10px;
     margin-bottom:9px;
@@ -2193,14 +2247,26 @@ h2 {
     margin-bottom:9px;
     padding: 6px 12px;
 }
-  
 
+
+.csstbl .tit.u1 {
+    margin-top:7px;
+    margin-bottom:7px;
+}
+.csstbl .tit.w_co {
+    width:60px;
+    
+}
 .csstbl .box_pl34 .cicon {
     margin-bottom:0px;
 }
-.csstbl .box_pl34 .input_01 {
-    margin-bottom:0px;
-    margin-top:8px;
+.csstbl .box_pl34 .sy2 .tit, .csstbl .box_pl34.p3 .sy2 .input_01 {
+   margin-bottom:0px;
+}
+.csstbl .box_pl34 .zhead .tit {
+    white-space: nowrap;
+    margin-bottom:5px;
+    
 }
 
 .box_pl34.last {
@@ -2217,6 +2283,9 @@ h2 {
 }
 .csstbl.b_01  .row.stmin_03 .input_01 {
    
+}
+.input_01.w_180 {
+    width:180px;
 }
 .cbsbox.inline.tit {
     width:40%;
@@ -2328,6 +2397,9 @@ h2 {
 .csstbl  .tit.font_3 {
     color:#d5dde9;
 }
+.csstbl .tit.font_7 {
+color:#2e3240 
+} 
 .csstbl  .tit.font_5 {
    
    font-family: 'helveticaneuecyrlight';
@@ -2972,7 +3044,7 @@ left:10.2px;
 }
 .outcities.st_22 .tabcit tr th:nth-child(2) {
    
-    width:13%;
+    width:16%;
 }
 .outcities.st_22 .tabcit tr th:nth-child(3) {
   
