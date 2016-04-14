@@ -1028,7 +1028,7 @@ h2 {
 .tzone span.act {
     background-color:#EAEEF4;
 }
-.tzone.green span.act {
+.tzone.green span.act, .tzone span.green {
      background-color:#74b724;
 }
 .tzone span.bold {
@@ -1039,10 +1039,10 @@ h2 {
 .tzone.green,.tzone.yellow, .tzone.red {
     color:#2e3240;
 }
-.tzone.yellow span.act {
+.tzone.yellow span.act, .tzone span.yellow   {
      background-color:#fff600;
 }
-.tzone.red span.act {
+.tzone.red span.act, .tzone span.red {
      background-color:#fe0000;
 }
 .tzone {
