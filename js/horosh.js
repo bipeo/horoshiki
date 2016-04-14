@@ -144,7 +144,7 @@ $('select.cus-sel').each(function () {
 
                     var wpbar = $('.cabtop').outerHeight();
                    scrollHeight -=   wpbar;
-                $(".opsidebar, .ymap_opt").css("min-height", scrollHeight + "px");
+                $(".opsidebar").css("min-height", scrollHeight + "px");
                 
             }
             
