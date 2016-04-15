@@ -1225,6 +1225,64 @@ h2 {
 }
 
 
+.outer-sel .opts.calc  .bonder {
+    padding:0px 3px;
+}
+
+.outer-sel  .opts.calc {
+    width:225px;
+}
+.opts.calc .cline {
+    margin:0px 5px 8px 5px;
+    overflow:hidden;
+}
+.opts.calc .cline .icon {
+    cursor:pointer;
+    width:10px;
+    height:18px;
+    background-repeat: no-repeat;
+   
+}
+.opts.calc .cline .icon.prev {
+    float:left;
+    background-image: url(../img/calc_left_ic.png); 
+}
+.opts.calc .cline .icon.next {
+    float:right;
+    background-image: url(../img/calc_right_ic.png); 
+}
+.opts.calc .cline .mdc {
+    text-align:center;
+    float:left;
+    width:calc(100% - 40px);
+    margin:1px 10px 0px 10px;
+    display:block;
+}
+.opts.calc .cline .mdc span {
+    color:#49565c;
+    font-size:14px;
+    display:inline-block;
+   font-family: 'Conv_SFUIText-BoldG1';
+}
+.opts.calc .dlist {
+    overflow:hidden;
+}
+.opts.calc .dlist li {
+    border-radius:3px;
+    font-size:10.5px;
+    padding:5px 5px;
+    margin:0px 0px 5px 0px;
+    font-family: 'Conv_SFUIText-RegularG3';
+    float:left;
+}
+.opts.calc .dlist li.act {
+    color:#fff;
+    background-color:#97b5ea;
+}
+.opts.calc .dlist li:hover {
+    background-color:#97b5ea;
+}
+
 
 .zpane {
         padding:0px 0px 0px 0%;
@@ -1291,6 +1349,10 @@ h2 {
 .zpane .pn.check.time {
     color:#fff;
     padding-right:1%;
+}
+.zpane .pn.check.time.left {
+    float:left;
+    margin-left:40px;
 }
 .zpane .pn.check.time:hover {
     background:none;
@@ -1418,6 +1480,12 @@ h2 {
     display:inline-block;
     position:relative;
     border-bottom: 1px dotted #82889c;
+ }
+ .outer-sel .select.selcalc {
+     cursor:auto
+ }
+ .outer-sel.h18 .select {
+     height:17px;
  }
 .outer-sel.hfirst .options li:first-child, .outer-sel.hfirst .opts  li:first-child {
      display:none;
@@ -3212,3 +3280,156 @@ left:10.2px;
 }
 
 
+.tabs_2  ul {
+    margin:20px 0px 18px 0px;
+    border-radius: 3px;
+    border:1px solid #97b5ea;
+    overflow:hidden;
+}
+.tabs_2 li {
+     font-size:10px;
+     text-transform: uppercase;
+     float:left;
+     color:#515669;
+}
+.tabs_2 li.act span {
+    color:#fff;
+    background-color:#97b5ea;
+}
+.tabs_2 li span, .tabs_2 li a {
+    text-decoration: none;
+    padding:11px 10px;
+    display:block;
+    border-right:1px solid #97b5ea;
+}
+.tabs_2 li:last-child span, .tabs_2 li:last-child a {
+    border-right:0px;
+}
+.tabs_2 li a {
+    color:#515669;
+}
+
+
+/*========================== table ==========================*/
+
+.tables_11 {
+    margin:17px 2% 60px 2%;
+    min-width:900px;
+}
+.tables_11 .table {
+	width: 49%;
+}
+
+.tables_11 .table.left {float: left;}
+.tables_11 .table.right {float: right;}
+
+.table_1 {
+	background: #fff;
+	color: #7c7f92;
+	display: table;
+	font-family: 'Conv_helveticaneuecyr-roman';
+	font-size: 12px;
+	margin-bottom: 1px;
+	width: 100%;
+}
+
+.table_1 td {
+	height: 25px;
+	vertical-align: middle;
+	width: 25%!important;
+}
+
+.table_1 th {
+	width: 25%;	
+}
+
+.table_1 td:first-child, .table_1 th:first-child {
+	padding-left: 21px;
+	width: 121px;
+}
+
+.table_1 tr:last-child td {
+	padding-bottom: 5px;
+}
+
+.table_2 td:last-child, .table_2 th:last-child {
+	padding-right: 20px;
+	width: 105px;
+}
+
+.table_1 th, .pt_1 tr:first-child td {
+	padding-bottom: 4px;
+	padding-top: 11px;
+}
+
+.table_1 strong {
+	color: #2e3240;
+	font-family: 'helveticaneuecyrbold';
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.table_1 .style_1 {
+	color: #2e3240;	
+}
+
+.table_1 .style_1 strong {
+	font-size: 14px;
+}
+
+.table_1 .text_left {
+	text-align: left;
+}
+
+.table_1 .style_2 {
+	color: #2e3240;
+}
+
+.table_3 td:nth-child(2) {
+	width: 80px;
+}
+
+.table_1 .style_3 {
+	color: #2e3240;
+	font-size: 18px;
+}
+
+.table_1.mt {
+	margin-top: 8px;
+}
+
+.table_1 .pb tr:last-child td {
+	padding-bottom: 90px;
+}
+
+.table_1.border_radius_1 {
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+.table_1.border_radius_2 {
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+.table_1.border_radius_all {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.table_1 .td_width td:nth-child(2) {
+	width: 172px;
+}
+
+.table_1 .ml2 {
+	padding-left: 76px;
+}
+
+.table_1 .span_2 {
+	color: #2e3240;
+}
+
+/*========================== END table ==========================*/
