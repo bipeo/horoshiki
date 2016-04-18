@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sand_Boxes</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="fonts/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="libs/jquery-1.8.3.min.js"></script>
+    <script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
+    <link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" media="screen" />
+    
+    <script src="js/horosh.js"></script>
+    <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
+    <script type="text/javascript">
+          $(function(){
+
+             //    $.pixlayout({clip: true, src: "design/1-3-1_error.jpg", show:true, center:true, top:0, left:0, pervious: false});
+             //  $.pixlayout({clip: true, src: "design/1.3.1pupups.png", show:true, center:true, top:0, left:0, pervious: false});
+          }); 
+  </script>
+     <script type="text/javascript">
+            $(document).ready(function() {
+	$(".fancybox").fancybox({
+            wrapCSS : 'photo-fancy',
+            padding: 0,
+            helpers : {
+                overlay: {
+                 css: {'background': 'rgba(63,67,82, 0.8)'} 
+                }
+            } 
+            
+	});
+        });
+        </script>
+   <script type="text/javascript">
+            $(document).ready(function() {
+                
+                $('._showwarn').on('click',function() {
+                  $(this).toggleClass('white').find('.sopts').toggle()
+                 
+                });
+                       $(document).mouseup(function (e)
+    {
+        var container = $(".sopts, ._showwarn");
+
+        if (!container.is(e.target) 
+            && container.has(e.target).length === 0) 
+        {
+            $('.sopts').hide();
+            $('.cicon').addClass('white')
+         
+        }
+    });
+
+        });
+        </script>
+</head>
+<body class="options_page">
+<!-- wrapper -->
+<div class="wrapper ">
+    
+    <div class="content">
+        <div class="cabtop">
+            <span class="navtogg open"></span>
+            <div class="uprof">
+                <img src="img/profava.png">
+                <div class="space">
+                    <span class="fio"><a href="#">Мария  Лупенкова</a></span>
+                <span class="job">Директор</span>
+                </div>
+            </div>
+            <div class="logout">
+                <span><a href="#">Выйти</a></span>
+                <a class="outlink" href="#"></a>
+            </div>
+        </div>
+        
+        <div class="barrower">
+            
+       
+        <div class="opsidebar collapsed">
+            <div class="inner">
+            <div class="key"><span>ОБЩИЕ НАСТРОЙКИ</span></div>
+            <ul>
+                <li><a href="#">Города и площадки</a></li>
+                <li><a href=#>Пользователи</a></li>
+                <li class="cur"><a href=#>Справочники</a></li>
+                <li><a href=#>Настройки площадки</a></li>
+                <li><a href=#>Зоны доставки</a></li>
+            </ul>
+            <div class="key"><span>Персонал</span></div>
+            <ul>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href=#>Карта возможностей</a></li>
+                <li><a href=#>График работы</a></li>
+          
+            </ul>
+            <div class="key"><span>ТРЕКИНГ</span></div>
+            <ul>
+                <li><a href="#">Журнал заказов</a></li>
+                <li><a href=#>План производства</a></li>
+                <li><a href=#>Заказы у курьеров</a></li>
+          
+            </ul>
+            <div class="key"><span>МАРКЕТИНГ</span></div>
+            <ul>
+                <li><a href="#">План продаж</a></li>
+                <li><a href=#>Меню</a></li>
+                <li><a href=#>Клиенты</a></li>
+              
+          
+            </ul>
+            <div class="key toggle"><span>Отчеты</span></div>
+          
+            </div>
+        </div>
+        
+        <div class="opsidebar uncollapse">
+            <div class="key">
+                
+                <span>
+                    <a href=# class="sprite sprite-1_ic"></a>
+                    <a href=# class="sprite sprite-2_ic"></a>
+                    <a href=# class="cur sprite sprite-3_ic"></a>
+                    <a href=# class="sprite sprite-4_ic"></a>
+                    <a href=# class="sprite sprite-5_ic"></a>
+                    
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href=# class="sprite sprite-6_ic"></a>
+                    <a href=# class="sprite sprite-7_ic"></a>
+                    <a href=# class="sprite sprite-8_ic"></a>
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-9_ic"></a>
+                    <a href="#" class="sprite sprite-10_ic"></a>
+                    <a href="#" class="sprite sprite-11_ic"></a>
+                </span>
+            </div>
+             <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-12_ic"></a>
+                    <a href="#"  class="sprite sprite-13_ic"></a>
+                    <a href="#" class="sprite sprite-14_ic"></a>
+                  <!--   <a href="#" class="sprite sprite-15_ic"></a>-->
+                </span>
+            </div>
+             <!-- <div class="key">
+                <span>
+                    ыы
+                    <a href="#" class="sprite sprite-16_ic"></a>
+                    <a href="#" class="sprite sprite-17_ic"></a>
+                    <a href="#" class="sprite sprite-18_ic"></a>
+                    <a href="#" class="sprite sprite-19_ic"></a>
+                </span>
+            </div> -->
+            
+            
+        </div>
+             </div>
+       
+        <div class="mainside sands">
+            <div class="crubs">
+                <span class="ht">Программисту / Разное</span>
+               
+            </div>
+            
+            <div class="csstbl cnt off_03 nst  mar_02">
+                
+                <div class="row rz34">
+                    <div class="col half">
+                       
+                             <div class="outer-sel drop bold pos2mid left ">
+                             <div class="select">
+                               
+                                 <div class="styledSelect">Тип цен</div>
+                                 <div class="opts" style="display: none;">
+                                     <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check011">
+                <label for="check011">Омск</label>
+                        </div>
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check022">
+                <label for="check022">Москва</label>
+                        </div>
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check033">
+                <label for="check033">Питер</label>
+                        </div>
+                                          <div class="but">Сохранить</div>
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                        
+                        
+                        <strong class="tit right st_mn">Омск</strong>
+                           
+                       <div class="outer-sel pad drop  pos3mid left ">
+                             <div class="select">
+                               
+                                 <div class="styledSelect">Minidrop</div>
+                                 <div class="opts minvert" >
+                                     <div class="cbsbox">
+                                    <div class="item">
+                                     <label for="unitform2" class="chlabel chkd revert">
+                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
+                                        1 
+                                     </label>
+                                     </div>
+                                         
+                                             <div class="item">
+                                     <label for="unitform3" class="chlabel revert">
+                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
+                                        0 
+                                     </label>
+                                     </div>
+                                             <div class="item">
+                                     <label for="unitform4" class="chlabel revert">
+                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
+                                        б 
+                                     </label>
+                                     </div>
+                                            <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        н 
+                                     </label>
+                                     </div>
+                                        
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                       
+                    </div>
+                      <div class="col half">
+                       
+                          <span class="tit w1 m2 font_2">
+                                
+                                обновлено 10-01-16
+                          
+                        
+                          
+                          
+                          
+                           
+                        
+                          
+                       
+                    </span></div>
+                
+                </div>
+                
+                <div class="row">
+                          <div class="col w_08">
+                           <strong class="tit mar_03 font_2">2</strong>
+                    </div>
+                    
+                    <div class="col w_12">
+                        
+                      
+                         
+                            <div class="outer-sel mar_04  minpad left ">
+                                <div class="select"><select class="cus-sel s-hidden">
+                                  <option value="volvo">Москва</option>
+                                  <option value="saab">Липецк</option>
+                              
+                                </select>
+                                <div class="styledSelect">Москва</div>
+                                <ul class="options" style="display: none;">
+                                    <li>Москва</li>
+                                    <li>Липецк</li>
+                                </ul></div>
+
+                               
+                               </div>
+                    </div>
+                
+                    <div class="col w_12">
+                          <span class="tit mar_03 font_2">1</span>
+                    </div>
+                    <div class="col w_30">
+                          <span class="tit mar_03 font_2 u">Настройка карты для сайта</span>
+                    </div>
+             
+              
+                </div>
+             
+                
+                 <div class="row">
+                    <div class="col w_25">
+                           <strong class="tit mar_03 font_2">Омск</strong>
+                    </div>
+                    <div class="col w_25">
+                           <span class="tit mar_03  font_2">Омск</span>
+                    </div>
+                    <div class="col w_25">
+                           <span class="tit mar_03 font_2">Омск</span>
+                    </div>
+                    <div class="col w_25">
+                        <span class="tit mar_03"><a href="#">Список улиц</a></span>
+                    </div>
+                  
+                </div>
+                
+            
+               
+                 <div class="row">
+                    <div class="col w_25">
+                          <span class="tit mar_03"></span>
+                    </div>
+                    <div class="col w_25">
+                           
+                               
+                   
+                        
+                          
+                        
+                         <div class="outer-sel styd drop bold mar_05  left " >
+                             <div class="select">
+                               
+                                 <div class="styledSelect active">Добавить</div>
+                                 <div class="opts list">
+                                   
+                                 <ul class="">
+                                     <li>Область</li>
+                                     <li>Район</li>
+                                     <li>Выберите город</li>
+                                 </ul>
+                                 <div class="but">Сохранить</div>
+                                   
+                                    
+                                 </div>
+                             </div>
+                             </div> 
+
+                        
+                    </div>
+                    <div class="col w_25">
+                           <span class="tit mar_03 font_2"></span>
+                    </div>
+                    <div class="col w_25">
+                          <span class="tit mar_03"></span>
+                    </div>
+                   
+                </div>
+                 <div class="row style_3">
+                    <div class="col w_25">
+                
+                        
+                         <div class="outer-sel  drop  mar_05 posmid  left " >
+                             <div class="select">
+                               
+                                 <div class="styledSelect active">Добавить</div>
+                                 <div class="opts list">
+                                   
+                                 <ul class="">
+                                     <li>Москва</li>
+                                     <li>Санкт-Петербург</li>
+                                    
+                                 </ul>
+                                
+                                   
+                                    
+                                 </div>
+                             </div>
+                             </div> 
+                        
+                        
+                    </div>
+                    <div class="col w_25">
+                           
+                               
+                   
+                        
+                        
+                         <div class="outer-sel styd drop bold mar_05  left " >
+                             <div class="select">
+                               
+                                 <div class="styledSelect active">Добавить</div>
+                                 <div class="opts list">
+                                   
+                                 <ul class="">
+                                     <li>Область</li>
+                                     <li>Район</li>
+                                     <li>Выберите город</li>
+                                 </ul>
+                                 <div class="but">Добавить</div>
+                                   
+                                    
+                                 </div>
+                             </div>
+                             </div> 
+
+                        
+                    </div>
+                    <div class="col w_25">
+                           <span class="tit mar_03 font_2"></span>
+                    </div>
+                    <div class="col w_25">
+                          <span class="tit mar_03"></span>
+                    </div>
+                   
+                </div>
+             
+             
+               
+                
+             
+             
+             
+                
+                
+                
+                
+            </div>
+           
+          
+            
+  <div class="depo_popup" id="edit_user_1">
+            <div class="csstbl cnt  ">
+                <div class="row hs3_r">
+                    <div class="col one"><span class="tit">№</span></div>
+                   <div class="col two"><span class="tit">Отдел</span></div>
+                   <div class="col three"><span class="tit"></span></div>
+                </div> 
+           
+                
+                
+               
+                
+                
+              
+                
+                 <div class="row">
+                    <div class="col one withc">
+                           <input class="input_01 small st_02 left" type="text" value="">
+                    </div>
+                    <div class="col two withc">
+                             <input class="input_01   st_02 left" type="text" value="">
+                    </div>
+                     <div class="col three withc">
+                         
+                          
+                    </div>
+                </div>
+                
+                 <div class="row">
+                    <div class="col one">
+                           <input class="input_01 small  st_02 left" type="text" value="">
+                    </div>
+                    <div class="col two withc">
+                            <input class="input_01 left  st_02 " type="text" value="">
+                    </div>
+                     <div class="col three withc">
+                         
+                    </div>
+                </div>
+             
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+            
+            
+            
+            
+
+  <div class="depo_popup" id="edit_user_2">
+            <div class="csstbl cnt  ">
+                <div class="row hs3_r">
+                    <div class="col one"><span class="tit">№</span></div>
+                   <div class="col two"><span class="tit">Отдел</span></div>
+                   <div class="col three"><span class="tit">Подотдел</span></div>
+                </div> 
+           
+                
+                
+               
+                
+                
+                 <div class="row">
+                    <div class="col one">
+                           <strong class="tit">4</strong>
+                    </div>
+                    <div class="col  two">
+                            <span class="tit">Производство</span>
+                    </div>
+                  
+                     
+                     <div class="col three">
+                            <span class="tit "></span>
+                    </div>
+                </div>
+                
+                 <div class="row">
+                    <div class="col one withc">
+                           <input class="input_01 small st_02 left" type="text" value="">
+                    </div>
+                    <div class="col two withc">
+                            <strong class="tit mar_03"></strong>
+                    </div>
+                     <div class="col three withc">
+                           <input class="input_01  st_02 " type="text" value="">
+                    </div>
+                </div>
+           
+                
+              
+            
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+
+            
+            <div class="depo_popup" id="edit_user_3" >
+            <div class="csstbl cnt  ">
+                <div class="row hs3_r">
+                    <div class="col one"><span class="tit">№</span></div>
+                   <div class="col two"><span class="tit">Этап</span></div>
+                   <div class="col three"><span class="tit">Норматив(мин)</span></div>
+                </div> 
+           
+                
+                
+               
+                
+                
+               
+                
+             
+          
+                 <div class="row">
+                    <div class="col one">
+                           <input class="input_01 small st_02 left" type="text" value="">
+                    </div>
+                    <div class="col two withc">
+                            <input class="input_01 small_2 left st_02  " type="text" value="">
+                    </div>
+                     <div class="col three withc">
+                          <input class="input_01 small_2 under_st st_02 " type="text" value="">
+                           <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check02">
+                <label for="check02">Закрыть доступ</label>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+
+
+  <div class="depo_popup" id="edit_user_4" >
+            <div class="csstbl cnt m4cols ">
+                <div class="row hs3_r">
+                    <div class="col w_15"><span class="tit" style="margin-left:25px;">№</span></div>
+                    <div class="col w_12"><span class="tit">№</span></div>
+                   <div class="col w_30"><span class="tit">Этап</span></div>
+                   <div class="col w_30"><span class="tit">Подэтап</span></div>
+                </div> 
+           
+                
+                
+               
+                
+                
+                 <div class="row">
+                    <div class="col w_15">
+                           <strong class="tit">4</strong>
+                    </div>
+                        <div class="col w_12">
+                           <strong class="tit"></strong>
+                    </div>
+                    <div class="col w_30">
+                            <span class="tit">Производство</span>
+                    </div>
+                  
+                     
+                     <div class="col w_30">
+                            <span class="tit "></span>
+                    </div>
+                </div>
+                
+                 <div class="row">
+                    <div class="col w_15 ">
+                            <span class="tit"></span>
+                    </div>
+                    <div class="col w_12 ">
+                           <input class="input_01 small_3 st_02" type="text" value="">
+                    </div>
+                     <div class="col w_30 ">
+                           <span class="tit"></span>
+                    </div>
+                     <div class="col w_30 ">
+                           <input class="input_01  st_02 " type="text" value="">
+                    </div>
+                </div>
+           
+                
+              
+            
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+
+
+   <div class="uspopup" id="add_user">
+            <div class="csstbl cnt tblpup b_01">
+                <div class="row">
+                 
+                    <h2 class="hs3">Карта пользователя  системы</h2>
+                </div> 
+           
+                
+                
+               
+                
+                
+                 <div class="row">
+                    <div class="col third">
+                      
+                           <strong class="tit bold">ID</strong>
+                           
+                       
+                       
+                    </div>
+                    <div class="col third midcol ">
+                        
+                            <strong class="tit mar_03">ФИО</strong>
+                       
+                    </div>
+                  
+                     
+                     <div class="col  three_ten right">
+                        
+                            <strong class="tit">Должность</strong>
+                       
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col third">
+                      
+                           <strong class="tit" >3</strong>
+                           
+                       
+                       
+                    </div>
+                    <div class="col third midcol">
+                            
+                               <div class="outer-sel left mar_03">
+                                <select class="cus-sel">
+                                  <option value="volvo">Выбрать</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+
+                               
+                               </div>
+                          
+
+                       
+                    </div>
+                  
+                     
+                     <div class="col three_ten right">
+                        
+                            <span class="tit font_2 ">Курьер</span>
+                       
+                    </div>
+                </div>
+                
+                
+                 <div class="row stmin_02">
+                    <div class="col seven_ten">
+                      
+                           <span class="tit bold">Логин</span>
+                           
+                       
+                       
+                    </div>
+                 
+                  
+                     
+                     <div class="col  three_ten">
+                        
+                            <strong class="tit">Пароль</strong>
+                       
+                    </div>
+                </div>
+                 <div class="row stmin_03">
+                    <div class="col seven_ten">
+                      
+                           <span class="tit valmid font_2">Всегда телефон сотрудника</span>
+                    </div>
+                 
+                  
+                     
+                     <div class="col  three_ten">
+                        
+                          <input class="input_01 st_02 left" type="text" value="">
+                       
+                    </div>
+                </div>
+                
+                 <div class="row istmin_02">
+                    <div class="col seven_ten">
+                      
+                         
+                           
+                              <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check01">
+                <label for="check01">Отправить пароль в смс</label>
+                        </div>
+                    </div>
+                              <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check02">
+                <label for="check02">Закрыть доступ</label>
+                        </div>
+                    </div>
+                           
+                       
+                       
+                    </div>
+                 
+                  
+                     
+                   
+                </div>
+                
+               
+                
+                
+               
+                
+                
+                
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn" type="submit" value="Редактировать">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+   <div class="worksmap" id="pop2">
+            <div class="csstbl cnt tblpup b_01">
+                <div class="row">
+                 
+                    <h2 class="hs3">Карта сотрудника</h2>
+                </div> 
+           
+                
+                
+               
+                
+                
+                 
+            
+                
+                <div class="row ">
+                 <div class="row rz32 left">
+                    <div class="col w_32">
+                      
+                           <strong class="tit full">ID</strong>
+                       
+                       
+                    </div>
+                    <div class="col w_32">
+                      <strong class="tit ">ФИО</strong>
+                    </div>
+                 
+                  
+                     
+                
+                </div>
+                
+                <div class="row rz32 right">
+                    
+                    
+                         <div class="col  w_46" >
+                        
+                            <strong class="tit">Должность</strong>
+                       
+                       
+                    </div>
+                     <div class="col w_45">
+                        
+                  
+                       
+                    </div>
+                </div>
+            
+              
+                </div>
+                <div class="row ">
+                 <div class="row rz32 left">
+                    <div class="col w_32">
+                      
+                           <strong class="tit ts3 full">3</strong>
+                       
+                       
+                    </div>
+                    <div class="col w_62">
+                      
+                          <input type="text" class="input_01 fullinp st_02 " placeholder="">
+                           
+                       
+                       
+                    </div>
+                 
+                  
+                     
+                
+                </div>
+                
+                <div class="row rz32 right">
+                    
+                    
+                         <div class="col  w_46" >
+                        
+                          <div class="outer-sel  st_74 ">
+                                <select class="cus-sel">
+                                  <option value="volvo">Выбрать</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+
+                               
+                               </div>
+                           
+                       
+                    </div>
+                     <div class="col w_45">
+                        
+                           
+                           
+                       
+                    </div>
+                </div>
+            
+              
+                </div>
+               
+                
+                <div class="row ">
+                 <div class="row left rz31 " >
+                    <div class="col w_32">
+                      
+                           <strong class="tit full">Площадка</strong>
+                           
+                            <div class="outer-sel  st_74 minpad">
+                                <select class="cus-sel">
+                                  <option value="volvo">Выбрать</option>
+                                  <option value="saab">Мегаплощадь</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+
+                               
+                               </div>
+                           
+                       
+                       
+                    </div>
+                    <div class="col w_32">
+                      
+                           <strong class="tit  full">Статус</strong>
+                           
+                         <div class="outer-sel  st_74 ">
+                                <select class="cus-sel">
+                                  <option value="volvo">Выбрать</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+
+                               
+                               </div>
+                           
+                       
+                       
+                    </div>
+                 
+                  
+                     
+                
+                </div>
+                
+                <div class="row rz31 right">
+                    
+                    
+                         <div class="col  w_46" >
+                        
+                            <strong class="tit">Дата приема</strong>
+                           <input type="text" class="input_01 ntbp datepicker st_02 " placeholder="21.03.14">
+                       
+                    </div>
+                     <div class="col w_45">
+                        
+                            <strong class="tit">Дата увольнения</strong>
+                           <!-- <div class="outer-sel  st_74 ">
+                                <select class="cus-sel">
+                                  <option value="volvo">Выбрать</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+
+                               
+                               </div> -->
+                           <input type="text" class="input_01 ntbp datepicker st_02 " placeholder="14.07.16">
+
+                       
+                    </div>
+                </div>
+            
+              
+                </div>
+               
+             
+               
+                
+               
+               
+                
+                
+               
+                
+                
+                
+                
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_04">
+                <input class="bttn" type="submit" value="Редактировать">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+            
+              <div class="op_place" id="edit_1" >
+      
+        <div class="csstbl cnt tblpup b_01">
+                <div class="row">
+                 
+                    <h2 class="hs3">Тип цен</h2>
+                </div> 
+                
+                 <div class="row">
+                         
+                        <div class="che3_mid">
+                              <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check01">
+                <label for="check01">Омск</label>
+                        </div>
+                    </div>
+                              <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check02">
+                <label for="check02">Москва</label>
+                        </div>
+                    </div>
+                              <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check03">
+                <label for="check03">Питер</label>
+                        </div>
+                    </div>
+                           
+                       
+                       
+                    </div>
+                      
+                 
+                  
+                     
+                   
+                </div>
+                
+               
+                
+                
+               
+                
+                
+                
+                
+            </div>
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn" type="submit" value="Сохранить">
+            </div>
+      </div>
+  <div class="op_place" id="edit_2" >
+      
+        <div class="csstbl cnt tblpup b_01">
+                <div class="row">
+                 
+                    <h2 class="hs3">Зоны доставки</h2>
+                </div> 
+                
+                 <div class="row">
+                         
+                        <div class="che3_mid">
+                              <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check22">
+                <label for="check22">1</label>
+                        </div>
+                    </div>
+                              <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check23">
+                <label for="check23">2</label>
+                        </div>
+                    </div>
+                              <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check24">
+                <label for="check24">3</label>
+                        </div>
+                    </div>
+                           
+                       
+                       
+                    </div>
+                      
+                 
+                  
+                     
+                   
+                </div>
+                
+               
+                
+                
+               
+                
+                
+                
+                
+            </div>
+            
+            
+            <div class="buts alcenter mar_02">
+                <input class="bttn" type="submit" value="Сохранить">
+            </div>
+      </div>
+      
+      
+            
+            <div class="csstbl cnt  off_02 mar_02">
+               
+       
+               
+                <div class="row  cu2">
+                         <div class="outer-sel drop  pos2mid left ">
+                             <div class="select">
+                               
+                                 <div class="styledSelect">Добавить</div>
+                                 <div class="opts" style="display: none;">
+                                     <div class="cbsbox vert">
+                        
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check011">
+                <label for="check011">1</label>
+                        </div>
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check022">
+                <label for="check022">2</label>
+                        </div>
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check033">
+                <label for="check033">3</label>
+                        </div>
+                                        
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                    
+              
+                   
+                    
+                </div>
+                
+                <div class="row">
+                    <div class="col half">
+                     
+                           <span class="tit w3">Способы покупки:</span>
+                           
+                           
+                             
+                            
+                                 
+                                 <div class="cbsbox inline tit w2 ">
+                                              
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check01">
+                <label for="check01">Доставка</label>
+                        </div>
+                    </div>
+
+                               
+                                 
+                          
+                           
+                       
+                       
+                    </div>
+                    <div class="col half">
+                        
+                         
+                            
+                                 <div class="cbsbox inline tit w2">
+                                              
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check02">
+                <label for="check02">Самовывоз</label>
+                        </div>
+                    </div>
+                                                   
+                        <div class="cbsbox inline tit">
+                                              
+                        <div class="item">
+                <input type="checkbox" class="checkbox" checked="checked" id="check03">
+                <label for="check03">Ресторан</label>
+                        </div>
+                    </div>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            
+                            
+            
+ <div class="addcpopup" id="add_city">
+            <div class="csstbl cnt tblpup b_01">
+                <div class="row">
+                 
+                    <h2 class="hs3">Добавить новый город</h2>
+                </div> 
+           
+                
+                <div class="row">
+                    <div class="col full">
+                               <div class="outer-sel w2 mar04 center">
+                                <select class="cus-sel">
+                                  <option value="volvo">Выбрать</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">Mercedes Kalina</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+                               </div>
+                    </div>
+               
+                </div>
+           
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02 cmarg">
+                
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+      </div>
+
+ <div class="addcpopup" id="add_place">
+            <div class="csstbl cnt tblpup b_01">
+                <div class="row">
+                 
+                    <h2 class="hs3">Добавить новую площадку</h2>
+                </div> 
+           
+                
+                <div class="row">
+                    <div class="col full cntp">
+                             <input class="input_01 long_3" type="text" value="">
+                    </div>
+               
+                </div>
+           
+            </div>
+            
+            
+            
+            <div class="buts alcenter mar_02 cmarg">
+                
+                <input class="bttn black" type="submit" value="Добавить">
+            </div>
+      </div>
+         
+            
+       
+            </div>
+
+        </div>
+    <!--content -->
+
+  
+
+</div><!-- END wrapper -->
+
+
+
+
+
+
+
+
+</body>
+</html>
+
