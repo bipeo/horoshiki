@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>2-2_tablica_day</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="fonts/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="libs/jquery-1.8.3.min.js"></script> 
+    <script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
+    <link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" media="screen" />
+    
+    <script type="text/javascript">
+            $(document).ready(function() {
+	$(".fancybox").fancybox({
+            wrapCSS : 'photo-fancy',
+            padding: 0,
+            helpers : {
+                overlay: {
+                 css: {'background': 'rgba(63,67,82, 0.8)'} 
+                }
+            } 
+            
+	});
+        });
+        </script>
+
+  <script src="js/horosh.js"></script>
+  <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
+  <script type="text/javascript">
+	$(function(){
+        // $.pixlayout({clip: true, src: "design/2-2_tablica_week_special_list.jpg", show:true, center:true, top:0, left:0, pervious: false});
+        }); 
+</script>
+</head>
+<body class="options_page">
+<!-- wrapper -->
+<div class="wrapper ">
+    
+    <div class="content">
+        <div class="cabtop">
+            <span class="navtogg open"></span>
+            <div class="uprof">
+                <img src="img/profava.png">
+                <div class="space">
+                    <span class="fio"><a href="#">Мария  Лупенкова</a></span>
+                <span class="job">Директор</span>
+                </div>
+            </div>
+            <div class="logout">
+                <span><a href="#">Выйти</a></span>
+                <a class="outlink" href="#"></a>
+            </div>
+        </div>
+        
+        <div class="barrower">
+            
+       
+        <div class="opsidebar collapsed">
+            <div class="inner">
+            <div class="key"><span>ОБЩИЕ НАСТРОЙКИ</span></div>
+            <ul>
+                <li><a href="#">Города и площадки</a></li>
+                <li><a href=#>Пользователи</a></li>
+                <li><a href=#>Справочники</a></li>
+                <li><a href=#>Настройки площадки</a></li>
+                <li><a href=#>Зоны доставки</a></li>
+            </ul>
+            <div class="key"><span>Персонал</span></div>
+            <ul>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href=#>Карта возможностей</a></li>
+                <li class="cur"><a href=#>График работы</a></li>
+          
+            </ul>
+            <div class="key"><span>ТРЕКИНГ</span></div>
+            <ul>
+                <li><a href="#">Журнал заказов</a></li>
+                <li><a href=#>План производства</a></li>
+                <li><a href=#>Заказы у курьеров</a></li>
+          
+            </ul>
+            <div class="key"><span>МАРКЕТИНГ</span></div>
+            <ul>
+                <li><a href="#">План продаж</a></li>
+                <li><a href=#>Меню</a></li>
+                <li><a href=#>Клиенты</a></li>
+                <li><a href=#>Отзывы</a></li>
+          
+            </ul>
+            <div class="key"><span>Отчеты</span></div>
+            <ul>
+                <li><a href="#">Показатели работы</a></li>
+                <li><a href=#>Отчет по курьерам</a></li>
+                <li><a href=#>Отзывы</a></li>
+                <li><a href=#>Карта доставленных 
+                заказов</a></li>
+          
+            </ul>
+            </div>
+        </div>
+        
+        <div class="opsidebar uncollapse">
+            <div class="key">
+                
+                <span>
+                    <a href=# class="sprite sprite-1_ic"></a>
+                    <a href=# class="sprite sprite-2_ic"></a>
+                    <a href=# class="sprite sprite-3_ic"></a>
+                    <a href=# class="sprite sprite-4_ic"></a>
+                    <a href=# class="sprite sprite-5_ic"></a>
+                    
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href=# class="sprite sprite-6_ic"></a>
+                    <a href=# class="sprite sprite-7_ic"></a>
+                    <a href=# class="cur sprite sprite-8_ic"></a>
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-9_ic"></a>
+                    <a href="#" class="sprite sprite-10_ic"></a>
+                    <a href="#" class="sprite sprite-11_ic"></a>
+                </span>
+            </div>
+             <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-12_ic"></a>
+                    <a href="#"  class="sprite sprite-13_ic"></a>
+                    <a href="#" class="sprite sprite-14_ic"></a>
+                    <a href="#" class="sprite sprite-15_ic"></a>
+                </span>
+            </div>
+             <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-16_ic"></a>
+                    <a href="#" class="sprite sprite-17_ic"></a>
+                    <a href="#" class="sprite sprite-18_ic"></a>
+                    <a href="#" class="sprite sprite-19_ic"></a>
+                </span>
+            </div>
+            
+            
+        </div>
+             </div>
+        
+        <div class="mainside">
+            <div class="crubs st_01 alleft">
+                <span class="ht">Персонал / График работы</span>
+                   <div class="appnew">
+                <a href="#">Новый</a>
+                </div>  
+            </div>
+            
+           
+           
+            <div class="csstbl calmar cnt st_5 ">
+                
+                  <div class="row">
+                
+                       
+                             <div class="outer-sel lnull city posmid mar_03 left">
+                                <select class="cus-sel">
+                                  <option value="volvo">Омск-1</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+
+                               
+                               </div>
+                        
+                   
+                    
+                          <div class="tabs_2">
+                              <ul>
+                                  <li class="act">
+                                      <span>колл центр</span>
+                                  </li>
+                                   <li>
+                                      <a href="#">Администрация</a>
+                                  </li>
+                                   <li>
+                                      <a href="#">Производство</a>
+                                  </li>
+                                   <li>
+                                      <a href="#">Курьеры</a>
+                                  </li>
+                              </ul>
+                              
+                          </div>
+                          
+                     
+                          
+                       
+                       
+                  
+                       
+                          
+                      <div class="side_rsec">
+                          
+                          
+                      
+                             <div class="outer-sel month drop " >
+                             <div class="select selcalc ">
+                               
+                                 <div class="styledSelect active">Март</div>
+                                 <div class="opts calc">
+                                     <div class="bonder">
+                                            
+                                         <div class="cline">
+                                             <span class="icon prev"></span>
+                                             <div class="mdc"><span>2016</span></div>
+                                             <span class="icon next"></span>
+                                         </div>
+                                         
+                                         <ul class="dlist">
+                                             <li><span>Январь</span></li>
+                                             <li><span>Февраль</span></li>
+                                             <li class="act"><span>Март</span></li>
+                                             <li><span>Апрель</span></li>
+                                             <li><span>Май</span></li>
+                                             <li><span>Июнь</span></li>
+                                             <li><span>Август</span></li>
+                                             <li><span>Сентябрь</span></li>
+                                             <li><span>Октябрь</span></li>
+                                         </ul>
+                      
+                                        
+                                 </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                          
+                       
+                       
+                  
+                      
+                     
+                       
+                          
+                             <div class="outer-sel drop week" >
+                             <div class="select selcalc">
+                               
+                                 <div class="styledSelect active">3 недели</div>
+                                 <div class="opts calc">
+                                     <div class="bonder">
+                                            
+                                         <div class="cline">
+                                             <span class="icon prev"></span>
+                                             <div class="mdc"><span>Март (<em>3 нед</em>)</span></div>
+                                             <span class="icon next"></span>
+                                         </div>
+                                         
+                                         <ul class="dlist">
+                                             <li><span><em>1 нед </em> (1-7)</span></li>
+                                             <li><span><em>2 нед </em>(8-15)</span></li>
+                                             <li class="act"><span><em>3 нед </em>(16-23)</span></li>
+                                             <li><span><em>4 нед </em> (24-31)</span></li>
+                                         </ul>
+                      
+                                        
+                                 </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                               
+                               
+                                <div class="outer-sel day  pos5mid mar_03">
+                                <select class="cus-sel">
+                                  <option value="volvo">2 день (вт)</option>
+                                  <option value="saab">3 день (ср)</option>
+                                  <option value="mercedes">4 день (чт)</option>
+                                  <option value="audi">5 день (пт)</option>
+                                </select>
+                               </div>
+                           
+                          
+                          </div>
+                          
+                       
+                       
+                  
+                      
+                       
+                  
+                </div>
+                
+            </div>
+            
+            <div class="out_dgrt">
+                <div class="h2t">Март 2016 /  3 неделя (16-23) / <span class="spn">2 день (вторник)</span></div>                <table class="dgrt_tbl  col_22">
+                    <tr class="bg_8">
+                        <td><span class="icon  emp"></span>
+                       Часы</td>
+                        <td>07</td>
+                        <td>08</td>
+                        <td>09</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+    
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>01</td>
+                        <td>02</td>
+                        <td>03</td>
+                    </tr>
+                      <tr class="bg_8">
+                        <td><span class="icon  emp"></span>
+                        Чеков</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+    
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+           
+                    <tr class="bg_8">
+                        <td><span class="icon emp"></span>Рек-но</td>
+                        <td>180</td>
+                        <td>110</td>
+                        <td>120</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        
+                        
+                          
+                        
+                    </tr>
+                    
+                      
+                    <tr class="bg_8">
+                        <td><span class="icon emp"></span><span class="val">На смене</span></td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        
+                  
+                        
+                    </tr>
+                    <tr class="">
+                        <td><span class="icon minus"></span><span class="val">Иванов М</span></td>
+                        <td>
+                           <div class="fill_plash" style="width:260%">3<span class="buter"></span></div>   
+
+                            <div class="outer-sel pad drop  pos3mid left ">
+                             <div class="select">
+                               
+                                 <div class="styledSelect active">1</div>
+                                 <div class="opts minvert">
+                                     <div class="cbsbox">
+                                    <div class="item">
+                                     <label for="unitform2" class="chlabel chkd revert">
+                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
+                                        1 
+                                     </label>
+                                     </div>
+                                         
+                                             <div class="item">
+                                     <label for="unitform3" class="chlabel revert">
+                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
+                                        0 
+                                     </label>
+                                     </div>
+                                             <div class="item">
+                                     <label for="unitform4" class="chlabel revert">
+                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
+                                        б 
+                                     </label>
+                                     </div>
+                                            <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        н 
+                                     </label>
+                                     </div>
+                                        
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                 
+                        
+                    </tr>
+                    
+                    
+                     <tr class="">
+                        <td><span class="icon minus"></span><span class="val">Петров Ф</span></td>
+                        <td>
+                             <div class="fill_plash" style="width:462%">5<span class="buter"></span></div> 
+                            <div class="outer-sel pad drop  pos3mid left ">
+                             <div class="select">
+                               
+                                 <div class="styledSelect active">1</div>
+                                 <div class="opts minvert">
+                                     <div class="cbsbox">
+                                    <div class="item">
+                                     <label for="unitform2" class="chlabel chkd revert">
+                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
+                                        1 
+                                     </label>
+                                     </div>
+                                         
+                                             <div class="item">
+                                     <label for="unitform3" class="chlabel revert">
+                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
+                                        0 
+                                     </label>
+                                     </div>
+                                             <div class="item">
+                                     <label for="unitform4" class="chlabel revert">
+                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
+                                        б 
+                                     </label>
+                                     </div>
+                                            <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        н 
+                                     </label>
+                                     </div>
+                                        
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                        </td>
+                       <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                 
+                        
+                    </tr>
+                    
+                     <tr class="">
+                        <td><span class="icon plus"></span><span class="val"></span></td>
+                        <td>
+                           
+                        </td>
+                       <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                 
+                        
+                    </tr>
+                     <tr class="">
+                        <td></td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                 
+                        
+                    </tr>
+                    
+                    
+                </table>
+                <div class="space_fix_100"></div>
+                
+            </div>
+            
+            </div>
+
+        </div>
+    <!--content -->
+
+  
+
+</div><!-- END wrapper -->
+
+
+
+
+</body>
+</html>
+
