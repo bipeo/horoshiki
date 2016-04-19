@@ -896,12 +896,26 @@ h2 {
  .dgrt_tbl tr td.sat, .dgrt_tbl tr td.sun {
       background:#f5f5f6;
  } 
- .dgrt_tbl.col_8 tr td:last-child  {
-     background:#f5f5f6;
- }
+
  .dgrt_tbl tr td:first-child {
      padding-left:20px;
      text-align: left;
+ }
+ .dgrt_tbl tr.full  td {
+     
+ }
+ .dgrt_tbl tr.full  td .key {
+      font-family: 'helveticaneuecyrbold';
+      display:block;
+      color:#3f4352;
+ }
+ .dgrt_tbl tr td .lab2 a {
+     color:#83879a;
+     text-decoration: none;
+     border-bottom:1px dotted #82889c
+ }
+ .dgrt_tbl tr td .val.u {
+     text-decoration: underline;
  }
  .dgrt_tbl .icon {
      cursor:pointer;

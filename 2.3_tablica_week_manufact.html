@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>2.2_table_week</title>
+    <title>2.3_tablica_week_manufact</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -31,7 +31,7 @@
   <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
   <script type="text/javascript">
 	$(function(){
-          // $.pixlayout({clip: true, src: "design/2-2_tablica_week_list.jpg", show:true, center:true, top:0, left:0, pervious: false});
+        // $.pixlayout({clip: true, src: "design/2-2_tablica_week_special_list.jpg", show:true, center:true, top:0, left:0, pervious: false});
         }); 
 </script>
 </head>
@@ -179,14 +179,14 @@
                     
                           <div class="tabs_2">
                               <ul>
-                                  <li class="act">
-                                      <span>колл центр</span>
+                                  <li>
+                                       <a href="#">колл центр</a>
                                   </li>
                                    <li>
                                       <a href="#">Администрация</a>
                                   </li>
-                                   <li>
-                                      <a href="#">Производство</a>
+                                   <li class="act">
+                                      <span class="act">Производство</span>
                                   </li>
                                    <li>
                                       <a href="#">Курьеры</a>
@@ -275,7 +275,11 @@
                              </div>
                           
                        
-                        <div class="outer-sel day  pos4mid mar_03" >
+                       
+                  
+                       
+                          
+                            <div class="outer-sel day  pos4mid mar_03">
                                 <select class="cus-sel">
                                   <option value="volvo">День</option>
                                   <option value="saab">Saab</option>
@@ -298,7 +302,10 @@
             
             <div class="out_dgrt">
                 <div class="h2t">Март 2016 / <span class="spn">3 неделя (16-23)</span></div>
-                <table class="dgrt_tbl col_8">
+                
+            
+                
+                 <table class="dgrt_tbl col_8">
                     <tr class="bg_8">
                         <td><span class="icon  emp"></span>Дата</td>
                         <td>пн</td>
@@ -306,7 +313,7 @@
                         <td>ср</td>
                         <td>чт</td>
                         <td>пт</td>
-                        <td>сб</td>
+                        <td class="sat">сб</td>
                         <td class="sun">вс</td>
                     </tr>
                     <tr class="bg_8">
@@ -316,7 +323,7 @@
                         <td>03</td>
                         <td>04</td>
                         <td>05</td>
-                        <td>06</td>
+                        <td class="sat">06</td>
                         <td class="sun">07</td>
                         
                     </tr>
@@ -327,9 +334,17 @@
                         <td>120</td>
                         <td>180</td>
                         <td>180</td>
-                        <td>180</td>
+                        <td class="sat">180</td>
                         <td class="sun">180</td>
                         
+                    </tr>
+                    <!-- start -->
+                    <tr class="full">
+                        <td colspan="32">
+                            <span class="key">
+                                ЗЦ
+                            </span> 
+                        </td>
                     </tr>
                     <tr class="bg_8">
                         <td><span class="icon emp"></span>Рек-но</td>
@@ -338,7 +353,7 @@
                         <td>5</td>
                         <td>5</td>
                         <td>5</td>
-                        <td>5</td>
+                        <td class="sat">5</td>
                         <td class="sun">5</td>
                         
                     </tr>
@@ -349,7 +364,7 @@
                         <td>5</td>
                         <td>5</td>
                         <td>5</td>
-                        <td>5</td>
+                        <td class="sun">5</td>
                         <td class="sun">5</td>
                         
                     </tr>
@@ -394,18 +409,61 @@
                              </div>
                              </div>
                         </td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td class="sun">5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
                         
                     </tr>
-                    
-                    
-                     <tr class="">
-                        <td><span class="icon minus"></span><span class="val">Петров Ф</span></td>
+                      <tr class="">
+                        <td><span class="icon emp"></span>
+                        <span class="val lab2"><a href="#">Добавить</a></span></td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        
+                    </tr>
+                     <!-- end -->
+                     
+                         <!-- start -->
+                    <tr class="full">
+                        <td colspan="32">
+                            <span class="key">
+                                Цех сущи
+                            </span> 
+                        </td>
+                    </tr>
+                    <tr class="bg_8">
+                        <td><span class="icon emp"></span>Рек-но</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        
+                    </tr>
+                    <tr class="bg_8">
+                        <td><span class="icon emp"></span>На смене</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sun"></td>
+                        <td class="sun"></td>
+                        
+                    </tr>
+                    <tr class="">
+                        <td><span class="icon minus"></span>Иванов М</td>
                         <td><div class="outer-sel pad drop  pos3mid left ">
                              <div class="select">
                                
@@ -445,17 +503,62 @@
                              </div>
                              </div>
                         </td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td class="sun">5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
                         
                     </tr>
-                    
-                     <tr class="">
-                        <td><span class="icon plus"></span><span class="val"></span></td>
+                      <tr class="">
+                        <td><span class="icon emp"></span>
+                        <span class="val lab2"><a href="#">Добавить</a></span></td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        
+                    </tr>
+                     <!-- end -->
+                     
+                     
+                          <!-- start -->
+                    <tr class="full">
+                        <td colspan="32">
+                            <span class="key">
+                                Холодный цех
+                            </span> 
+                        </td>
+                    </tr>
+                    <tr class="bg_8">
+                        <td><span class="icon emp"></span>Рек-но</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        
+                    </tr>
+                    <tr class="bg_8">
+                        <td><span class="icon emp"></span>На смене</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sun"></td>
+                        <td class="sun"></td>
+                        
+                    </tr>
+                    <tr class="">
+                        <td><span class="icon minus"></span>Иванов М</td>
                         <td><div class="outer-sel pad drop  pos3mid left ">
                              <div class="select">
                                
@@ -495,17 +598,129 @@
                              </div>
                              </div>
                         </td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td class="sun">5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
                         
                     </tr>
+                      <tr class="">
+                        <td><span class="icon emp"></span>
+                        <span class="val lab2"><a href="#">Добавить</a></span></td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        
+                    </tr>
+                     <!-- end -->
+                     
+                          <!-- start -->
+                    <tr class="full">
+                        <td colspan="32">
+                            <span class="key">
+                                Горячий цех
+                            </span> 
+                        </td>
+                    </tr>
+                    <tr class="bg_8">
+                        <td><span class="icon emp"></span>Рек-но</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        
+                    </tr>
+                    <tr class="bg_8">
+                        <td><span class="icon emp"></span>На смене</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sun"></td>
+                        <td class="sun"></td>
+                        
+                    </tr>
+                    <tr class="">
+                        <td><span class="icon minus"></span>Иванов М</td>
+                        <td><div class="outer-sel pad drop  pos3mid left ">
+                             <div class="select">
+                               
+                                 <div class="styledSelect active">1</div>
+                                 <div class="opts minvert">
+                                     <div class="cbsbox">
+                                    <div class="item">
+                                     <label for="unitform2" class="chlabel chkd revert">
+                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
+                                        1 
+                                     </label>
+                                     </div>
+                                         
+                                             <div class="item">
+                                     <label for="unitform3" class="chlabel revert">
+                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
+                                        0 
+                                     </label>
+                                     </div>
+                                             <div class="item">
+                                     <label for="unitform4" class="chlabel revert">
+                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
+                                        б 
+                                     </label>
+                                     </div>
+                                            <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        н 
+                                     </label>
+                                     </div>
+                                        
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        
+                    </tr>
+                      <tr class="">
+                        <td><span class="icon emp"></span>
+                        <span class="val lab2"><a href="#">Добавить</a></span></td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        
+                    </tr>
+                     <!-- end -->
+              
+                    
+                  
                     
                     
                 </table>
+                
                 <div class="space_fix_100"></div>
                 
             </div>
