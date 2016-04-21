@@ -835,6 +835,12 @@ h2 {
  .out_dgrt {
      overflow-x:auto;
  }
+ 
+ 
+ .out_dgrt .h2t {
+     
+ }
+ 
  .dgrt_tbl {
      font-size:10px;
  }
@@ -861,6 +867,15 @@ h2 {
    padding:8px 9px 6px 9px;
   text-align: center;
 }
+    
+.dgrt_tbl.m3st {
+    font-size:12px;
+}
+
+    .dgrt_tbl.m3st tr td {
+       height:33px;  
+       padding:12px 9px 10px 9px;
+    }
  .dgrt_tbl tr:first-child td {
     border-top:1px solid #d5dde9;
 }
@@ -884,6 +899,10 @@ h2 {
   border-bottom-right-radius: 4px;
 }
 
+
+.dgrt_tbl tr.rdrg td {
+    border-top:1px solid #d5dde9
+}
  
  
  
@@ -908,6 +927,12 @@ h2 {
  }
   .dgrt_tbl tr.bg_9 td {
       background:#edf0f5;
+ }
+ .dgrt_tbl tr.font_3 td {
+     color:#2e3240;
+ }
+ .dgrt_tbl tr.font_3.nfirst td:first-child {
+     color:#82889c;
  }
  .dgrt_tbl  .list_5 .date {
      text-decoration: underline;
@@ -981,10 +1006,13 @@ h2 {
  .dgrt_tbl tr td .val.u {
      text-decoration: underline;
  }
+ .dgrt_tbl tr td .val.bold {
+      font-family: 'helveticaneuecyrbold';
+ }
  .dgrt_tbl .icon {
      cursor:pointer;
      position:absolute;
-     top:23%;
+     top:24%;
      left:0px;
      margin:0px 2px 2px 6px;
      border-radius: 50%;
@@ -1003,6 +1031,9 @@ h2 {
  }
  .dgrt_tbl .icon.emp {
      background:none;
+ }
+ .dgrt_tbl.m3st .icon {
+     top:35%;
  }
 
   .dgrt_tbl .date_graph .rline .outer-sel {
@@ -1066,8 +1097,20 @@ h2 {
      height:12px;
      line-height:12px;
  }
+ .fill_plash.size_02 {
+     left:50%;
+     height:14px;
+     background:#82889c;
+     top:10px;
+ }
+ .fill_plash.size_02 .buter {
+     width:8px;
+     height:5px;
+     right:auto;
+    
+ }
+
  .fill_plash .buter {
-   
      z-index: 4;
      top:3px;
      right:4px;
@@ -1079,6 +1122,13 @@ h2 {
      border-top:1px solid rgba(255,255,255,.7);
      border-bottom:1px solid rgba(255,255,255,.7);
  }
+ .fill_plash .buter.one {
+    
+     left:4px;
+ }
+ .fill_plash .buter.two {
+      right:4px;
+ }
  .fill_plash .buter:after {
      content:'';
      position:absolute;
@@ -1087,6 +1137,9 @@ h2 {
      left:0px;
      width:100%;
      background:rgba(255,255,255,.7);
+ }
+ .fill_plash.size_02 .buter:after {
+     top:2px;
  }
  
  
@@ -1863,13 +1916,16 @@ h2 {
 .styledSelect:active, .styledSelect.active {
    
 }
-.dgrt_tbl .h2t {
+.out_dgrt .h2t {
     margin:0px 0px 9px 0px;
     color:#3f4352;
     font-family: 'Conv_helveticaneuecyr-roman';
     font-size:12px;
 }
-.dgrt_tbl .h2t .spn, .dgrt_tbl .h_2, .dgrt_tbl .its .h2,  .dgrt_tbl  .list_5 .date {
+.out_dgrt .h2t.mar2 {
+      margin:0px 0px 4px 0px;
+}
+.out_dgrt .h2t .spn, .dgrt_tbl .h_2, .dgrt_tbl .its .h2,  .dgrt_tbl  .list_5 .date {
     font-family: 'helveticaneuecyrbold';
 }
 .out_dgrt .h_2 {
@@ -1908,7 +1964,7 @@ h2 {
     list-style:none;
     background-color:white;
     border-radius: 4px;
-    
+    text-transform:none;
     border:1px solid #c9d0d2;
    
     -webkit-box-shadow: -1px 1px 7px 2px rgba(0,0,0,.08);
@@ -1922,6 +1978,15 @@ h2 {
      padding: 2px 0 2px 0px;
      top:24px;
      
+}
+.outer-sel.pos6mid .options, .outer-sel.pos6mid .opts {
+     width:144px;
+     padding: 2px 0 2px 0px;
+     top:26px;
+     
+}
+.outer-sel.pos6mid .opts, .outer-sel.pos6mid .opts.minvert .item, .outer-sel.cldbox .opts {
+    border-color:#d5dde9;
 }
 
 .outer-sel .options:after ,.outer-sel .opts:after  {
@@ -2050,43 +2115,165 @@ h2 {
       right:12px;
       width:10px;
       height:8px;
-      /*w10 h 8*/
+   
   }
   .outer-sel.center .styledSelect {
     
     font-family: 'Conv_helveticaneuecyr-roman';
      padding:12px 12px 2px 12px;
   }
-  .outer-sel.bceco .styledSelect {
+  .outer-sel.bceco .styledSelect{
       padding:8px 12px 2px 12px;
   }
+
   .outer-sel.bceco {
       padding-top:10px;
       margin:0px auto 10px auto;
       width:198px
   }
-
   
-  
-  .add2plan {
-      
-     
-     
-  
+   .outer-sel.planbox  .outer-sel.bceco {
+        font-size: 14px;
+        text-transform: none;
+        font-family: 'Conv_helveticaneuecyr-roman';
+         margin:0px auto 10px auto;
+         padding: 2px 10px 2px 0px;
+         float:none;
+        /*testtt*/
   }
   .outer-sel.planbox {
-      position:absolute;
       margin:0px;
-      right:20px;
-   
+      right:20px;   
   }
+  .outer-sel.planbox,  .outer-sel.cldbox {
+      position:absolute;
+  }
+  .outer-sel.cldbox {
+      margin-top:18px;
+      right:20px;
+  }
+  .cld  {
+      padding:0px 9px;
+      text-transform: none;
+      font-family: 'Conv_helveticaneuecyr-roman';
+      font-size:14px;
+  }
+  .cld   .revert.checkbox:not(checked) + label:before, .cld  .chlabel:before {
+    right: -26px;
+    top:-2px;
+    width:19px;
+    height:19px;
+    background: url(../img/check03.png) no-repeat;
+  }
+  .cld  .revert.checkbox:checked + label:before, .cld  .chlabel.chkd:before {
+    background-position: 0 -20px;
+}
   .outer-sel.planbox  .opts {
       top:auto;
       right:18px;
       width:228px;
       display:block;
   }
+  .outer-sel.cldbox  .opts {
+      top:-26px;
+      right:-71px;
+      width:189px;
+      display:none;
+  }
+  .outer-sel.cldbox .opts:after {
+      width:12px;
+      height:8px;
+      top:-8px;
+      right:auto;
+      left:28px;
+      background: url(../img/bcet_ic.png) no-repeat;
+      
+  }
+  
+
+  .csstbl .cld .row {
+      border-bottom:0px;
+  }
+  .cld .tbox {
+      float:left;
+      margin:8px 0px 12px 0px;
+  }
+  
+  .cld .dbox {
+      float:left;
+      margin:0px 20px 12px 0px;
+  }
+  .csstbl  .cld .input_01,  .cld .input_01  {
+      text-align:center;
+      color:#515669;
+      margin:1px 10px 16px 7px;
+      padding: 6px 4px 6px 4px;
+      float:left;
+      width:56px;
+  }
+  .cld .buts .bttn {
+      padding-top:7px;
+      padding-bottom:7px;
+  }
  
+  .dgr_compare {
+      position:relative;
+      width:122px;
+      color:#3f4352;
+      text-transform: none;
+      font-size:8px;
+  }
+  .dgr_compare .line {
+      overflow:hidden;
+  }
+  .dgr_compare .col {
+     
+      float:left;
+      
+  }
+  .dgrt_tbl tr td.comp {
+      border-bottom:0px;
+      padding-left:6px;
+  }
+   .dgrt_tbl tr td.maxgraph {
+       vertical-align: top;
+       border-bottom:0px;
+       padding-bottom:0px;
+  }
+  .dgrt_tbl tr td.maxgraph .cbsbox  {
+      float:left;
+      font-size:12px;
+      color:#3f4352;
+  }
+  .cbsbox  .checkbox.revert.pink:not(checked) + label:before  {
+      width:19px;
+      height:19px;
+      background: url(../img/pink_check.png) no-repeat;
+      background-position:0px 0px;
+    }
+    
+    .maxgraph   .checkbox.revert.pink:not(checked) + label:before{
+        top:-2px;
+    }
+ 
+  .cbsbox .checkbox.revert.pink:checked + label:before {
+    background-position: 0 -20px;
+    }
+  .dgr_compare .col:last-child {
+     margin-left:10px;
+  }
+  .dgr_compare .col span {
+      margin:0px 0px 5px 0px;
+      display:block;
+  }
+  .dgr_compare .tt {
+      cursor:pointer;
+      display:block;
+      text-decoration: underline;
+      font-size:12px;
+      margin:0px 0px 18px 0px;
+      
+  }
   
 
 .csstbl .row {
@@ -2238,13 +2425,39 @@ h2 {
     right:38%;
     top:-8px;
 }
-.outer-sel.pos3mid .select  {
+.dgrt_tbl .outer-sel.pos3mid .select, .outer-sel.pos3mid .select  {
     height:auto;
-   
 }
 .outer-sel.drop.pos3mid .styledSelect {
      padding:0px 0px
 }
+
+
+.outer-sel.pos6mid .options, .outer-sel.pos6mid .opts {
+     right:auto;
+     left:-25px;
+     border-radius: 0px;
+     font-size:14px;
+     color:#515669;
+}
+.outer-sel.pos6mid .options:after, .outer-sel.pos6mid .opts:after {
+    right:50%;
+    margin-right:-8px;
+    top:-8px;
+    background: url(../img/bcet_ic.png) no-repeat;
+    width:12px;
+    height:8px;
+}
+.outer-sel.pos6mid .select  {
+    height:auto;
+   
+   
+}
+.outer-sel.drop.pos6mid .styledSelect {
+     padding:0px 0px
+}
+
+
 
 .dgrt_tbl .rline td {
     padding-bottom:5px;
@@ -3282,6 +3495,14 @@ color:#2e3240
   position: absolute;
   opacity: 0;
 }
+.opts.minvert .checkbox {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    
+}
+
 .checkbox:not(checked) + label, .chlabel {
   position: relative; 
   padding: 0 0 0 36px; 
@@ -3322,6 +3543,16 @@ color:#2e3240
    padding-bottom:4px;
    padding-left:12px;
 }
+.opts.minvert.m_2 .chlabel.revert {
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+.opts.minvert.m_2 .chlabel:before {
+    right:12px;
+    margin-top:5px;
+}
+    
+
 
 .checkbox:checked + label:before, .chlabel.chkd:before{
   background-position:0 -26px;
@@ -3817,6 +4048,14 @@ left:10.2px;
 .inout input[type=text]::-moz-placeholder  {color:#3e434c;   opacity:1;}/* Firefox 19+ */
 .inout input[type=text]:-moz-placeholder  {color:#3e434c;   opacity:1;}/* Firefox 18- */
 .inout input[type=text]:-ms-input-placeholder     {color:#3e434c;   opacity:1;}
+
+
+.cld input[type=text]::-webkit-input-placeholder {color:#515669;   opacity:1;}
+.cld input[type=text]::-moz-placeholder  {color:#515669;   opacity:1;}/* Firefox 19+ */
+.cld input[type=text]:-moz-placeholder  {color:#515669;   opacity:1;}/* Firefox 18- */
+.cld input[type=text]:-ms-input-placeholder     {color:#515669;   opacity:1;}
+
+
 .input_03,.tarr_02 {
    box-sizing: border-box;      
  }     
@@ -3860,36 +4099,51 @@ left:10.2px;
 .tabs_2 {
     float:left;
 }
-
-.tabs_2  ul {
+.tabs_2.mar_2 > ul {
+    margin-bottom:10px;
+}
+.tabs_2 >  ul {
     margin:0px 0px 18px 0px;
     border-radius: 3px;
     border:1px solid #97b5ea;
-    overflow:hidden;
+    
 }
-.tabs_2 li {
+.tabs_2 >  ul:before, .tabs_2 >  ul:after {
+    content:'';
+    display:table;
+}
+.tabs_2 > ul:after {
+    clear:both;
+}
+.tabs_2 > ul >  li {
+     position:relative;
      font-size:10px;
      text-transform: uppercase;
      float:left;
      color:#515669;
 }
-.tabs_2 li.act span {
+.tabs_2 > ul > li.act > span, .tabs_2 > ul > li.act > a {
     color:#fff;
     background-color:#97b5ea;
 }
-.tabs_2 li span, .tabs_2 li a {
+.tabs_2 > ul > li > span, .tabs_2 > ul > li a {
     text-decoration: none;
     padding:11px 11px 10px 10px;
     display:block;
     border-right:1px solid #97b5ea;
 }
-.tabs_2 li:last-child span, .tabs_2 li:last-child a {
+.tabs_2 >  ul > li:last-child span, .tabs_2 ul > li:last-child a {
     border-right:0px;
 }
-.tabs_2 li a {
+.tabs_2 > ul > li a {
     color:#515669;
 }
 
+
+.tabs_2 > ul >  li .outer-sel {
+   position:absolute;
+   top:0px;
+}
 
 /*========================== table ==========================*/
 
@@ -4016,3 +4270,29 @@ left:10.2px;
 
 
 /*========================== END table ==========================*/
+
+.ct-chart {
+    height:100px;
+    position:relative;
+    margin-left:-31px;
+    margin-top:-5px;
+}
+.ct-chart .ct-label.ct-vertical.ct-start {
+  
+}
+.ct-chart .ct-series-a .ct-line {
+  stroke:#868c9f;
+  stroke-width: 2px;
+}
+.ct-chart .ct-series-a .ct-point {
+  stroke:#868c9f;
+  stroke-width: 8px;
+}
+.ct-chart .ct-series-b .ct-line {
+  stroke:#ee7a7a;
+  stroke-width: 2px;
+}
+.ct-chart .ct-series-b .ct-point {
+  stroke:#ee7a7a;
+  stroke-width: 8px;
+}
