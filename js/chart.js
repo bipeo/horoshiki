@@ -36,7 +36,7 @@ var chart = new Chartist.Line('.ct-chart', {
   axisX: {
    showLabel: false,
    showGrid: false,
-   offset: 6
+   offset: 10
   },
   lineSmooth: Chartist.Interpolation.cardinal({
     fillHoles: true,
