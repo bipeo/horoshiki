@@ -2,36 +2,28 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>2-2_tablica_day</title>
+    <title>2.3_tablica_tceh_two
+</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="fonts/style.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="libs/jquery-1.8.3.min.js"></script> 
-    <script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
-    <link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" media="screen" />
-    
-    <script type="text/javascript">
-            $(document).ready(function() {
-	$(".fancybox").fancybox({
-            wrapCSS : 'photo-fancy',
-            padding: 0,
-            helpers : {
-                overlay: {
-                 css: {'background': 'rgba(63,67,82, 0.8)'} 
-                }
-            } 
-            
-	});
-        });
-        </script>
+   <script src="libs/jquery-1.8.3.min.js"></script> 
+        
 
+    <link rel="stylesheet" href="libs/chartist/chartist.css">
+    <script type="text/javascript" src="libs/chartist/chartist.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+
+
+
+    
   <script src="js/horosh.js"></script>
   <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
   <script type="text/javascript">
 	$(function(){
-        // $.pixlayout({clip: true, src: "design/2-2_tablica_week_special_list.jpg", show:true, center:true, top:0, left:0, pervious: false});
+        // $.pixlayout({clip: true, src: "design/2.3_tablica_tceh.png", show:true, center:true, top:0, left:0, pervious: false});
         }); 
 </script>
 </head>
@@ -177,16 +169,61 @@
                         
                    
                     
-                          <div class="tabs_2">
+                          <div class="tabs_2 mar_2">
                               <ul>
-                                  <li class="act">
-                                      <span>колл центр</span>
+                                  <li>
+                                       <a href="#">колл центр</a>
+                                       
                                   </li>
                                    <li>
                                       <a href="#">Администрация</a>
                                   </li>
-                                   <li>
-                                      <a href="#">Производство</a>
+                                   <li class="act">
+                                      <a class="drtab" href="#">Производство</a>
+                                         <div class="outer-sel pad drop pos6mid left ">
+                             <div class="select">
+                               
+                                 <div class="opts minvert m_2">
+                                     <div class="cbsbox">
+                                    <div class="item">
+                                     <label for="unitform2" class="chlabel chkd revert">
+                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
+                                        Цех суши 
+                                     </label>
+                                     </div>
+                                         
+                                             <div class="item">
+                                     <label for="unitform3" class="chlabel revert">
+                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
+                                        Холодный цех 
+                                     </label>
+                                     </div>
+                                             <div class="item">
+                                     <label for="unitform4" class="chlabel revert">
+                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
+                                        Пицца 
+                                     </label>
+                                     </div>
+                                            <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        Упаковка 
+                                     </label>
+                                     </div>
+                                        
+                                          <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        Уборка 
+                                     </label>
+                                     </div>
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                                </div>
+                                   
                                   </li>
                                    <li>
                                       <a href="#">Курьеры</a>
@@ -297,14 +334,117 @@
                 
             </div>
             
-            <div class="out_dgrt">
-                <div class="h2t">Март 2016 /  3 неделя (16-23) / <span class="spn">2 день (вторник)</span></div>                <table class="dgrt_tbl  col_22">
-                    <tr class="bg_8">
+            <div class="metr">
+                <div class="h2t mar2">Чеков <span class="spn">150 / 170</span>    &nbsp; &nbsp; LC: <span class="spn">23%</span> </div>
+            </div>
+                <div class="diag_4">
+                            <div class="row">
+                               
+                                    <div class="dgr_compare">
+                                        <span class="tt compare_but">Сравнить</span>
+                                           <div class="outer-sel cldbox">
+         
+         <div class="opts">
+                   
+                               
+             <div class="cld">
+                 <div class="row">
+                 <span class="tbox">
+                     c
+                 </span>
+                   <input class="input_01 st_669"  placeholder="22-09" type="text" value="">
+                  <span class="tbox">
+                     по
+                 </span>
+                 <input class="input_01 st_669" placeholder="22-10" type="text" value="">
+                 </div>
+                 <div class="row">
+                      <span class="dbox">
+                     вт 12.03
+                 </span>
+                    <div class="cbsbox ">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert" checked="checked" id="check01">
+                <label for="check01">150</label>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="row">
+                      <span class="dbox">
+                     вт 12.03
+                 </span>
+                    <div class="cbsbox ">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert" checked="checked" id="check02">
+                <label for="check02">150</label>
+                        </div>
+                    </div>
+                 </div>
+                  <div class="buts alcenter mar_023 cmarg">
+                <input class="bttn black" type="submit" value="Сравнить">
+                </div>
+             </div>   
+             
+                 
+           
+                        
+             
+             </div>
+         
+         </div>
+                                        <div class="line">
+                                            <div class="col">
+                                                <span>ПН 12-03 - 150</span>
+                                                <span>ПН 12-03 - 150</span>
+                                                <span>ПН 12-03 - 150</span>
+                                            </div>
+                                             <div class="col">
+                                                <span>ПН 12-03 - 150</span>
+                                                <span>ПН 12-03 - 150</span>
+                                                <span>ПН 12-03 - 150</span>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                       
+                        <div class="maxgraph">
+                            <div class="row">
+                            <div class="cbsbox pink ">
+                        <div class="item">
+                    <label>Заказы</label>
+                        </div>
+                    </div>
+                                </div>
+                            <div class="row">
+                            
+                            <div class="ct-chart">
+                              
+                            </div>     
+                            <ul class="grnums box_a"></ul>
+                            <ul class="grnums box_b"></ul>
+                            </div>
+                            
+                           
+
+                            
+                        </div>        
+                            </div>
+                 
+            </div>
+            
+            
+            <div class="out_dgrt ">
+
+                <table class="dgrt_tbl m3st  col_22">
+                      
+                    <tr class="rdrg   font_3">
+                        
                         <td><span class="icon  emp"></span>
-                       Часы</td>
-                        <td>07</td>
-                        <td>08</td>
-                        <td>09</td>
+                        <span class="val bold"> Часы</span>
+                        </td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
                         <td>10</td>
                         <td>11</td>
                         <td>12</td>
@@ -326,9 +466,9 @@
                         <td>02</td>
                         <td>03</td>
                     </tr>
-                      <tr class="bg_8">
+                      <tr class="font_3 bg_8">
                         <td><span class="icon  emp"></span>
-                        Чеков</td>
+                            <span class="val bold">Чеков</span></td>
                         <td>2</td>
                         <td>2</td>
                         <td>2</td>
@@ -415,12 +555,12 @@
                   
                         
                     </tr>
-                    <tr class="">
-                        <td><span class="icon minus"></span><span class="val">Иванов М</span></td>
+                    <tr class="font_3 nfirst">
+                        <td><span class="icon minus"></span><span class="val u">Иванов М</span></td>
                         <td>
-                                    <div class="fill_plash" style="width:260%">3
-                                        <div class="buter">
-                                <span class="btog"></span>
+                           <div class="fill_plash size_02" style="width:260%">
+                               <div class="buter one">
+                                   <span class="btog"></span>
                                    <div class="outer-sel pad drop  pos3mid left ">
                              <div class="select">
                                
@@ -480,144 +620,112 @@
                                  </div>
                              </div>
                              </div>
-                                </div></div>   
+                                   
+                                   
+                               </div>
+                               
+                               <div class="buter two">
+                                   
+                                      <span class="btog"></span>
+                                   <div class="outer-sel pad drop  pos3mid left ">
+                             <div class="select">
+                               
+                                
+                                 <div class="opts minvert">
+                                     <div class="cbsbox">
+                                    <div class="item">
+                                     <label for="unitform2" class="chlabel chkd revert">
+                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
+                                        1 
+                                     </label>
+                                         <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="10" value="">
+                                                </div>
+                                     </div>
+                                         
+                                             <div class="item">
+                                     <label for="unitform3" class="chlabel revert">
+                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
+                                        0 
+                                     </label>
+                                                  <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="11:00" value="">
+                                                </div>
+                                     </div>
+                                             <div class="item">
+                                     <label for="unitform4" class="chlabel revert">
+                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
+                                        б 
+                                     </label>
+                                                  <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="12:00" value="">
+                                                </div>
+                                     </div>
+                                            <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        н 
+                                     </label>
+                                                <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="15:00" value="">
+                                                </div>
+                                     </div>
+                                         <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        н 
+                                     </label>
+                                                <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="16:00" value="">
+                                                </div>
+                                     </div>
+                                        
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                                   
+                               </div>
+                           </div>   
 
-                           
+                          
                         </td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
                         
                         
                         
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
                         
                         
-                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
                  
                         
                     </tr>
                     
                     
                      <tr class="">
-                        <td><span class="icon minus"></span><span class="val">Петров Ф</span></td>
+                        <td><span class="icon emp"></span><span class="val lab2"><a href="#">Добавить</a></span></td>
                         <td>
-                                    <div class="fill_plash" style="width:462%">5<div class="buter">
-                                 
-                                             <span class="btog"></span>
-                                   <div class="outer-sel pad drop  pos3mid left ">
-                             <div class="select">
-                               
-                                
-                                 <div class="opts minvert">
-                                     <div class="cbsbox">
-                                    <div class="item">
-                                     <label for="unitform2" class="chlabel chkd revert">
-                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
-                                        1 
-                                     </label>
-                                         <div class="dater_box">
-                                                    <input class="input_01 st_669 " type="text" placeholder="10" value="">
-                                                </div>
-                                     </div>
-                                         
-                                             <div class="item">
-                                     <label for="unitform3" class="chlabel revert">
-                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
-                                        0 
-                                     </label>
-                                                  <div class="dater_box">
-                                                    <input class="input_01 st_669 " type="text" placeholder="11:00" value="">
-                                                </div>
-                                     </div>
-                                             <div class="item">
-                                     <label for="unitform4" class="chlabel revert">
-                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
-                                        б 
-                                     </label>
-                                                  <div class="dater_box">
-                                                    <input class="input_01 st_669 " type="text" placeholder="12:00" value="">
-                                                </div>
-                                     </div>
-                                            <div class="item">
-                                     <label for="unitform5" class="chlabel revert">
-                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
-                                        н 
-                                     </label>
-                                                <div class="dater_box">
-                                                    <input class="input_01 st_669 " type="text" placeholder="15:00" value="">
-                                                </div>
-                                     </div>
-                                         <div class="item">
-                                     <label for="unitform5" class="chlabel revert">
-                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
-                                        н 
-                                     </label>
-                                                <div class="dater_box">
-                                                    <input class="input_01 st_669 " type="text" placeholder="16:00" value="">
-                                                </div>
-                                     </div>
-                                        
-                        </div>
-                                     
-                                    
-                                 </div>
-                             </div>
-                             </div>
-                                </div></div> 
-                            <div class="outer-sel pad drop  pos3mid left ">
-                             <div class="select">
-                               
-                                
-                                 <div class="opts minvert">
-                                     <div class="cbsbox">
-                                    <div class="item">
-                                     <label for="unitform2" class="chlabel chkd revert">
-                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
-                                        1 
-                                     </label>
-                                     </div>
-                                         
-                                             <div class="item">
-                                     <label for="unitform3" class="chlabel revert">
-                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
-                                        0 
-                                     </label>
-                                     </div>
-                                             <div class="item">
-                                     <label for="unitform4" class="chlabel revert">
-                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
-                                        б 
-                                     </label>
-                                     </div>
-                                            <div class="item">
-                                     <label for="unitform5" class="chlabel revert">
-                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
-                                        н 
-                                     </label>
-                                     </div>
-                                        
-                        </div>
-                                     
-                                    
-                                 </div>
-                             </div>
-                             </div>
+                          
                         </td>
                        <td></td>
                         <td></td>
@@ -648,78 +756,13 @@
                         
                     </tr>
                     
-                     <tr class="">
-                        <td><span class="icon plus"></span><span class="val"></span></td>
-                        <td>
-                           
-                        </td>
-                       <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        
-                        
-                        
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        
-                        
-                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                 
-                        
-                    </tr>
-                     <tr class="">
-                        <td></td>
-                        <td>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        
-                        
-                        
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        
-                        
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                 
-                        
-                    </tr>
+               
                     
                     
                 </table>
                 <div class="space_fix_100"></div>
                 
             </div>
-            
             </div>
 
         </div>
