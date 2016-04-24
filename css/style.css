@@ -2303,6 +2303,9 @@ h2 {
        vertical-align: top;
        padding:0px;
   }
+  .dgrt_tbl tr td.maxgraph.st_2 {
+      border-bottom:0px;
+  }
   .dgrt_tbl tr td.maxgraph .row {
       padding-left:10px;
   }
