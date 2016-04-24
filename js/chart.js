@@ -1,19 +1,5 @@
 
  $(document).ready(function(){
-       /*var line1 = [14, 32, 41, 44, 40, 47, 53, 67];
-  
-  var plot1 = $.jqplot('chart_1', [line1], {
-      title: 'Chart with Point Labels', 
-      seriesDefaults: { 
-        showMarker:true,
-        pointLabels: {
-            show:true,
-            labels:['119', '91', '12']
-            }
-       
-      },
-      
-  }); */
      
 var chart = new Chartist.Line('.ct-chart', {
    
@@ -30,6 +16,7 @@ var chart = new Chartist.Line('.ct-chart', {
   fullWidth: true,
   showLabel: false,
   low: 0,
+  height:'100px',
   chartPadding: 0,
 
   axisY: {
@@ -49,28 +36,7 @@ var chart = new Chartist.Line('.ct-chart', {
   }),
 });
 
-    setTimeout(function(){
-        $('.ct-series-a .ct-point').each(function() {
-            var it = $(this).attr('ct:value');
-           
-           var value = parseInt(it) * 3.59 + 39;
-            var px = - value + 'px';
-           
-            $('.grnums.box_a').append('<li style=top:' + px + '>'+it+ '</li>');
-            
-        });
-        
-        $('.ct-series-b .ct-point').each(function() {
-            var it = $(this).attr('ct:value');
-           
-           var value = parseInt(it) * 3.66 + 64;
-            var px = - value + 'px';
-           
-            $('.grnums.box_b').append('<li style=top:' + px + '>'+it+ '</li>');
-            
-        });
-        
-    }, 0);
+   
    
 
  })

@@ -1,4 +1,5 @@
 
+
  $(document).ready(function(){
        /*var line1 = [14, 32, 41, 44, 40, 47, 53, 67];
   
@@ -17,7 +18,7 @@
      
 var chart = new Chartist.Line('.ct-chart', {
    
-  //labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20],
+  labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20],
   series: [
       
     [4, 2, 4, 6, 7, 5, 8, 4, 3, 5, 6, 4, 6, 4, 2, 3, 7, 9 ],
@@ -47,28 +48,14 @@ var chart = new Chartist.Line('.ct-chart', {
   }),
 });
 
-    setTimeout(function(){
-        $('.ct-series-a .ct-point').each(function() {
-            var it = $(this).attr('ct:value');
-           
-           var value = parseInt(it) * 1 + 40;
-            var px = - value + 'px';
-           
-            $('.grnums.box_a').append('<li style=top:' + px + '>'+it+ '</li>');
-            
-        });
-        
-        $('.ct-series-b .ct-point').each(function() {
-            var it = $(this).attr('ct:value');
-           
-           var value = parseInt(it) * 3.66 + 64;
-            var px = - value + 'px';
-           
-            $('.grnums.box_b').append('<li style=top:' + px + '>'+it+ '</li>');
-            
-        });
-        
-    }, 0);
+  
+
+
    
 
+
  })
+ 
+ 
+ 
+ 

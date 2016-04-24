@@ -199,23 +199,70 @@ $('select.cus-sel').each(function () {
             
             
             
-            /*Chart*/
-            $(document).ready(function(){
+                $(window).load(function()
+                {
+                    setPos();
+                }
+            );
+            $(window).resize(function()
+                {
+                   
+                     setPos();
+                }
+            );
+    
+    
+            function setPos() {
+                setTimeout(function(){
+              $('.grnums').find('li').remove();       
+             $('.ct-series-a .ct-point').each(function() {
+                 var it = $(this).attr('ct:value');
+                 var xpos = "left:"+parseInt($(this).attr('x1')) + "px";
+                 var ypos = "top:"+parseInt($(this).attr('y1')) + "px;";
+                 $('.grnums.box_a').append('<li style='+ xpos +';'+ ypos + '>'+it+  '</li>');
+             });
+             
+             
+               $('.ct-series-b .ct-point').each(function() {
+                 var it = $(this).attr('ct:value');
+                 var xpos = "left:"+parseInt($(this).attr('x1')) + "px";
+                 var ypos = "top:"+parseInt($(this).attr('y1')) + "px;";
+                 $('.grnums.box_b').append('<li style='+ xpos +';'+ ypos + '>'+it+  '</li>');
 
-                
-                
 
-});
-
-
-
-            /*Chart*/
+             });
+             
+         }, 0);
+         }
+            
+            
+            
+            //attach keypress to input
+            $('.input_01.intd').keydown(function(event) {
+                // Allow special chars + arrows 
+                if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 
+                    || event.keyCode == 27 || event.keyCode == 13 
+                    || (event.keyCode == 65 && event.ctrlKey === true) 
+                    || (event.keyCode >= 35 && event.keyCode <= 39)){
+                        return;
+                }else {
+                    // If it's not a number stop the keypress
+                    if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                        event.preventDefault(); 
+                    }   
+                }
+            });
+            
+            
+     
             
           
             
             
         }
     );
+    
+    
     
     
     
