@@ -39,7 +39,31 @@ $(function(){
             $(this).parent().find('.opts').show()
         } //for buter
           
-     });   
+     });
+     
+       $('.tabs_2.pref > ul > li > .tg_oun').on('click',function() {
+        if($(this).parent().find('.blcom').is(':visible')) {
+            $('.tabs_2.pref > ul > li').removeClass('act');
+             $(this).parent().removeClass('act');
+            $('.tabs_2.pref > ul > li').find('.blcom').hide();
+            $(this).parent().find('.blcom').hide()
+        } else {
+              $('.tabs_2.pref > ul > li').removeClass('act');
+            $(this).parent().addClass('act');
+             $('.tabs_2.pref > ul > li').find('.blcom').hide();
+            $(this).parent().find('.blcom').show()
+        } //for tabs_2
+//         var c = $(".tabs_2 > ul > li");
+//           c.each(function(b, a) {
+//           $(a).bind('click',function(e) {
+//           c.not($(a).toggleClass('show_with')).removeClass("show_with");
+//            return false;
+//           })
+//       
+//            });
+     });  
+     
+     
     
      $('.drtab').on('click',function() {
          $(this).next().find('.opts').toggle(); //for drtab
@@ -56,13 +80,15 @@ $(function(){
             
              $(document).mouseup(function (e)
     {
-        var container = $(".drop.outer-sel .opts, .drop.outer-sel .select, .drtab, .cldbox .opts, .compare_but, .btog ");
+        var container = $(".drop.outer-sel .opts, .drop.outer-sel .select, .drtab, .cldbox .opts, .compare_but, .btog, .tg_oun");
 
         if (!container.is(e.target) 
             && container.has(e.target).length === 0) 
         {
             $('.drop.outer-sel .opts').hide();
             $('.cldbox .opts').hide()
+            $('.outer-sel .options, .outer-sel .opts').hide()
+            $('.tabs_2.pref > ul > li').removeClass('act'); //remove tabs_2 class
          
         }
     });

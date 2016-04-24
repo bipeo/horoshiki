@@ -1637,6 +1637,8 @@ h2 {
    font-family: 'Conv_SFUIText-BoldG1';
 }
 .opts.calc .dlist {
+    margin:0px;
+    padding:0px;
     overflow:hidden;
 }
 .opts.calc .dlist li, .opts.calc .dlist li:hover {
@@ -2017,12 +2019,12 @@ h2 {
 
 .outer-sel .options:after ,.outer-sel .opts:after  {
     content:'';
-    top:-11px;
+    top:-8px;
     right:12px;
-    width:20px;
-    height: 11px;
+    width:12px;
+    height: 8px;
     position:absolute;
-    background:url(../img/dropcorner_2.png) no-repeat;
+    background:url(../img/bcet_ic.png) no-repeat;
    
 }
 .outer-sel.pos3mid .opts:after {
@@ -2200,11 +2202,15 @@ h2 {
       width:228px;
       display:block;
   }
+ 
   .outer-sel.cldbox  .opts {
       top:-26px;
       right:-71px;
       width:189px;
       display:none;
+  }
+   .diag_4 .outer-sel.cldbox  .opts {
+      top:-17px;
   }
   .outer-sel.cldbox .opts:after {
       width:12px;
@@ -2303,16 +2309,21 @@ h2 {
       border: 1px solid #d5dde9;
       color:#83879a;
       text-align:left;
+      margin-bottom:7px;
+  }
+  .chart_out {
+      position:relative;
   }
   .diag_4 .dgr_compare {
       padding:6px 5px 0px 0px;
-      border-right:1px solid red;
+      border-right:1px solid #d5dde9;
       width:auto;
   }
   .diag_4 .maxgraph {
      
-     
-      padding: 6px 9px 0px 9px;
+     width:calc(100% - 142px);
+     float:right;
+      padding: 6px 0px 0px 0px;
      
   }
   .diag_4 >  .row {
@@ -2488,6 +2499,39 @@ h2 {
 .outer-sel.pos4mid .options, .outer-sel.pos4mid .opts  {
     right:8px;
 }
+.tabs_2.pref  ul  {
+    width:180px !important;
+}
+.tabs_2.pref  .outer-sel.pos4mid .options, .tabs_2.pref .outer-sel.pos4mid .opts {
+    right:-34px; 
+}
+.tabs_2.pref  .outer-sel.week  .options, .tabs_2.pref .outer-sel.week  .opts {
+    right:-102px; 
+}
+.tabs_2.pref  .outer-sel.month  .options, .tabs_2.pref .outer-sel.month  .opts {
+    right:-90px; 
+}
+
+
+.tabs_2.pref > ul > li {
+    width:60px;
+    display:none;
+}
+
+.tabs_2.pref > ul >  li:nth-child(-n + 3)  {
+    display:block;
+}
+
+.tabs_2.pref > ul >  li:nth-child(3) .tg_oun  {
+    border-right:0px;
+}
+
+
+.tabs_2  .outer-sel .options, .tabs_2 .outer-sel .opts {
+    top:33px;
+}
+
+
 .outer-sel.pos4mid .options:after, .outer-sel.pos4mid .opts:after {
     right:10%;
 }
@@ -3319,18 +3363,18 @@ color:#2e3240
       margin-right:7.3%;
 }
 .csstbl.calmar  .outer-sel.month {
-    margin-left:37px; 
+    margin-left:10px; 
     /*margin-left:36%; */
     
-     margin-right:55px; 
+     margin-right:52px; 
       /* margin-right:5.3%; */
 }
 .csstbl.calmar  .outer-sel.week {
-     margin-right:55px; 
+     margin-right:53px; 
      /* margin-right:5.3%;*/
 }
 .side_rsec {
-     width:332px;
+     width:300px;
      float:right;
 }
 .csstbl.calmar  .outer-sel.day {
@@ -4195,23 +4239,29 @@ left:10.2px;
     float:left;
 }
 .tabs_arrs {
+    position:relative;
+    width:178px;
     float:right;
 }
+
 .tabs_arrs  .arrs {
+    cursor:pointer;
     border-radius: 50%;
     background-color:#eaeaec;
     margin:4px 5px 0px 5px;
     width:24px;
     height:24px;
-    float:left;
+    position:absolute;
     background-repeat: no-repeat;
     display:block;
 }
 .tabs_arrs .arrs.prev {
+    left:-95px;
     background-position:45% 49.9%;
     background-image: url(../img/day_arr_prev.png);
 }
 .tabs_arrs .arrs.next {
+    right:21px;
     background-position:55% 49.9%;
     background-image: url(../img/day_arr_next.png);
 }
@@ -4219,6 +4269,7 @@ left:10.2px;
     margin-bottom:10px;
 }
 .tabs_2 >  ul {
+  
     margin:0px 0px 18px 0px;
     border-radius: 3px;
     border:1px solid #97b5ea;
@@ -4232,12 +4283,15 @@ left:10.2px;
     clear:both;
 }
 .tabs_2 > ul >  li {
+     
      position:relative;
      font-size:10px;
      text-transform: uppercase;
      float:left;
      color:#515669;
 }
+
+
 .tabs_2 > ul > li.act > span, .tabs_2 > ul > li.act > a {
     color:#fff;
     background-color:#97b5ea;
@@ -4254,11 +4308,14 @@ left:10.2px;
 .tabs_2 > ul > li a {
     color:#515669;
 }
-
+.tabs_2 > ul > li .tg_oun {
+    text-align:center;
+}
 
 .tabs_2 > ul >  li .outer-sel {
    position:absolute;
    top:0px;
+   width:auto !important;
 }
 
 /*========================== table ==========================*/
@@ -4387,12 +4444,18 @@ left:10.2px;
 
 /*========================== END table ==========================*/
 
+
 .ct-chart {
     height:100px;
     position:relative;
     margin-top:6px;
     margin-left:-31px;
     
+}
+
+.diag_4 .ct-chart {
+    height:35px;
+    margin-top:20px;
 }
 .ct-chart .ct-label.ct-vertical.ct-start {
   
@@ -4462,7 +4525,7 @@ left:10.2px;
 }
 .grnums li:last-child {
     margin-right:0px;
-    display:none; /*warnnnn*/
+    /*warnnnn*/
 }
 .grnums li:before {
     content:'';

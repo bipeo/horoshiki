@@ -7,26 +7,14 @@
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="fonts/style.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="libs/jquery-1.8.3.min.js"></script> 
-    <script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
     <link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" media="screen" />
+   
     
-    <script type="text/javascript">
-            $(document).ready(function() {
-	$(".fancybox").fancybox({
-            wrapCSS : 'photo-fancy',
-            padding: 0,
-            helpers : {
-                overlay: {
-                 css: {'background': 'rgba(63,67,82, 0.8)'} 
-                }
-            } 
-            
-	});
-        });
-        </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+   
+  <script src="js/tabs_2_slider.js"></script>    
   <script src="js/horosh.js"></script>
   <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
   <script type="text/javascript">
@@ -157,8 +145,7 @@
                 </div>  
             </div>
             
-           
-           
+                   
             <div class="csstbl calmar cnt st_5 ">
                 
                   <div class="row">
@@ -177,6 +164,7 @@
                         
                    
                     
+                    
                           <div class="tabs_2">
                               <ul>
                                   <li class="act">
@@ -186,7 +174,50 @@
                                       <a href="#">Администрация</a>
                                   </li>
                                    <li>
-                                      <a href="#">Производство</a>
+                                      <a class="drtab" href="#">Производство</a>
+                                      <div class="outer-sel pad drop pos6mid left ">
+                             <div class="select">
+                               
+                                 <div class="opts minvert m_2" style="display: none;">
+                                     <div class="cbsbox">
+                                    <div class="item">
+                                     <label for="unitform2" class="chlabel chkd revert">
+                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
+                                        Цех суши 
+                                     </label>
+                                     </div>
+                                         
+                                             <div class="item">
+                                     <label for="unitform3" class="chlabel revert">
+                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
+                                        Холодный цех 
+                                     </label>
+                                     </div>
+                                             <div class="item">
+                                     <label for="unitform4" class="chlabel revert">
+                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
+                                        Пицца 
+                                     </label>
+                                     </div>
+                                            <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        Упаковка 
+                                     </label>
+                                     </div>
+                                        
+                                          <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        Уборка 
+                                     </label>
+                                     </div>
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                                </div>
                                   </li>
                                    <li>
                                       <a href="#">Курьеры</a>
@@ -195,35 +226,29 @@
                               
                           </div>
                       
+                          
                       <div class="tabs_arrs">
+                          
                             <span class="arrs prev"></span>
+                             <span class="arrs next"></span>
+                             <div>
                        <div class="tabs_2 pref">
                          
                               <ul>
-                                  <li class="act">
-                                      <span class="toggle_calmon">День</span>
-                                             <div class="outer-sel day  pos4mid mar_03">
-                                <div class="select">
+                                  
+                                  
+                               
+                                    
+                               
                               
-                                    <ul class="options" style="display: block;">
-                                        <li>1 день (пн)</li>
-                                        <li>2 день (вт)</li>
-                                        <li>3 день (ср)</li>
-                                        <li>4 день (чт)</li>
-                                        <li>5 день (пт)</li>
-                                    </ul>
-                                </div>
-                               </div>
-                                           
-                                   
-                                  </li>
+                                  
                                    <li>
-                                      <a class="toggle_week" href="#">Неделя</a>
+                                      <a class="tg_oun" href="#">Неделя</a>
                                             <div class="outer-sel drop week" >
                              <div class="select selcalc">
                                
                                 
-                                 <div class="opts calc" style="display: block;">
+                                 <div class="opts calc blcom">
                                      <div class="bonder">
                                             
                                          <div class="cline">
@@ -248,13 +273,14 @@
                              </div>
                                
                                   </li>
-                                   <li>
-                                      <a class="toggle_month" href="#">Месяц</a>
+                                  
+                                      <li>
+                                      <a class="tg_oun" href="#">Месяц</a>
                                            <div class="outer-sel month drop " >
                              <div class="select selcalc ">
                                
-                                <!--  <div class="styledSelect active">Неделя</div> -->
-                                 <div class="opts calc" style="display: block">
+                               
+                                 <div class="opts calc blcom" >
                                      <div class="bonder">
                                             
                                          <div class="cline">
@@ -280,22 +306,92 @@
                                      
                                     
                                  </div>
-                                
-                                
-                                
-                                
-                                
                              </div>
                              </div>
                                
                                   </li>
+                                  
+                                          <li>
+                                      <a class="tg_oun" href="#">Тест</a>
+                                            <div class="outer-sel drop week" >
+                             <div class="select selcalc">
+                               
+                                
+                                 <div class="opts calc blcom">
+                                     <div class="bonder">
+                                            
+                                         <div class="cline">
+                                             <span class="icon prev"></span>
+                                             <div class="mdc"><span>Март (<em>3 нед</em>)</span></div>
+                                             <span class="icon next"></span>
+                                         </div>
+                                         
+                                         <ul class="dlist">
+                                             <li><span><em>1 нед </em> (1-7)</span></li>
+                                             <li><span><em>2 нед </em>(8-15)</span></li>
+                                             <li class="act"><span><em>3 нед </em>(16-23)</span></li>
+                                             <li><span><em>4 нед </em> (24-31)</span></li>
+                                         </ul>
+                      
+                                        
+                                 </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                               
+                                  </li>
+                                  
+                                     <li class="">
+                                      <a href="#" class="tg_oun">Тест_2</a>
+                                             <div class="outer-sel day  pos4mid mar_03">
+                                <div class="select">
+                              
+                                    <ul class="options blcom" >
+                                        <li>1 день (пн)</li>
+                                        <li>2 день (вт)</li>
+                                        <li>3 день (ср)</li>
+                                        <li>4 день (чт)</li>
+                                        <li>5 день (пт)</li>
+                                    </ul>
+                                </div>
+                               </div>
+                                           
+                                   
+                                  </li>
+                                  
+                                      <li class="">
+                                      <a href="#" class="tg_oun">День</a>
+                                             <div class="outer-sel day  pos4mid mar_03">
+                                <div class="select">
+                              
+                                    <ul class="options blcom" >
+                                        <li>1 день (пн)</li>
+                                        <li>2 день (вт)</li>
+                                        <li>3 день (ср)</li>
+                                        <li>4 день (чт)</li>
+                                        <li>5 день (пт)</li>
+                                    </ul>
+                                </div>
+                               </div>
+                                           
+                                   
+                                  </li>
+                                  
+                               
+                                  
+                                      
+                             
+                                  
+                                     
                                  
                               </ul>
                             
                           </div>
-                            <span class="arrs next"></span>
+                           
                           </div>
-                     
+                     </div>
                           
                        
                        

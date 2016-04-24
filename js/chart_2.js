@@ -20,8 +20,7 @@ var chart = new Chartist.Line('.ct-chart', {
   //labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20],
   series: [
       
-    [3,  3, 5,  4,  3, 4,  3,  3,  3, 4,  3,  2,  3,  4, 3,  4,  3,  2,   ],
-    [10, 9, 11, 10, 9, 11, 12, 11, 9, 10, 11, 11, 10, 9, 10, 11, 10, 9, ,  ],
+    [4, 2, 4, 6, 7, 5, 8, 4, 3, 5, 6, 4, 6, 4, 2, 3, 7, 9 ],
     
     
   ]
@@ -31,7 +30,7 @@ var chart = new Chartist.Line('.ct-chart', {
   showLabel: false,
   low: 0,
   chartPadding: 0,
-
+  height:'40px',
   axisY: {
       showLabel: false,
       showGrid:false,
@@ -42,7 +41,6 @@ var chart = new Chartist.Line('.ct-chart', {
    showGrid: false,
    offset: 10
   },
- 
   
   lineSmooth: Chartist.Interpolation.cardinal({
     fillHoles: true,
@@ -53,7 +51,7 @@ var chart = new Chartist.Line('.ct-chart', {
         $('.ct-series-a .ct-point').each(function() {
             var it = $(this).attr('ct:value');
            
-           var value = parseInt(it) * 3.59 + 39;
+           var value = parseInt(it) * 1 + 40;
             var px = - value + 'px';
            
             $('.grnums.box_a').append('<li style=top:' + px + '>'+it+ '</li>');
