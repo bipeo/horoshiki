@@ -904,8 +904,12 @@ h2 {
     border-top:1px solid #d5dde9
 }
  
- 
- 
+.dgr_period.dgrt_tbl  tr td:first-child {
+    padding-left:25px;
+} 
+.dgr_period.dgrt_tbl {
+    color:#2e3240;
+} 
 
 .dgrt_tbl.col_8 td   {
      width:12.5%;
@@ -914,6 +918,10 @@ h2 {
      width:4.54%;
  }
 
+
+ .dgrt_tbl strong {
+         font-family: 'helveticaneuecyrbold';
+ }
  
  .dgrt_tbl tr td {
     white-space: nowrap;
@@ -927,6 +935,15 @@ h2 {
  }
   .dgrt_tbl tr.bg_9 td {
       background:#edf0f5;
+ }
+ .dgrt_tbl tr.bg_11 td {
+     background:#fffbd7;
+ }
+  .dgrt_tbl tr.bg_14 td {
+     background:#fffbd7;
+ }
+  .dgrt_tbl tr.bg_12 td {
+     background:#f0f0f0;
  }
  .dgrt_tbl tr.font_3 td {
      color:#2e3240;
@@ -1034,6 +1051,12 @@ h2 {
  }
  .dgrt_tbl.m3st .icon {
      top:35%;
+ }
+ 
+ .dgrt_tbl .icon.flin {
+     background-position:2px center;
+     background-image:url('../img/flin.png');
+    
  }
 
   .dgrt_tbl .date_graph .rline .outer-sel {
@@ -1791,6 +1814,11 @@ h2 {
     font-size: 14px;
     font-family: 'Conv_helveticaneuecyr-roman';
 }
+.csstbl.rad3 {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius:0px;
+
+}
 .dgrt  {
     width:100%;
 }
@@ -1802,6 +1830,9 @@ h2 {
 }
 .csstbl.mar_02 {
      margin-bottom:20px;
+}
+.csstbl.mar_10 {
+    margin-bottom:9px;
 }
 .csstbl.st_5 {
     border:0px;
@@ -1879,7 +1910,7 @@ h2 {
     cursor:pointer;
     display:inline-block;
     position:relative;
-    border-bottom: 1px dotted #82889c;
+    border-bottom: 1px dashed #82889c;
  }
  .outer-sel .select.selcalc {
     
@@ -2340,12 +2371,21 @@ h2 {
      margin: 0px 0px 10px 0px;
   }
   .maxgraph .cbsbox  {
+      position:relative;
       float:left;
       font-size:12px;
       color:#3f4352;
   }
+  .maxgraph .cbsbox  {
+      
+  }
   .maxgraph.st_2 .cbsbox {
       padding-top:12px; 
+  }
+  .cbsbox.min_2  .checkbox {
+      width:13px;
+      height:13px;
+      top:0px;
   }
   .cbsbox  .checkbox.revert.pink:not(checked) + label:before  {
       width:19px;
@@ -2353,13 +2393,25 @@ h2 {
       background: url(../img/pink_check.png) no-repeat;
       background-position:0px 0px;
     }
-    
+   .cbsbox.min_2  .checkbox:not(checked) + label:before  {
+      width:13px;
+      height:13px;
+      background-position:0px 0px;
+      right:auto;
+     
+    }
+    .cbsbox.min_2  .checkbox.green:not(checked) + label:before {
+        background: url(../img/check_04.png) no-repeat;   
+    } 
     .maxgraph   .checkbox.revert.pink:not(checked) + label:before{
         top:-2px;
     }
  
   .cbsbox .checkbox.revert.pink:checked + label:before {
     background-position: 0 -20px;
+    }
+    .cbsbox.min_2  .checkbox.green:checked + label:before {
+        background-position:0px -13px;
     }
   .dgr_compare .col:last-child {
      margin-left:10px;
@@ -2375,6 +2427,11 @@ h2 {
       font-size:12px;
       margin:0px 0px 18px 0px;
       
+  }
+  
+  .maxgraph .cbsbox.min_2 {
+      top:-4px;
+      left:-20px;
   }
   
 
@@ -3020,6 +3077,10 @@ h2 {
     border-right:0px;
 }
 
+.csstbl .wi34.size_1 .th {
+    padding: 10px 0px;
+}
+
 .two_ten .tit.mar_3 {
     margin-left:11%;
 }
@@ -3368,20 +3429,28 @@ color:#2e3240
 }
 
 .csstbl.calmar  .outer-sel.city {
-  /*  margin-right:75px; */
+
       margin-right:7.3%;
 }
+.csstbl.calmar.period  .outer-sel.city {
+     margin-left:12px;
+     margin-right:6.3%;
+}
 .csstbl.calmar  .outer-sel.month {
-    margin-left:10px; 
-    /*margin-left:36%; */
-    
+     margin-left:10px; 
      margin-right:52px; 
-      /* margin-right:5.3%; */
+     
 }
 .csstbl.calmar  .outer-sel.week {
      margin-right:53px; 
-     /* margin-right:5.3%;*/
+     
 }
+.csstbl.calmar.period .date_box2  {
+    margin:8px 4% 0px 0px;
+    
+    border-bottom:2px solid #c2c3c6;
+}   
+
 .side_rsec {
      width:300px;
      float:right;
@@ -4355,6 +4424,11 @@ left:10.2px;
    top:0px;
    width:auto !important;
 }
+.tabs_2.wm3 > ul > li > span, .tabs_2.wm3 > ul > li a {
+      padding:11px 16px 10px 16px;
+      text-align:center;
+}
+
 
 /*========================== table ==========================*/
 
@@ -4586,4 +4660,11 @@ left:10.2px;
 }
 .grnums.box_b li:before {
     background:#ee7a7a;
+}
+
+
+.date_box2 {
+    float:left;
+    display:block;
+    color:#2e3240;
 }

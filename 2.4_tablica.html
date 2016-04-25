@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>2.4_tablica</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="fonts/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="libs/jquery-1.8.3.min.js"></script> 
+    <script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
+    <link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" media="screen" />
+    
+    <script type="text/javascript">
+            $(document).ready(function() {
+	$(".fancybox").fancybox({
+            wrapCSS : 'photo-fancy',
+            padding: 0,
+            helpers : {
+                overlay: {
+                 css: {'background': 'rgba(63,67,82, 0.8)'} 
+                }
+            } 
+            
+	});
+        });
+        </script>
+
+  <script src="js/horosh.js"></script>
+  <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
+  <script type="text/javascript">
+	$(function(){
+       //  $.pixlayout({clip: true, src: "design/2-4.png", show:true, center:true, top:0, left:0, pervious: false});
+        }); 
+</script>
+</head>
+<body class="options_page">
+<!-- wrapper -->
+<div class="wrapper ">
+    
+    <div class="content">
+        <div class="cabtop">
+            <span class="navtogg open"></span>
+            <div class="uprof">
+                <img src="img/profava.png">
+                <div class="space">
+                    <span class="fio"><a href="#">Мария  Лупенкова</a></span>
+                <span class="job">Директор</span>
+                </div>
+            </div>
+            <div class="logout">
+                <span><a href="#">Выйти</a></span>
+                <a class="outlink" href="#"></a>
+            </div>
+        </div>
+        
+        <div class="barrower">
+            
+       
+        <div class="opsidebar collapsed">
+            <div class="inner">
+            <div class="key"><span>ОБЩИЕ НАСТРОЙКИ</span></div>
+            <ul>
+                <li><a href="#">Города и площадки</a></li>
+                <li><a href=#>Пользователи</a></li>
+                <li><a href=#>Справочники</a></li>
+                <li><a href=#>Настройки площадки</a></li>
+                <li><a href=#>Зоны доставки</a></li>
+            </ul>
+            <div class="key"><span>Персонал</span></div>
+            <ul>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href=#>Карта возможностей</a></li>
+                <li class="cur"><a href=#>График работы</a></li>
+          
+            </ul>
+            <div class="key"><span>ТРЕКИНГ</span></div>
+            <ul>
+                <li><a href="#">Журнал заказов</a></li>
+                <li><a href=#>План производства</a></li>
+                <li><a href=#>Заказы у курьеров</a></li>
+          
+            </ul>
+            <div class="key"><span>МАРКЕТИНГ</span></div>
+            <ul>
+                <li><a href="#">План продаж</a></li>
+                <li><a href=#>Меню</a></li>
+                <li><a href=#>Клиенты</a></li>
+                <li><a href=#>Отзывы</a></li>
+          
+            </ul>
+            <div class="key"><span>Отчеты</span></div>
+            <ul>
+                <li><a href="#">Показатели работы</a></li>
+                <li><a href=#>Отчет по курьерам</a></li>
+                <li><a href=#>Отзывы</a></li>
+                <li><a href=#>Карта доставленных 
+                заказов</a></li>
+          
+            </ul>
+            </div>
+        </div>
+        
+        <div class="opsidebar uncollapse">
+            <div class="key">
+                
+                <span>
+                    <a href=# class="sprite sprite-1_ic"></a>
+                    <a href=# class="sprite sprite-2_ic"></a>
+                    <a href=# class="sprite sprite-3_ic"></a>
+                    <a href=# class="sprite sprite-4_ic"></a>
+                    <a href=# class="sprite sprite-5_ic"></a>
+                    
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href=# class="sprite sprite-6_ic"></a>
+                    <a href=# class="sprite sprite-7_ic"></a>
+                    <a href=# class="cur sprite sprite-8_ic"></a>
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-9_ic"></a>
+                    <a href="#" class="sprite sprite-10_ic"></a>
+                    <a href="#" class="sprite sprite-11_ic"></a>
+                </span>
+            </div>
+             <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-12_ic"></a>
+                    <a href="#"  class="sprite sprite-13_ic"></a>
+                    <a href="#" class="sprite sprite-14_ic"></a>
+                    <a href="#" class="sprite sprite-15_ic"></a>
+                </span>
+            </div>
+             <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-16_ic"></a>
+                    <a href="#" class="sprite sprite-17_ic"></a>
+                    <a href="#" class="sprite sprite-18_ic"></a>
+                    <a href="#" class="sprite sprite-19_ic"></a>
+                </span>
+            </div>
+            
+            
+        </div>
+             </div>
+        
+        <div class="mainside">
+            <div class="crubs st_01 alleft">
+                <span class="ht">Персонал / Управление</span>
+                   <div class="appnew">
+                <a href="#">Новый</a>
+                </div>  
+            </div>
+            
+            
+            <div class="csstbl rad3 cnt mar_10 ">
+                <div class="row wi34 size_1">
+                     <div class="col w_25  th  first">Анализ </div>
+                     <div class="col w_25 th">Нехватка персонала</div>
+                    <div class="col w_25  th ">Нормативы</div>
+                    <div class="col w_25 th">Система оплаты</div>
+                </div>
+            
+               
+            </div>
+            
+           
+           
+            <div class="csstbl calmar cnt period st_5 ">
+                
+                  <div class="row">
+                
+                       
+                             <div class="outer-sel lnull city posmid mar_03 left">
+                                <select class="cus-sel">
+                                  <option value="volvo">Омск-1</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+
+                               
+                               </div>
+                      <span class="date_box2">21.03.2016</span>
+                        
+                   
+                    
+                          <div class="tabs_2 wm3">
+                              <ul>
+                                  <li class="act">
+                                       <a href="#">День</a>
+                                  </li>
+                                   <li>
+                                      <a href="#">Период</a>
+                                  </li>
+                                   <li>
+                                      <span>Вручную</span>
+                                  </li>
+                                  
+                              </ul>
+                              
+                          </div>
+                          
+                     
+                          
+                       
+                       
+                  
+                       <!-- 
+                          
+                      <div class="side_rsec">
+                          
+                          
+                      
+                             <div class="outer-sel month drop " >
+                             <div class="select selcalc ">
+                               
+                                 <div class="styledSelect active">Март</div>
+                                 <div class="opts calc">
+                                     <div class="bonder">
+                                            
+                                         <div class="cline">
+                                             <span class="icon prev"></span>
+                                             <div class="mdc"><span>2016</span></div>
+                                             <span class="icon next"></span>
+                                         </div>
+                                         
+                                         <ul class="dlist">
+                                             <li><span>Январь</span></li>
+                                             <li><span>Февраль</span></li>
+                                             <li class="act"><span>Март</span></li>
+                                             <li><span>Апрель</span></li>
+                                             <li><span>Май</span></li>
+                                             <li><span>Июнь</span></li>
+                                             <li><span>Август</span></li>
+                                             <li><span>Сентябрь</span></li>
+                                             <li><span>Октябрь</span></li>
+                                         </ul>
+                      
+                                        
+                                 </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                          
+                       
+                       
+                  
+                      
+                     
+                       
+                          
+                             <div class="outer-sel drop week" >
+                             <div class="select selcalc">
+                               
+                                 <div class="styledSelect active">3 недели</div>
+                                 <div class="opts calc">
+                                     <div class="bonder">
+                                            
+                                         <div class="cline">
+                                             <span class="icon prev"></span>
+                                             <div class="mdc"><span>Март (<em>3 нед</em>)</span></div>
+                                             <span class="icon next"></span>
+                                         </div>
+                                         
+                                         <ul class="dlist">
+                                             <li><span><em>1 нед </em> (1-7)</span></li>
+                                             <li><span><em>2 нед </em>(8-15)</span></li>
+                                             <li class="act"><span><em>3 нед </em>(16-23)</span></li>
+                                             <li><span><em>4 нед </em> (24-31)</span></li>
+                                         </ul>
+                      
+                                        
+                                 </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                          
+                       
+                       
+                  
+                       
+                          
+                            <div class="outer-sel day  pos4mid mar_03">
+                                <select class="cus-sel">
+                                  <option value="volvo">День</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">День</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+                               </div>
+                          
+                          </div>
+                          
+                       
+                       
+                  
+                      
+                       
+                  
+                </div> -->
+                
+            </div>
+            </div>
+            <div class="out_dgrt">
+                <div class="h2t">Март 2016 /  3 неделя (16-23) / <span class="spn">17 марта</span></div>
+                
+                <table class="dgrt_tbl dgr_period">
+                    
+                          <tr class="">
+                        <td>
+                            <span class="val bold"></span>
+                            <div class="maxgraph">         
+                        <div class="cbsbox min_2" >
+                        <div class="item">
+                <input type="checkbox" class="checkbox  green revert" checked="checked" id="check04">
+                <label for="check04"></label>
+                        </div>
+                    </div>
+                                </div>
+                        </td>
+                        
+                        <td>08</td>
+                        <td>09</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+    
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>00</td>
+                        <td>01</td>
+                        <td>02</td>
+                        <td>03</td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <!-- start -->
+                    <tr class="bg_11">
+                        <td><span class="icon  flin"></span>
+                            <strong>Администрация</strong></td>
+                        
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                      <tr class="bg_12">
+                        <td><span class="icon  flin"></span>
+                            <strong>Менеджеры</strong></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td>2</td>
+                        <td>18</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                      <tr class="bg_12">
+                        <td><span class="icon  flin"></span>
+                            <strong>Кассиры</strong></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="">
+                        <td><span class="icon  emp"></span>
+                           </td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- end -->
+                    
+                           <!-- start -->
+                    <tr class="bg_11">
+                        <td><span class="icon  flin"></span>
+                            <strong>Цех суши</strong></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                      <tr class="bg_12">
+                        <td><span class="icon  flin"></span>
+                            Чеков поступило</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                      <tr class="bg_12">
+                        <td><span class="icon  flin"></span>
+                            Чеков приготовлено</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="">
+                        <td><span class="icon  emp"></span>
+                           </td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- end -->
+                    
+                      <tr class="bg_12">
+                        <td><span class="icon  flin"></span>
+                            Скорость</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                      <tr class="bg_12">
+                        <td><span class="icon  flin"></span>
+                            Задержек</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                      <tr class="bg_12">
+                        <td><span class="icon  flin"></span>
+                            Нехватка сотрудников</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="">
+                        <td><span class="icon  emp"></span>
+                           </td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                  
+                    
+                         
+                      <tr class="bg_12">
+                        <td><span class="icon  flin"></span>
+                           Поваров факт</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                      <tr class="bg_12">
+                        <td><span class="icon  flin"></span>
+                            Поваров по плану</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                      <tr class="">
+                        <td><span class="icon  flin"></span>
+                           Поваров утчнено</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="">
+                        <td><span class="icon  emp"></span>
+                            
+                           </td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    
+                     <tr class="bg_11">
+                        <td><span class="icon  flin"></span>
+                            <strong>Упаковка</strong></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                      <tr class="bg_12">
+                        <td><span class="icon  flin"></span>
+                            Чеков поступило</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                      <tr class="">
+                        <td><span class="icon  flin"></span>
+                           Скорость</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                     <tr class="">
+                        <td><span class="icon  flin"></span>
+                           Сотрудников факт</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                     <tr class="">
+                        <td><span class="icon  emp"></span>
+                           Сотрудников уточнено</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr class="">
+                        <td><span class="icon  emp"></span>
+                            Скорость пр-ва+упаковка
+                           </td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+    
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                   
+                     
+                    
+                    <tr class="full">
+                        <td colspan="32">
+                            
+                        </td>
+                    </tr>
+                   
+                    
+                 
+                     <!-- start -->
+             
+                   
+             
+                    
+                     <!-- end -->
+                     
+                    
+                    
+                    
+                 
+            
+                  
+                 
+                    
+                   
+                    
+                     <!-- end -->
+                     
+                 
+            
+                   
+                    
+                    
+                
+                    
+                     <!-- end -->
+                    
+                    
+                    
+                    
+                </table>
+                <div class="space_fix_100"></div>
+                
+            </div>
+            
+            </div>
+
+        </div>
+    <!--content -->
+
+  
+
+</div><!-- END wrapper -->
+
+
+
+
+</body>
+</html>
+
