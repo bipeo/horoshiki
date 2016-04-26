@@ -940,8 +940,10 @@ h2 {
      background:#fffbd7;
  }
   .dgrt_tbl tr.bg_14 td {
-     background:#fffbd7;
+     background:#d7efff;
  }
+
+
   .dgrt_tbl tr.bg_12 td {
      background:#f0f0f0;
  }
@@ -4191,6 +4193,9 @@ left:10.2px;
 }
 .space_fix_100px {
     height:100px;
+}
+.space_fix_50 {
+    height:50px;
 }
 .butki {
     font-size:12px;
