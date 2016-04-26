@@ -3069,10 +3069,20 @@ h2 {
 .csstbl .wi34  .th {
     color:#2e3240;
 }
+.csstbl  .col  .hk {
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0px;
+    top:0px;
+   
+} 
 .csstbl .wi34 .th.disact {
     color:#d5dde9;
 }
 .csstbl .wi34 .col {
+    position:relative;
     border-right:1px solid #d5dde9
 }
 .csstbl .wi34 .col:last-child {
@@ -3349,6 +3359,7 @@ h2 {
     
 }
 .csstbl .row .col {
+    position:relative;
     box-sizing: border-box;
    
 }
