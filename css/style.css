@@ -909,6 +909,7 @@ h2 {
 } 
 .dgr_period.dgrt_tbl {
     color:#2e3240;
+    line-height: 1.1em;
 } 
 
 .dgrt_tbl.col_8 td   {
@@ -1008,6 +1009,9 @@ h2 {
  .dgrt_tbl tr td:first-child {
      padding-left:20px;
      text-align: left;
+ }
+  .dgrt_tbl tr.row43 td:first-child  {
+     border-left:0px;
  }
  .dgrt_tbl tr.full  td {
      
@@ -4444,7 +4448,10 @@ left:10.2px;
       padding:11px 16px 10px 16px;
       text-align:center;
 }
-
+.tabs_2.wm4 > ul > li > span, .tabs_2.wm4 > ul > li a {
+      padding:11px 25px 10px 25px;
+      text-align:center;
+}
 
 /*========================== table ==========================*/
 
@@ -4683,4 +4690,17 @@ left:10.2px;
     float:left;
     display:block;
     color:#2e3240;
+}
+
+.tabs_2.wm4.mar {
+    margin-right:57px;
+}
+ .row_wm3 .tabs_2 > ul  {
+     margin-top:3px;
+}
+.bg_002 {
+    background-color:#fceded;
+}
+.bg_003 {
+    background-color:#f0f0f0;
 }
