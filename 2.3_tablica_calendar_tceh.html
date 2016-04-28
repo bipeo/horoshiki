@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>2.3_tablica_calendar_tceh</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="fonts/style.css" type="text/css">
+    <script src="libs/jquery-1.8.3.min.js"></script> 
+    <script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
+    <link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" media="screen" />
+    <link href="libs/datepicker/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
+    <script src="libs/datepicker/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+    <script src="libs/datepicker/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+   
+        
+
+
+    <link rel="stylesheet" href="libs/chartist/chartist.css">
+    <script type="text/javascript" src="libs/chartist/chartist.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+
+        <script>
+         $(document).ready(function() {
+
+//$('.datepicker').datepicker({
+//   
+//   altFormat: "yy-mm-dd", 
+//   showOtherMonths: true,
+//   selectOtherMonths: true,
+//   beforeShow: function(input, inst) {
+//      
+//       $('#ui-datepicker-div, .ui-datepicker-inline').addClass('dpcust');
+//   }
+//});
+//$('.dp_date').each(function(i,e){
+//        var $d = $(this);
+//        $d.datepicker({
+//            altFormat: "dd.mm.y", 
+//            showOtherMonths: true,
+//            selectOtherMonths: true,
+//            altField: $d.data('altfield'),
+//            defaultDate: $d.data('defaultdate'),
+//            beforeShow: function(input, inst) {
+//            $('#ui-datepicker-div, .ui-datepicker').addClass('dpcust');
+//            }
+//           
+//        });
+//     
+//    });
+
+//     $('.input_01').on('click',function() {
+//        var id =  $(this).attr('id');
+//        var dt = $('.dp_date').data('altfield');
+//        $('.dp_date').removeClass('act');
+//        $('*[data-altfield="#'+id+'"]').addClass('act');
+//  
+//    });
+    
+    
+    $('.input_01').on('click',function() {
+        var id =  $(this).attr('id');
+        var dt = $('.dp_date').data('altfield');
+        $('.dp_date').hide();
+        $('*[data-altfield="#'+id+'"]').show();
+  
+    });
+
+
+    /*dp_date.from_1 start*/
+     $(".dp_date.from_1").datepicker({
+         changeMonth: false,    
+         altFormat: "dd.mm.y",
+         altField: $('#startdate_1'),
+         onSelect: function(date, obj){
+             
+        function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }
+        
+         $('#startdate_1').val(cutYear());   
+        },
+         onClose: function(selectedDate) {
+            $("#enddate_1").datepicker("option", "minDate", selectedDate);
+        }
+    });
+    
+    /*dp_date.from_1 end */
+    
+    /*.dp_date.to_1 start*/
+    
+        $(".dp_date.to_1").datepicker({
+        changeMonth: false,    
+        altFormat: "dd.mm.y",
+        altField: $('#enddate_1'),
+        onSelect: function(date, obj){
+            
+          function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }  
+         
+        $('#enddate_1').val(cutYear());   
+        },
+        
+         onClose: function(selectedDate) {
+            $("#startdate_1").datepicker("option", "maxDate", selectedDate);
+        }
+        
+        
+        });
+         /*.dp_date.to_1 end */
+        
+            
+          /*dp_date.from_2 start */
+          $(".dp_date.from_2").datepicker({
+         changeMonth: false,    
+         altFormat: "dd.mm.y",
+         altField: $('#startdate_2'),
+         onSelect: function(date, obj){
+             
+        function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }
+        
+         $('#startdate_2').val(cutYear());   
+        },
+         onClose: function(selectedDate) {
+            $("#enddate_2").datepicker("option", "minDate", selectedDate);
+        }
+    });
+            /*dp_date.from_2 end */
+
+    
+    
+       /*.dp_date.to_2 start */
+        $(".dp_date.to_2").datepicker({
+        changeMonth: false,    
+        altFormat: "dd.mm.y",
+        altField: $('#enddate_2'),
+        onSelect: function(date, obj){
+            
+          function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }  
+         
+        $('#enddate_2').val(cutYear());   
+        },
+        
+         onClose: function(selectedDate) {
+            $("#startdate_2").datepicker("option", "maxDate", selectedDate);
+        }
+        
+        
+        });
+        /*.dp_date.to_2 end */
+
+   });
+</script>
+    <script type="text/javascript">
+//            $(document).ready(function() {
+//	$(".fancybox").fancybox({
+//            wrapCSS : 'photo-fancy',
+//            padding: 0,
+//            helpers : {
+//                overlay: {
+//                 css: {'background': 'rgba(63,67,82, 0.8)'} 
+//                }
+//            } 
+//            
+//	});
+//        });
+        </script>
+
+
+    
+  <script src="js/horosh.js"></script>
+  <script src="libs/pixLayout/jquery.pixlayout.0.9.7.js"></script>
+  <script type="text/javascript">
+	$(function(){
+        // $.pixlayout({clip: true, src: "design/2.3_tablica_calendar_tceh.png", show:true, center:true, top:0, left:0, pervious: false});
+        }); 
+</script>
+</head>
+<body class="options_page"  >
+<!-- wrapper -->
+<div class="wrapper "  >
+    
+    <div class="content">
+        <div class="cabtop">
+            <span class="navtogg open"></span>
+            <div class="uprof">
+                <img src="img/profava.png">
+                <div class="space">
+                    <span class="fio"><a href="#">Мария  Лупенкова</a></span>
+                <span class="job">Директор</span>
+                </div>
+            </div>
+            <div class="logout">
+                <span><a href="#">Выйти</a></span>
+                <a class="outlink" href="#"></a>
+            </div>
+        </div>
+        
+        <div class="barrower">
+            
+       
+        <div class="opsidebar collapsed">
+            <div class="inner">
+            <div class="key"><span>ОБЩИЕ НАСТРОЙКИ</span></div>
+            <ul>
+                <li><a href="#">Города и площадки</a></li>
+                <li><a href=#>Пользователи</a></li>
+                <li><a href=#>Справочники</a></li>
+                <li><a href=#>Настройки площадки</a></li>
+                <li><a href=#>Зоны доставки</a></li>
+            </ul>
+            <div class="key"><span>Персонал</span></div>
+            <ul>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href=#>Карта возможностей</a></li>
+                <li class="cur"><a href=#>График работы</a></li>
+          
+            </ul>
+            <div class="key"><span>ТРЕКИНГ</span></div>
+            <ul>
+                <li><a href="#">Журнал заказов</a></li>
+                <li><a href=#>План производства</a></li>
+                <li><a href=#>Заказы у курьеров</a></li>
+          
+            </ul>
+            <div class="key"><span>МАРКЕТИНГ</span></div>
+            <ul>
+                <li><a href="#">План продаж</a></li>
+                <li><a href=#>Меню</a></li>
+                <li><a href=#>Клиенты</a></li>
+                <li><a href=#>Отзывы</a></li>
+          
+            </ul>
+            <div class="key"><span>Отчеты</span></div>
+            <ul>
+                <li><a href="#">Показатели работы</a></li>
+                <li><a href=#>Отчет по курьерам</a></li>
+                <li><a href=#>Отзывы</a></li>
+                <li><a href=#>Карта доставленных 
+                заказов</a></li>
+          
+            </ul>
+            </div>
+        </div>
+        
+        <div class="opsidebar uncollapse">
+            <div class="key">
+                
+                <span>
+                    <a href=# class="sprite sprite-1_ic"></a>
+                    <a href=# class="sprite sprite-2_ic"></a>
+                    <a href=# class="sprite sprite-3_ic"></a>
+                    <a href=# class="sprite sprite-4_ic"></a>
+                    <a href=# class="sprite sprite-5_ic"></a>
+                    
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href=# class="sprite sprite-6_ic"></a>
+                    <a href=# class="sprite sprite-7_ic"></a>
+                    <a href=# class="cur sprite sprite-8_ic"></a>
+                </span>
+            </div>
+            <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-9_ic"></a>
+                    <a href="#" class="sprite sprite-10_ic"></a>
+                    <a href="#" class="sprite sprite-11_ic"></a>
+                </span>
+            </div>
+             <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-12_ic"></a>
+                    <a href="#"  class="sprite sprite-13_ic"></a>
+                    <a href="#" class="sprite sprite-14_ic"></a>
+                    <a href="#" class="sprite sprite-15_ic"></a>
+                </span>
+            </div>
+             <div class="key">
+                <span>
+                    <a href="#" class="sprite sprite-16_ic"></a>
+                    <a href="#" class="sprite sprite-17_ic"></a>
+                    <a href="#" class="sprite sprite-18_ic"></a>
+                    <a href="#" class="sprite sprite-19_ic"></a>
+                </span>
+            </div>
+            
+            
+        </div>
+             </div>
+        
+        <div class="mainside">
+            <div class="crubs st_01 alleft">
+                <span class="ht">Персонал / График работы</span>
+                   <div class="appnew">
+                <a href="#">Новый</a>
+                </div>  
+            </div>
+            
+           
+           
+            <div class="csstbl calmar cnt st_5 ">
+                
+                  <div class="row">
+                
+                       
+                             <div class="outer-sel lnull city posmid mar_03 left">
+                                <select class="cus-sel">
+                                  <option value="volvo">Омск-1</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="mercedes">Mercedes</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+
+                               
+                               </div>
+                        
+                   
+                    
+                          <div class="tabs_2 mar_2">
+                              <ul>
+                                  <li>
+                                       <a href="#">колл центр</a>
+                                       
+                                  </li>
+                                   <li>
+                                      <a href="#">Администрация</a>
+                                  </li>
+                                   <li class="act">
+                                      <a class="drtab" href="#">Производство</a>
+                                         <div class="outer-sel pad drop pos6mid left ">
+                             <div class="select">
+                               
+                                 <div class="opts minvert m_2">
+                                     <div class="cbsbox">
+                                    <div class="item">
+                                     <label for="unitform2" class="chlabel chkd revert">
+                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
+                                        Цех суши 
+                                     </label>
+                                     </div>
+                                         
+                                             <div class="item">
+                                     <label for="unitform3" class="chlabel revert">
+                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
+                                        Холодный цех 
+                                     </label>
+                                     </div>
+                                             <div class="item">
+                                     <label for="unitform4" class="chlabel revert">
+                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
+                                        Пицца 
+                                     </label>
+                                     </div>
+                                            <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        Упаковка 
+                                     </label>
+                                     </div>
+                                        
+                                          <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        Уборка 
+                                     </label>
+                                     </div>
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                                </div>
+                                   
+                                  </li>
+                                   <li>
+                                      <a href="#">Курьеры</a>
+                                  </li>
+                              </ul>
+                              
+                          </div>
+                          
+                     
+                          
+                       
+                       
+                          
+                      
+                     
+                       
+                          
+                      <div class="side_rsec pleft">
+                          
+                                    <div class="outer-sel off_2 date_cal drop " >
+                             <div class="select selcalc ">
+                               
+                                 <div class="styledSelect">Выбрать период</div>
+                                 <div class="opts  date_slc " >
+                                     <div class="cld date_mnt">
+                                         
+                                         <div class="row fortbox">
+                 <span class="tbox">
+                     c
+                 </span>
+                 
+                                             
+                   <input class="input_01 st_669" id="startdate_1" placeholder="" type="text" value="">
+                  <span class="tbox">
+                     по
+                 </span>
+                 <input class="input_01 st_669" id="enddate_1" placeholder="" type="text" value="">
+                 </div>
+                                         <div class="dper">
+                                             <div class="dp_date from_1 dpcust" data-altfield="#startdate_1" data-defaultdate="-30d"></div>
+                                             <div class="dp_date to_1 dpcust" data-altfield="#enddate_1" data-defaultdate="+0d"></div>
+                                             
+                                             
+                                         </div>
+                                         
+                                         
+                                         
+                                           <div class="buts alcenter mar_024 cmarg">
+                <input class="bttn black" type="submit" value="Выбрать">
+                </div>
+                                          </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                           
+                           
+                          
+                          </div>
+                          
+                       
+                       
+                  
+                      
+                       
+                  
+                </div>
+                
+            </div>
+            
+            <div class="out_dgrt ">
+                <div class="h2t mar2">Чеков <span class="spn">150 / 170</span>    &nbsp; &nbsp; LC: <span class="spn">23%</span> </div>
+
+                <table class="dgrt_tbl m3st  col_22">
+                            <tr class="rowcomp"><td colspan="2" class="comp">
+                                    <div class="dgr_compare">
+                                        <span class="tt compare_but">Сравнить</span>
+<!--                                           <div class="outer-sel cldbox">
+         
+         <div class="opts">
+                   
+                               
+             <div class="cld">
+                 <div class="row">
+                 <span class="tbox">
+                     c
+                 </span>
+                   <input class="input_01 st_669"  placeholder="22-09" type="text" value="">
+                  <span class="tbox">
+                     по
+                 </span>
+                 <input class="input_01 st_669" placeholder="22-10" type="text" value="">
+                 </div>
+                 <div class="row">
+                      <span class="dbox">
+                     вт 12.03
+                 </span>
+                    <div class="cbsbox ">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert" checked="checked" id="check01">
+                <label for="check01">150</label>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="row">
+                      <span class="dbox">
+                     вт 12.03
+                 </span>
+                    <div class="cbsbox ">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert" checked="checked" id="check02">
+                <label for="check02">150</label>
+                        </div>
+                    </div>
+                 </div>
+                  <div class="buts alcenter mar_023 cmarg">
+                <input class="bttn black" type="submit" value="Сравнить">
+                </div>
+             </div>   
+             
+                 
+           
+                        
+             
+             </div>
+         
+         </div> -->
+                                        <!-- outer-sel end -->
+                                        
+                                             <div class="outer-sel off_1 date_cal drop " >
+                             <div class="select selcalc ">
+                               
+                                 <div class="opts  date_slc">
+                                     <div class="cld date_mnt">
+                                         
+                                         <div class="row fortbox">
+                 <span class="tbox">
+                     c
+                 </span>
+                 
+                                             
+                   <input class="input_01 st_669" id="startdate_2" placeholder="" type="text" value="">
+                  <span class="tbox">
+                     по
+                 </span>
+                 <input class="input_01 st_669" id="enddate_2" placeholder="" type="text" value="">
+                 </div>
+                                         <div class="dper">
+                                             <div class="dp_date from_2 three dpcust act" data-altfield="#startdate_2" data-defaultdate="-30d"></div>
+                                             <div class="dp_date to_2 four dpcust" data-altfield="#enddate_2" data-defaultdate="+0d"></div>
+                                             
+                                             
+                                         </div>
+                                           <div class="buts alcenter mar_024 cmarg">
+                <input class="bttn black" type="submit" value="Выбрать">
+                </div>
+                                          </div>
+                                 </div>
+                             </div>
+                             </div>
+                                        
+                                        <div class="line">
+                                            <div class="col">
+                                                <span>ПН 12-03 - 150</span>
+                                                <span>ПН 12-03 - 150</span>
+                                                <span>ПН 12-03 - 150</span>
+                                            </div>
+                                             <div class="col">
+                                                <span>ПН 12-03 - 150</span>
+                                                <span>ПН 12-03 - 150</span>
+                                                <span>ПН 12-03 - 150</span>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                        </td>
+                        <td class="maxgraph st_2" colspan="20">
+                            <div class="row">
+                            <div class="cbsbox pink ">
+                        <div class="item">
+                <input type="checkbox" class="checkbox pink revert" checked="" id="check04">
+                <label for="check04">Макс</label>
+                        </div>
+                    </div>
+                                </div>
+                            <div class="row">
+                            
+                            <div class="ct-chart">
+                              
+                            </div>     
+                            <ul class="grnums box_a"></ul>
+                            <ul class="grnums box_b"></ul>
+                            </div>
+                            
+                           
+
+                            
+                        </td>        
+                            </tr>
+                    <tr class="rdrg font_3">
+                        
+                        <td><span class="icon  emp"></span>
+                        <span class="val bold"> Часы</span>
+                        </td>
+                        <td>07</td>
+                        <td>08</td>
+                        <td>09</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+    
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>01</td>
+                        <td>02</td>
+                        <td>03</td>
+                    </tr>
+                      <tr class="font_3">
+                        <td><span class="icon  emp"></span>
+                            <span class="val bold">Чеков</span></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+    
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="2"></td>
+                    </tr>
+           
+                    <tr class="bg_8">
+                        <td><span class="icon emp"></span>Рек-но</td>
+                        <td>180</td>
+                        <td>110</td>
+                        <td>120</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        <td>180</td>
+                        
+                        
+                          
+                        
+                    </tr>
+                    
+                      
+                    <tr class="bg_8">
+                        <td><span class="icon emp"></span><span class="val">На смене</span></td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        
+                  
+                        
+                    </tr>
+                    <tr class="font_3 nfirst">
+                        <td><span class="icon minus"></span><span class="val u">Иванов М</span></td>
+                        <td>
+                           <div class="fill_plash size_02" style="width:260%">
+                               <div class="buter one">
+                                   <span class="btog"></span>
+                                   <div class="outer-sel pad drop  pos3mid left ">
+                             <div class="select">
+                               
+                                
+                                 <div class="opts minvert">
+                                     <div class="cbsbox">
+                                    <div class="item">
+                                     <label for="unitform2" class="chlabel chkd revert">
+                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
+                                        1 
+                                     </label>
+                                         <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="10" value="">
+                                                </div>
+                                     </div>
+                                         
+                                             <div class="item">
+                                     <label for="unitform3" class="chlabel revert">
+                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
+                                        0 
+                                     </label>
+                                                  <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="11:00" value="">
+                                                </div>
+                                     </div>
+                                             <div class="item">
+                                     <label for="unitform4" class="chlabel revert">
+                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
+                                        б 
+                                     </label>
+                                                  <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="12:00" value="">
+                                                </div>
+                                     </div>
+                                            <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        н 
+                                     </label>
+                                                <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="15:00" value="">
+                                                </div>
+                                     </div>
+                                         <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        н 
+                                     </label>
+                                                <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="16:00" value="">
+                                                </div>
+                                     </div>
+                                        
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                                   
+                                   
+                               </div>
+                               
+                               <div class="buter two">
+                                   
+                                      <span class="btog"></span>
+                                   <div class="outer-sel pad drop  pos3mid left ">
+                             <div class="select">
+                               
+                                
+                                 <div class="opts minvert">
+                                     <div class="cbsbox">
+                                    <div class="item">
+                                     <label for="unitform2" class="chlabel chkd revert">
+                                        <input type="checkbox" id="unitform2" checked="checked" class="checkbox" name="" value="1">
+                                        1 
+                                     </label>
+                                         <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="10" value="">
+                                                </div>
+                                     </div>
+                                         
+                                             <div class="item">
+                                     <label for="unitform3" class="chlabel revert">
+                                        <input type="checkbox" id="unitform3" class="checkbox" name="" value="1">
+                                        0 
+                                     </label>
+                                                  <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="11:00" value="">
+                                                </div>
+                                     </div>
+                                             <div class="item">
+                                     <label for="unitform4" class="chlabel revert">
+                                        <input type="checkbox" id="unitform4" class="checkbox" name="" value="1">
+                                        б 
+                                     </label>
+                                                  <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="12:00" value="">
+                                                </div>
+                                     </div>
+                                            <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        н 
+                                     </label>
+                                                <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="15:00" value="">
+                                                </div>
+                                     </div>
+                                         <div class="item">
+                                     <label for="unitform5" class="chlabel revert">
+                                        <input type="checkbox" id="unitform5" class="checkbox" name="" value="1">
+                                        н 
+                                     </label>
+                                                <div class="dater_box">
+                                                    <input class="input_01 st_669 " type="text" placeholder="16:00" value="">
+                                                </div>
+                                     </div>
+                                        
+                        </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                                   
+                               </div>
+                           </div>   
+
+                          
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        
+                        
+                        
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        
+                        
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                        <td><input type=text class="input_01 intd st_669" placeholder="1"></td>
+                 
+                        
+                    </tr>
+                    
+                    
+                     <tr class="">
+                        <td><span class="icon emp"></span><span class="val lab2"><a href="#">Добавить</a></span></td>
+                        <td>
+                          
+                        </td>
+                       <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                        
+                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                 
+                        
+                    </tr>
+                    
+               
+                    
+                    
+                </table>
+                <div class="space_fix_100"></div>
+                
+            </div>
+            
+            </div>
+
+        </div>
+    <!--content -->
+
+  
+
+</div><!-- END wrapper -->
+
+
+
+
+</body>
+</html>
+

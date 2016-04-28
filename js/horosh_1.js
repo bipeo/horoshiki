@@ -24,9 +24,9 @@ $(function(){
             
             
      $('.drop.outer-sel .styledSelect').on('click',function() {
-          $(this).parent().find('.dp_date').first().show();
+           
            $('.drop.outer-sel').find('.opts').hide();
-         $(this).toggleClass('active').next('.opts').toggle();
+         $(this).toggleClass('active').next('.opts').show();
      });
 
      $('.buter').find('.btog').on('click',function() {
@@ -71,10 +71,7 @@ $(function(){
      });
      
      $('.compare_but').on('click',function() {
-         
          $(this).next().find('.opts').toggle(); //for drtab
-         $(this).parent().find('.dp_date').first().show();
-
      });
      
      
@@ -84,7 +81,7 @@ $(function(){
             
              $(document).mouseup(function (e)
     {
-        var container = $(".drop.outer-sel .opts, .drop.outer-sel .select,  .drtab, .cldbox .opts, .compare_but, .btog, .tg_oun, .ui-datepicker ");
+        var container = $(".drop.outer-sel .opts, .drop.outer-sel .select, .drtab, .cldbox .opts, .compare_but, .btog, .tg_oun, .ui-datepicker");
 
         if (!container.is(e.target) 
             && container.has(e.target).length === 0) 
