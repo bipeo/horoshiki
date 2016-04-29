@@ -59,11 +59,14 @@
 //  
 //    });
     
+    //date_cal
+   
     
     $('.input_01').on('click',function() {
         var id =  $(this).attr('id');
         var dt = $('.dp_date').data('altfield');
-        $('.dp_date').hide();
+        var cpar = $('*[data-altfield="#'+id+'"]').parent();
+        cpar.find('.dp_date').not($('*[data-altfield="#'+id+'"]')).hide();
         $('*[data-altfield="#'+id+'"]').show();
   
     });
@@ -443,7 +446,7 @@
                  <input class="input_01 st_669" id="enddate_1" placeholder="" type="text" value="">
                  </div>
                                          <div class="dper">
-                                             <div class="dp_date from_1 dpcust" data-altfield="#startdate_1" data-defaultdate="-30d"></div>
+                                             <div style="display:block;" class="dp_date from_1 dpcust" data-altfield="#startdate_1" data-defaultdate="-30d"></div>
                                              <div class="dp_date to_1 dpcust" data-altfield="#enddate_1" data-defaultdate="+0d"></div>
                                              
                                              
@@ -553,8 +556,8 @@
                  <input class="input_01 st_669" id="enddate_2" placeholder="" type="text" value="">
                  </div>
                                          <div class="dper">
-                                             <div class="dp_date from_2 three dpcust act" data-altfield="#startdate_2" data-defaultdate="-30d"></div>
-                                             <div class="dp_date to_2 four dpcust" data-altfield="#enddate_2" data-defaultdate="+0d"></div>
+                                             <div style="display:block;" class="dp_date from_2  dpcust" data-altfield="#startdate_2" data-defaultdate="-30d"></div>
+                                             <div class="dp_date to_2  dpcust" data-altfield="#enddate_2" data-defaultdate="+0d"></div>
                                              
                                              
                                          </div>

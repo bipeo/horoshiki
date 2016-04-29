@@ -24,8 +24,8 @@ $(function(){
             
             
      $('.drop.outer-sel .styledSelect').on('click',function() {
-          $(this).parent().find('.dp_date').first().show();
-           $('.drop.outer-sel').find('.opts').hide();
+         $('.outer-sel.cldbox').find('.opts').hide();
+         $('.drop.outer-sel').find('.opts').hide();
          $(this).toggleClass('active').next('.opts').toggle();
      });
 
@@ -71,10 +71,8 @@ $(function(){
      });
      
      $('.compare_but').on('click',function() {
-         
+         $('.drop.outer-sel').find('.opts').hide(); 
          $(this).next().find('.opts').toggle(); //for drtab
-         $(this).parent().find('.dp_date').first().show();
-
      });
      
      
