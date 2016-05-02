@@ -888,9 +888,14 @@ h2 {
             padding: 1px;
             border:0px;
     }
- .dgrt_tbl tr:first-child td {
-    border-top:1px solid #d5dde9;
-}
+    .dgrt_tbl tr:first-child td {
+       border-top:1px solid #d5dde9;
+   }
+
+    .dgrt_tbl.m3st tr td .ui-datepicker th {
+         border:0px;
+    }
+
 /* top-left border-radius */
  .dgrt_tbl tr:first-child td:first-child {
   border-top-left-radius: 4px;
@@ -4238,16 +4243,12 @@ left:10.2px;
 }
 .dpcust .ui-state-hover, .dpcust.ui-state-hover
 .dpcust .ui-widget-content .ui-state-hover, .dpcust.ui-widget-content .ui-state-hover,
-
 .dpcust .ui-widget-header .ui-state-hover, .dpcust.ui-widget-header .ui-state-hover,
-
 .dpcust .ui-state-focus, .dpcust.ui-state-focus,
 .dpcust .ui-widget-content .ui-state-focus, .dpcust.ui-widget-content .ui-state-focus,
-
 .dpcust .ui-widget-header .ui-state-focus {
         background:#97b5ea;
         color: #fff
-/*	color: #fff !important ;*/
 }
 .dpcust .ui-datepicker-calendar .ui-state-hover {
      background:#97b5ea !important;
@@ -4827,4 +4828,12 @@ left:10.2px;
 }
 .bg_003 {
     background-color:#f0f0f0;
+}
+
+.active .ui-state-default{
+    background: rgba(102, 255, 102, 1)
+}
+
+.active:hover .ui-state-default{
+    background: rgba(255, 255, 0, 1)
 }

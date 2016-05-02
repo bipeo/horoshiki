@@ -25,161 +25,54 @@
         <script>
          $(document).ready(function() {
 
-//$('.datepicker').datepicker({
-//   
-//   altFormat: "yy-mm-dd", 
-//   showOtherMonths: true,
-//   selectOtherMonths: true,
-//   beforeShow: function(input, inst) {
-//      
-//       $('#ui-datepicker-div, .ui-datepicker-inline').addClass('dpcust');
-//   }
-//});
-//$('.dp_date').each(function(i,e){
-//        var $d = $(this);
-//        $d.datepicker({
-//            altFormat: "dd.mm.y", 
-//            showOtherMonths: true,
-//            selectOtherMonths: true,
-//            altField: $d.data('altfield'),
-//            defaultDate: $d.data('defaultdate'),
-//            beforeShow: function(input, inst) {
-//            $('#ui-datepicker-div, .ui-datepicker').addClass('dpcust');
-//            }
-//           
-//        });
-//     
-//    });
-
-//     $('.input_01').on('click',function() {
-//        var id =  $(this).attr('id');
-//        var dt = $('.dp_date').data('altfield');
-//        $('.dp_date').removeClass('act');
-//        $('*[data-altfield="#'+id+'"]').addClass('act');
-//  
-//    });
-    
-    //date_cal
-   
-    
-    $('.input_01').on('click',function() {
-        var id =  $(this).attr('id');
-        var dt = $('.dp_date').data('altfield');
-        var cpar = $('*[data-altfield="#'+id+'"]').parent();
-        cpar.find('.dp_date').not($('*[data-altfield="#'+id+'"]')).hide();
-        $('*[data-altfield="#'+id+'"]').show();
-  
-    });
-
 
     /*dp_date.from_1 start*/
-     $(".dp_date.from_1").datepicker({
-         changeMonth: false,    
-         altFormat: "dd.mm.y",
-         altField: $('#startdate_1'),
-         onSelect: function(date, obj){
-             
-        function cutYear() {
-        delimiter = '.',
-        start = 2,
-        tokens = date.split(delimiter).slice(start),
-        dm = tokens.join(delimiter);  
-        substr = date.substr(0,6);
-        year = dm.substr(2,4);
-            return (substr +  year).toString();
-        }
-        
-         $('#startdate_1').val(cutYear());   
-        },
-         onClose: function(selectedDate) {
-            $("#enddate_1").datepicker("option", "minDate", selectedDate);
-        }
+    $(".from_1").datepicker({
+    changeMonth: false,
+    altFormat: "dd.mm.y",
+    altField: "#startdate_1",
+    onSelect: function(selectedDate) {
+        $(".to_1").datepicker("option", "minDate", selectedDate)
+    }
     });
     
     /*dp_date.from_1 end */
     
     /*.dp_date.to_1 start*/
-    
-        $(".dp_date.to_1").datepicker({
-        changeMonth: false,    
+      $(".to_1").datepicker({
+        changeMonth: false,
         altFormat: "dd.mm.y",
-        altField: $('#enddate_1'),
-        onSelect: function(date, obj){
-            
-          function cutYear() {
-        delimiter = '.',
-        start = 2,
-        tokens = date.split(delimiter).slice(start),
-        dm = tokens.join(delimiter);  
-        substr = date.substr(0,6);
-        year = dm.substr(2,4);
-            return (substr +  year).toString();
-        }  
-         
-        $('#enddate_1').val(cutYear());   
-        },
-        
-         onClose: function(selectedDate) {
-            $("#startdate_1").datepicker("option", "maxDate", selectedDate);
+        altField: "#enddate_1",
+        onSelect: function(selectedDate) {
+            $(".from_1").datepicker("option", "maxDate", selectedDate)
         }
-        
-        
-        });
+    });
+
          /*.dp_date.to_1 end */
         
             
           /*dp_date.from_2 start */
-          $(".dp_date.from_2").datepicker({
-         changeMonth: false,    
-         altFormat: "dd.mm.y",
-         altField: $('#startdate_2'),
-         onSelect: function(date, obj){
-             
-        function cutYear() {
-        delimiter = '.',
-        start = 2,
-        tokens = date.split(delimiter).slice(start),
-        dm = tokens.join(delimiter);  
-        substr = date.substr(0,6);
-        year = dm.substr(2,4);
-            return (substr +  year).toString();
-        }
-        
-         $('#startdate_2').val(cutYear());   
-        },
-         onClose: function(selectedDate) {
-            $("#enddate_2").datepicker("option", "minDate", selectedDate);
-        }
+              $(".from_2").datepicker({
+    changeMonth: false,
+    altFormat: "dd.mm.y",
+    altField: "#startdate_2",
+    onSelect: function(selectedDate) {
+        $(".to_3").datepicker("option", "minDate", selectedDate)
+    }
     });
+
             /*dp_date.from_2 end */
 
     
     
        /*.dp_date.to_2 start */
-        $(".dp_date.to_2").datepicker({
-        changeMonth: false,    
+        $(".to_2").datepicker({
+        changeMonth: false,
         altFormat: "dd.mm.y",
-        altField: $('#enddate_2'),
-        onSelect: function(date, obj){
-            
-          function cutYear() {
-        delimiter = '.',
-        start = 2,
-        tokens = date.split(delimiter).slice(start),
-        dm = tokens.join(delimiter);  
-        substr = date.substr(0,6);
-        year = dm.substr(2,4);
-            return (substr +  year).toString();
-        }  
-         
-        $('#enddate_2').val(cutYear());   
-        },
-        
-         onClose: function(selectedDate) {
-            $("#startdate_2").datepicker("option", "maxDate", selectedDate);
+        altField: "#enddate_2",
+        onSelect: function(selectedDate) {
+            $(".from_1").datepicker("option", "maxDate", selectedDate)
         }
-        
-        
         });
         /*.dp_date.to_2 end */
 

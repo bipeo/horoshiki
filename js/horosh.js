@@ -257,6 +257,16 @@ $('select.cus-sel').each(function () {
             });
             
             
+             $('.input_01').on('click',function() {
+        var id =  $(this).attr('id');
+        var dt = $('.dp_date').data('altfield');
+        var cpar = $('*[data-altfield="#'+id+'"]').parent();
+        cpar.find('.dp_date').not($('*[data-altfield="#'+id+'"]')).hide();
+        $('*[data-altfield="#'+id+'"]').show();
+  
+        });
+            
+            
      
             
           
