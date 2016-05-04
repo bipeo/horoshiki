@@ -26,53 +26,118 @@
          $(document).ready(function() {
 
 
+    
+    //date_cal
+
+
     /*dp_date.from_1 start*/
-    $(".from_1").datepicker({
-    changeMonth: false,
-    altFormat: "dd.mm.y",
-    altField: "#startdate_1",
-    onSelect: function(selectedDate) {
-        $(".to_1").datepicker("option", "minDate", selectedDate)
-    }
+     $(".dp_date.from_1").datepicker({
+         changeMonth: false,    
+         altFormat: "dd.mm.y",
+         altField: $('#startdate_1'),
+         onSelect: function(date, obj){
+             
+        function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }
+        
+         $('#startdate_1').val(cutYear());   
+        },
+         onClose: function(selectedDate) {
+            $("#enddate_1").datepicker("option", "minDate", selectedDate);
+        }
     });
     
     /*dp_date.from_1 end */
     
     /*.dp_date.to_1 start*/
-      $(".to_1").datepicker({
-        changeMonth: false,
+    
+        $(".dp_date.to_1").datepicker({
+        changeMonth: false,    
         altFormat: "dd.mm.y",
-        altField: "#enddate_1",
-        onSelect: function(selectedDate) {
-            $(".from_1").datepicker("option", "maxDate", selectedDate)
+        altField: $('#enddate_1'),
+        onSelect: function(date, obj){
+            
+          function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }  
+         
+        $('#enddate_1').val(cutYear());   
+        },
+        
+         onClose: function(selectedDate) {
+            $("#startdate_1").datepicker("option", "maxDate", selectedDate);
         }
-    });
-
+        
+        
+        });
          /*.dp_date.to_1 end */
         
             
           /*dp_date.from_2 start */
-              $(".from_2").datepicker({
-    changeMonth: false,
-    altFormat: "dd.mm.y",
-    altField: "#startdate_2",
-    onSelect: function(selectedDate) {
-        $(".to_3").datepicker("option", "minDate", selectedDate)
-    }
+          $(".dp_date.from_2").datepicker({
+         changeMonth: false,    
+         altFormat: "dd.mm.y",
+         altField: $('#startdate_2'),
+         onSelect: function(date, obj){
+             
+        function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }
+        
+         $('#startdate_2').val(cutYear());   
+        },
+         onClose: function(selectedDate) {
+            $("#enddate_2").datepicker("option", "minDate", selectedDate);
+        }
     });
-
             /*dp_date.from_2 end */
 
     
     
        /*.dp_date.to_2 start */
-        $(".to_2").datepicker({
-        changeMonth: false,
+        $(".dp_date.to_2").datepicker({
+        changeMonth: false,    
         altFormat: "dd.mm.y",
-        altField: "#enddate_2",
-        onSelect: function(selectedDate) {
-            $(".from_1").datepicker("option", "maxDate", selectedDate)
+        altField: $('#enddate_2'),
+        onSelect: function(date, obj){
+            
+          function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }  
+         
+        $('#enddate_2').val(cutYear());   
+        },
+        
+         onClose: function(selectedDate) {
+            $("#startdate_2").datepicker("option", "maxDate", selectedDate);
         }
+        
+        
         });
         /*.dp_date.to_2 end */
 
@@ -622,7 +687,9 @@
                         <td><span class="icon minus"></span><span class="val u">Иванов М</span></td>
                         <td>
                            <div class="fill_plash size_02" style="width:260%">
+                               <span class="time">3 ч</span>
                                <div class="buter one">
+                                   
                                    <span class="btog"></span>
                                    <div class="outer-sel pad drop  pos3mid left ">
                              <div class="select">

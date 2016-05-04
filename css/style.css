@@ -555,6 +555,9 @@ body.login_page {
 .opsidebar ul li:first-child {
     padding-top:10px;
 }
+.opsidebar  .key:first-child + ul li:first-child {
+    padding-top:0px; /*newfix*/
+}
 .opsidebar.uncollapse ul li:last-child {
      padding-bottom:14px; 
 }
@@ -667,6 +670,14 @@ body.login_page {
 .appnew a {
     color:#82889c; 
 }
+.appnew_2 {
+    font-size:12px;
+    font-family: 'Conv_helveticaneuecyr-roman';
+    float:right;
+}
+.appnew_2 a {
+    color:#82889c;
+}
 h2 {
     font-size:18px;
 }
@@ -689,6 +700,18 @@ h2 {
 .rik_3 .crubs  .appnew .bttn_2 {
     position:relative;
     top:-10px;
+}
+.appnew_2.c_st2 {
+    margin-bottom:10px;
+}
+.appnew_2 .tabbut {
+    text-decoration: none;
+    padding: 10px 25px 9px 25px;
+    text-align: center;
+    position:relative;
+    background:#97b5ea;
+    border-radius: 3px;
+    color:#fff;
 }
 .brbox .crubs  {
     float:left;
@@ -883,16 +906,17 @@ h2 {
        height:33px;  
        padding:12px 9px 10px 9px;
     }
-   .dgrt_tbl.m3st tr td .ui-datepicker td {
+   .dgrt_tbl.m3st tr td .ui-datepicker td, .dgrt_tbl .rline td .ui-datepicker td, .dgrt_tbl tr td .ui-datepicker td   {
             height: auto;
             padding: 1px;
             border:0px;
     }
+ 
     .dgrt_tbl tr:first-child td {
        border-top:1px solid #d5dde9;
    }
 
-    .dgrt_tbl.m3st tr td .ui-datepicker th {
+    .dgrt_tbl.m3st tr td .ui-datepicker th, .dgrt_tbl .rline td .ui-datepicker th, .dgrt_tbl tr td .ui-datepicker th  {
          border:0px;
     }
 
@@ -1014,10 +1038,25 @@ h2 {
  .dgrt_tbl  .list_5  .pbut {
      font-size:12px;
      float:right;
-     margin-top:2px;
+     margin-top:0px;
  }
- .dgrt_tbl  .list_5  .pbut a {
+ .dgrt_tbl  .list_5  .pbut .link {
      color:#515669;
+ }
+ .dgrt_tbl  .list_5 .pbut  .outer-sel  {
+    margin:0px;
+ }
+ .dgrt_tbl  .list_5 .pbut   .outer-sel .select {
+     border-bottom:0px;
+ }
+ .dgrt_tbl  .list_5 .pbut   .outer-sel .select .styledSelect {
+     color:#515669;
+     padding:0px 0px 0px 0px;
+     border-bottom:1px solid #515669;
+     
+ }
+ .dgrt_tbl  .list_5 .pbut   .outer-sel .select .styledSelect:after {
+     display:none;
  }
  .dgrt_tbl tr td.sat, .dgrt_tbl tr td.sun {
       background:#f5f5f6;
@@ -1138,7 +1177,7 @@ h2 {
      color:#fff;
      background:#0e6eff;
      width:88px;
-    /* z-index:3;*/
+     z-index:3;
      text-align:center;
      height:12px;
      line-height:12px;
@@ -1210,7 +1249,10 @@ h2 {
      z-index: 12;
  }
  
- 
+ .fill_plash .time {
+      margin:1px 0px 0px 0px;
+      display:block;
+ }
  
 .tab_st5  tr td {
     vertical-align: middle;
@@ -1752,6 +1794,19 @@ h2 {
     right:-77px;
     top:33px; 
 }
+.outer-sel.off_3  .opts.date_slc {
+    right:-114px; /*2.4.1*/
+    top:34px; 
+}
+.outer-sel.off_  .opts.date_slc:after {
+    right:124px;
+}
+.outer-sel.off_4  .opts.date_slc {
+   
+}
+.outer-sel.off_4  .opts.date_slc:after {
+   
+}
 .opts.date_slc input[type=text].input_01 {
     cursor:pointer;
     text-align:left;
@@ -1889,6 +1944,7 @@ h2 {
     border-bottom-right-radius:0px;
 
 }
+
 .dgrt  {
     width:100%;
 }
@@ -2491,12 +2547,30 @@ h2 {
     .maxgraph   .checkbox.revert.pink:not(checked) + label:before{
         top:-2px;
     }
+    .cbsbox.min_3  {
+      width:19px;
+      height:19px;
+      position:relative;
+    }
+     .cbsbox.min_3  .checkbox:not(checked) + label:before  {
+      width:19px;
+      height:19px;
+      background-position:0px 0px;
+      right:auto;
+     
+    }
+     .cbsbox.min_3  .checkbox.green:not(checked) + label:before {
+        background: url(../img/arr_ic_2.png) no-repeat;   
+        } 
  
   .cbsbox .checkbox.revert.pink:checked + label:before {
     background-position: 0 -20px;
     }
     .cbsbox.min_2  .checkbox.green:checked + label:before {
         background-position:0px -13px;
+    }
+   .cbsbox.min_3  .checkbox.green:checked + label:before {
+        background-position:0px -19px;
     }
   .dgr_compare .col:last-child {
      margin-left:10px;
@@ -2549,12 +2623,40 @@ h2 {
     float:left;
     display:block;
 }
+.csstbl  .tit.hid {
+    opacity:0;
+}
 .csstbl .tit .hir {
     font-size:13px;
    color:#515669;
 }
 .csstbl  .tit.h2 {
     font-size:16px;
+}
+.csstbl  .tit.h1 {
+    font-size:18px;
+}
+.csstbl .boxp_1 .row {
+    border:0px;
+}
+.csstbl.sty_3 .boxp_1 .row:first-child {
+    border-bottom:0px;
+    border-top:1px solid #d5dde9;
+   
+}
+.csstbl.cols_8 .boxp_1 .row:not(:first-child) { 
+
+}
+.csstbl .boxp_1 .tit {
+    margin-top:6px;
+    margin-bottom:6px;
+}
+.csstbl .boxp_1 .row:first-child .tit {
+    margin-top:10px;
+    margin-bottom:0px;
+}
+.csstbl .boxp_1 {
+    padding-bottom:8px;
 }
 .csstbl.off_04 .nothline .tit {
     font-size:12px;
@@ -2733,6 +2835,15 @@ h2 {
 .outer-sel.drop.pos6mid .styledSelect {
      padding:0px 0px
 }
+.outer-sel.bold_2.drop .styledSelect {
+        padding: 2px 14px 2px 0px;
+}
+.outer-sel.bold_2 .options, .outer-sel.bold_2 .opts {
+    top:30px;
+}
+.lfnull.outer-sel.bold_2.pos6mid .options, .lfnull.outer-sel.bold_2.pos6mid .opts {
+    left:0px;
+}
 
 
 
@@ -2755,9 +2866,10 @@ h2 {
     height:16px;
 }
 .dgrt_tbl .rline .outer-sel.marauto {
+   
     float:none;
     width:112px;
-    margin:0 auto;
+    margin:0 auto 0px auto;
 }
 .dgrt_tbl .rline .outer-sel .styledSelect {
     color:#515669;
@@ -2804,6 +2916,12 @@ h2 {
     color:#515669;
     font-family: 'Conv_SFUIText-BoldG1';
 
+}
+.outer-sel.bold_2 .styledSelect {
+     font-family: 'Conv_SFUIText-BoldG1';
+}
+.outer-sel.bold_3 .styledSelect {
+     font-family: 'Conv_SFUIText-BoldG1';
 }
 .st_mn {
     width:140px;
@@ -3150,6 +3268,7 @@ h2 {
     width:208px;
 }
 .csstbl .wi34  .th {
+    font-family: 'helveticaneuecyrbold';
     color:#2e3240;
 }
 .csstbl  .col  .hk {
@@ -3246,12 +3365,64 @@ h2 {
     margin-top:10px;
     margin-bottom:10px; 
 }
-.csstbl .row.bg_2:first-child {
-    
+.csstbl.off_06 .tit {
+    margin-top:10px;
+    margin-bottom:10px; 
 }
+.csstbl.off_06 .row .col:first-child .tit.mar_03 {
+    margin-left:16px;
+    white-space: nowrap;
+}
+.csstbl.off_06 .row .col {
+    text-align:right;
+}
+.csstbl.cols_8 .row .col {
+     width:10.6%
+}
+.csstbl.off_07  {
+    border-top:0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius:0px;
+}
+.csstbl.off_07 .row:first-child {
+    border-bottom: 1px solid #d5dde9;
+}
+.off_07 .row .col:nth-child(1) {
+    width:20%;
+    border-right:1px solid #d5dde9;
+}
+.off_07 .row .col:nth-child(2) {
+    width:8%;
+    border-right:1px solid #d5dde9;
+}
+.off_07 .row .col:nth-child(3) {
+    width:69%
+}
+.csstbl.off_06 .row .col:first-child {
+    text-align:left;
+}
+.csstbl.off_07 .tit {
+    width:100%;
+    height:14px;
+    font-size:10px;
+    margin-top:5px;
+    margin-bottom:5px; 
+}
+.csstbl.off_07 .tit.ht {
+    margin-top:3px;
+    margin-bottom:7px;
+    font-size:14px;
+}
+
 .csstbl.off_03  .row.bg_2 .tit {
     margin-top:12px;
     margin-bottom:12px; 
+}
+.csstbl.cols_8 .row .col:first-child {
+    width:12.99%; 
+}
+.csstbl.cols_8 .row:first-child {
+  border-bottom: 1px solid #d5dde9;
 }
 .csstbl.off_03  .row:nth-child(3) {
     background-color:#f9fafc;
@@ -3421,7 +3592,17 @@ h2 {
     
      color:#515669;
 }
-
+.csstbl.sty_3  .tit {
+    text-align:right;
+    color:#2e3240;
+    width:29%;
+    float:right;
+}
+.csstbl.sty_3 .col:first-child  .tit { 
+    text-align:left;
+    float:left;
+    width:auto;
+}
 .csstbl  .col .bttn_2 {
     
     margin-top: 14px;
@@ -3530,8 +3711,23 @@ color:#2e3240
 }
 .csstbl.calmar.period  .outer-sel.city {
      margin-left:12px;
-     margin-right:6.3%;
+     margin-right:7.3%;
 }
+.csstbl.calmar.period  .outer-sel.city_2 {
+    margin-right:7.3%;
+}
+.dlit  .outer-sel {
+    margin-top:18px;
+    margin-right:10%;
+}
+.dlit  .outer-sel:nth-child(1) {
+    width:calc(20% - 12px);
+    margin-right:0px;
+}
+.mlit .outer-sel:first-child  .select {
+    padding-right:9px;
+}
+
 .csstbl.calmar  .outer-sel.month {
      margin-left:10px; 
      margin-right:52px; 
@@ -4287,9 +4483,19 @@ left:10.2px;
     border-color: transparent;
 }
 
-.dpcust.ui-datepicker td span,  .dpcust.ui-datepicker td a, .dpcust .ui-datepicker td span,  .dpcust .ui-datepicker td a {
+.dpcust.ui-datepicker td span,  .dpcust.ui-datepicker td a, .dpcust .ui-datepicker td span,
+.dpcust .ui-datepicker td a, 
+.tabs_2 > ul > li  .dpcust .ui-datepicker td a  {
     text-align:center;
      padding:5px 4px; 
+}
+.tabs_2 > ul > li  .dpcust .ui-datepicker .ui-datepicker-prev, .tabs_2 > ul > li  .ui-datepicker .ui-datepicker-next {
+    padding:0px;
+    border:0px;
+   
+}
+.tabs_2 > ul > li  .dpcust .ui-datepicker td a {
+    border:0px;
 }
 
 .outcities .outer-sel.cust_22 {
@@ -4526,6 +4732,9 @@ left:10.2px;
     border-radius: 3px;
     border:1px solid #97b5ea;
     
+}
+.tabs_2.mar_3 > ul {
+    margin-bottom:10px;
 }
 .tabs_2 >  ul:before, .tabs_2 >  ul:after {
     content:'';
@@ -4836,4 +5045,33 @@ left:10.2px;
 
 .active:hover .ui-state-default{
     background: rgba(255, 255, 0, 1)
+}
+
+.chebx_1:before, .chebx_1:after {
+    content:'';
+    display:table;
+}
+.chebx_1:after  {
+    clear:both;
+}
+.chebx_1 .tit {
+    white-space:nowrap;
+    width:10.5%;
+    float:left;
+    padding-left:16px;
+    font-family: 'Conv_helveticaneuecyr-roman';
+    font-size:12px;
+    color:#2e3240;
+    display:block;
+}
+.chebx_1 .col {
+    width:10.4%;
+    float:left;
+}
+
+
+.chebx_1 .cbsbox {
+ float:right;
+ margin-top:3px;  
+ 
 }

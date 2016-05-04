@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'sf_ui__textregular';
+    src: url('sfuitext_regular/sfuitext-regular-webfont.eot');
+    src: url('sfuitext_regular/sfuitext-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sfuitext_regular/sfuitext-regular-webfont.woff2') format('woff2'),
+         url('sfuitext_regular/sfuitext-regular-webfont.woff') format('woff'),
+         url('sfuitext_regular/sfuitext-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 @font-face {
 	font-family: 'Conv_helveticaneuecyr-roman';

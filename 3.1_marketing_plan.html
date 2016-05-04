@@ -7,25 +7,137 @@
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="fonts/style.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
     <script src="libs/jquery-1.8.3.min.js"></script> 
     <script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
     <link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" media="screen" />
+    <link href="libs/datepicker/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
+    <script src="libs/datepicker/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+    <script src="libs/datepicker/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     
-    <script type="text/javascript">
-            $(document).ready(function() {
-	$(".fancybox").fancybox({
-            wrapCSS : 'photo-fancy',
-            padding: 0,
-            helpers : {
-                overlay: {
-                 css: {'background': 'rgba(63,67,82, 0.8)'} 
-                }
-            } 
+    <script>
+         $(document).ready(function() {
+
+
+    
+    //date_cal
+
+
+    /*dp_date.from_1 start*/
+     $(".dp_date.from_1").datepicker({
+         changeMonth: false,    
+         altFormat: "dd.mm.y",
+         altField: $('#startdate_1'),
+         onSelect: function(date, obj){
+             
+        function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }
+        
+         $('#startdate_1').val(cutYear());   
+        },
+         onClose: function(selectedDate) {
+            $("#enddate_1").datepicker("option", "minDate", selectedDate);
+        }
+    });
+    
+    /*dp_date.from_1 end */
+    
+    /*.dp_date.to_1 start*/
+    
+        $(".dp_date.to_1").datepicker({
+        changeMonth: false,    
+        altFormat: "dd.mm.y",
+        altField: $('#enddate_1'),
+        onSelect: function(date, obj){
             
-	});
+          function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }  
+         
+        $('#enddate_1').val(cutYear());   
+        },
+        
+         onClose: function(selectedDate) {
+            $("#startdate_1").datepicker("option", "maxDate", selectedDate);
+        }
+        
+        
         });
-        </script>
+         /*.dp_date.to_1 end */
+        
+            
+          /*dp_date.from_2 start */
+          $(".dp_date.from_2").datepicker({
+         changeMonth: false,    
+         altFormat: "dd.mm.y",
+         altField: $('#startdate_2'),
+         onSelect: function(date, obj){
+             
+        function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }
+        
+         $('#startdate_2').val(cutYear());   
+        },
+         onClose: function(selectedDate) {
+            $("#enddate_2").datepicker("option", "minDate", selectedDate);
+        }
+    });
+            /*dp_date.from_2 end */
+
+    
+    
+       /*.dp_date.to_2 start */
+        $(".dp_date.to_2").datepicker({
+        changeMonth: false,    
+        altFormat: "dd.mm.y",
+        altField: $('#enddate_2'),
+        onSelect: function(date, obj){
+            
+          function cutYear() {
+        delimiter = '.',
+        start = 2,
+        tokens = date.split(delimiter).slice(start),
+        dm = tokens.join(delimiter);  
+        substr = date.substr(0,6);
+        year = dm.substr(2,4);
+            return (substr +  year).toString();
+        }  
+         
+        $('#enddate_2').val(cutYear());   
+        },
+        
+         onClose: function(selectedDate) {
+            $("#startdate_2").datepicker("option", "maxDate", selectedDate);
+        }
+        
+        
+        });
+        /*.dp_date.to_2 end */
+
+   });
+</script>
+
         <script type="text/javascript">
             $(document).ready(function() {
                 
@@ -286,7 +398,7 @@
                 
                   <div class="row">
                            
-                               <div class="outer-sel  marauto">
+<!--                               <div class="outer-sel  marauto">
                                 <select class="cus-sel">
                                   <option value="volvo">Декабрь 2015</option>
                                   <option value="saab">Январь 2015</option>
@@ -295,7 +407,39 @@
                                 </select>
 
                                
-                               </div>
+                               </div>-->
+                    
+                        <div class="outer-sel  marauto  off_2 date_cal drop " >
+                             <div class="select selcalc ">
+                                <div class="styledSelect">Январь 2015</div>
+                                 <div class="opts  date_slc">
+                                     <div class="cld date_mnt">
+                                         
+                                         <div class="row fortbox">
+                 <span class="tbox">
+                     c
+                 </span>
+                 
+                                             
+                   <input class="input_01 st_669" id="startdate_2" placeholder="" type="text" value="">
+                  <span class="tbox">
+                     по
+                 </span>
+                 <input class="input_01 st_669" id="enddate_2" placeholder="" type="text" value="">
+                 </div>
+                                         <div class="dper">
+                                             <div style="display:block;" class="dp_date from_2  dpcust" data-altfield="#startdate_2" ></div>
+                                             <div class="dp_date to_2  dpcust" data-altfield="#enddate_2"></div>
+                                             
+                                             
+                                         </div>
+                                           <div class="buts alcenter mar_024 cmarg">
+                <input class="bttn black" type="submit" value="Выбрать">
+                </div>
+                                          </div>
+                                 </div>
+                             </div>
+                             </div>
                           
                 </div>
                 
@@ -319,9 +463,46 @@
                                        01.15
                                    </span>
                                       <span class="onmin"></span>
-                                   <span class="pbut">
-                                       <a href="#">Добавить</a>
-                                   </span>
+                                   <div class="pbut">
+                                  
+                                           <div class="outer-sel off_2 date_cal drop " >
+                             <div class="select selcalc ">
+                               
+                                 <div class="styledSelect">Добавить</div>
+                                 <div class="opts  date_slc " >
+                                     <div class="cld date_mnt">
+                                         
+                                         <div class="row fortbox">
+                 <span class="tbox">
+                     c
+                 </span>
+                 
+                                             
+                   <input class="input_01 st_669" id="startdate_1" placeholder="" type="text" value="">
+                  <span class="tbox">
+                     по
+                 </span>
+                 <input class="input_01 st_669" id="enddate_1" placeholder="" type="text" value="">
+                 </div>
+                                         <div class="dper">
+                                             <div style="display:block;" class="dp_date from_1 dpcust" data-altfield="#startdate_1" ></div>
+                                             <div class="dp_date to_1 dpcust" data-altfield="#enddate_1" ></div>
+                                             
+                                             
+                                         </div>
+                                         
+                                         
+                                         
+                                           <div class="buts alcenter mar_024 cmarg">
+                <input class="bttn black" type="submit" value="Выбрать">
+                </div>
+                                          </div>
+                                     
+                                    
+                                 </div>
+                             </div>
+                             </div>
+                                   </div>
                                </div>
                            </div>
                           
