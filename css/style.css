@@ -1928,7 +1928,7 @@ h2 {
 
 
 
-.uspopup, .depo_popup, .addcpopup, .op_place, .worksmap {
+.uspopup, .ctpop, .depo_popup, .addcpopup, .op_place, .worksmap {
     display:none;
 }
 .csstbl {
@@ -2157,7 +2157,33 @@ h2 {
  box-shadow: -1px 1px 7px 2px rgba(0,0,0,.08);
 
 }
+.outer-sel.link2 .options {
+    width:160px;
+}
+.outer-sel.link2 .select {
+    border-bottom:0px;
+}
 
+.outer-sel.link2 .options:after, .outer-sel.link2 .opts:after {
+    width:20px;
+    height:10px;
+    right:67px;
+    top:-10px;
+    background: url(../img/big_corn.png) no-repeat;
+}
+.outer-sel.link2 .options li, .outer-sel.link2 .opts li, .outer-sel.link2 .opts .itm {
+    padding: 10px 13px;
+}
+.outer-sel.link2 .styledSelect {
+    text-decoration: underline;
+    color:#3992f7;
+}
+.outer-sel.link2 .options, .outer-sel.link2 .opts {
+        padding: 9px 0;
+}
+.outer-sel.link2 .styledSelect:after {
+    display:none;
+}
 .outer-sel .opts.cw04 {
     width:100px;
 }
@@ -3765,6 +3791,9 @@ color:#2e3240
 .outer-sel.mar_05 {
     margin:9px 12px 10px 12px; 
 }
+.outer-sel.mar_06 {
+    margin:10px 12px 9px 12px; 
+}
  .csstbl.b_01  .outer-sel.mar_04 {
      margin-left:12px;
      margin-right:12px;
@@ -4089,6 +4118,21 @@ color:#2e3240
   background-position:0 -26px;
 }
 
+.checkbox.ic_2:not(checked) + label:before,  .chlabel.ic_2:before  {
+     background: url(../img/checkb_02.png) no-repeat;
+     top:-5px;
+}
+
+.checkbox.ic_2:checked + label:before, .chlabel.chkd.ic_2:before  {
+    background-position:0 -26px;
+}
+.csstbl.b_01 .che4_mid .cbsbox.vert {
+    margin-left: 8px;
+}
+.checkbox.ic_2.revert:not(checked) + label:before, .chlabel.ic_2.revert:before {
+    right: -9px; 
+}
+
 /* Показываем получение фокуса. */
 .checkbox:focus + label:before {
 }
@@ -4118,6 +4162,54 @@ color:#2e3240
     margin-left:160px;
 }
 
+
+
+.overfl::-webkit-scrollbar 
+{
+   width: 5px;
+  
+}
+.overfl::-webkit-scrollbar-track 
+{
+   border-radius:10px;
+   
+}
+.overfl::-webkit-scrollbar-thumb
+{
+  
+   background-color:#d5dde9;
+   border-radius:10px;
+}
+
+
+.che4_mid {
+   border-bottom:1px solid #c9d0d2;  
+   padding:0px 0px 7px 0px;
+   margin-top:6px;
+   overflow:hidden;
+   margin-bottom:9px;
+   
+}
+.ovxhid .fancybox-inner {
+  /*new fix*/  
+  overflow-x:hidden !important;   
+/*  overflow-y:hidden !important;*/
+}
+.overfl {
+/*    height:500px;
+    overflow-y:scroll;*/
+}
+
+
+.csstbl.b_01  .che4_mid .cbsbox.vert {
+    margin: 17px auto 15px auto;
+    width:148px;
+}
+.che4_mid .checkbox + label {
+    display:block;
+    color:#3f4352;
+    
+}
 
 .cbout_34 .cbsbox.vert {
     width:30%;
@@ -4154,6 +4246,10 @@ color:#2e3240
 }
 .op_place {
     width:500px;
+}
+.ctpop {
+   
+    width:268px;
 }
 
 .depo_popup .csstbl .row .col.one .tit, 

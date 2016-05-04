@@ -10,37 +10,34 @@
     <script src="libs/jquery-1.8.3.min.js"></script> 
     <script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
     <link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" media="screen" />
-    <link href="libs/datepicker/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
-    <script src="libs/datepicker/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
-    <script src="libs/datepicker/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <script>
-         $(document).ready(function() {
-
-$('.datepicker').datepicker({
-   altFormat: "yy-mm-dd", 
-   showOtherMonths: true,
-   selectOtherMonths: true,
-   beforeShow: function(input, inst) {
-      
-       $('#ui-datepicker-div').addClass('dpcust');
-   }
-});
-   });
-</script>
+  
     <script type="text/javascript">
             $(document).ready(function() {
 	$(".fancybox").fancybox({
-            wrapCSS : 'photo-fancy',
+            wrapCSS : 'photo-fancy ovxhid',
+            //scrolling   : 'no', /*warninggg!!!!!!*/
+            autoSize : false,
+            fitToView : false,
             padding: 0,
             helpers : {
                 overlay: {
-                 css: {'background': 'rgba(63,67,82, 0.8)'} 
-                }
-            } 
+                 css: {'background': 'rgba(63,67,82, 0.8)'},
+                 
+                },
+               
+            },
+            afterLoad: function () {
+        this.width = $(this.element).data("width");
+        this.height = $(this.element).data("height");
+        }
+            
             
 	});
+        
+       
         });
         </script>
 
@@ -208,10 +205,28 @@ $('.datepicker').datepicker({
                            <strong class="tit mar_03 font_2">Омск</strong>
                     </div>
                     <div class="col w_25">
-                           <span class="tit mar_03  font_2">Омск</span>
+                           <span class="tit mar_03  font_2"><a class="fancybox" data-width="282" data-height="600" href="#edit_1">Омск(drop)</a></span>
                     </div>
                     <div class="col w_25">
-                           <span class="tit mar_03 font_2">Омск</span>
+                          
+                           
+                               
+                               <div class="outer-sel link2 size_1 mar_06 left">
+                                <select class="cus-sel">
+                                  <option value="volvo">Населеннные пункты</option>
+                                  <option value="saab">Балашиха</option>
+                                  <option value="mercedes">Мытищи</option>
+                                  <option value="audi">Королёв</option>
+                                  <option value="audi">Серпухов</option>
+                                  <option value="audi">Жел-дор</option>
+                                </select>
+                               </div>
+                           
+                           
+                          
+                        
+                        
+                           
                     </div>
                     <div class="col w_25">
                         <span class="tit mar_03"><a href="#">Список улиц</a></span>
@@ -266,7 +281,7 @@ $('.datepicker').datepicker({
                                     
                                  </div>
                              </div>
-                             </div> -->
+                             </div>-->
                         
                         
                             <div class="outer-sel bold mar_05 left">
@@ -404,7 +419,7 @@ $('.datepicker').datepicker({
 </div><!-- END wrapper -->
 
 
-   <div class="uspopup" id="add_user" style="display:block;">
+<!--   <div class="uspopup" id="add_user" style="display:block;">
             <div class="csstbl cnt tblpup b_01">
                 <div class="row">
                  
@@ -706,7 +721,7 @@ $('.datepicker').datepicker({
                      <div class="col w_45">
                         
                             <strong class="tit">Дата увольнения</strong>
-                           <!-- <div class="outer-sel  st_74 ">
+                            <div class="outer-sel  st_74 ">
                                 <select class="cus-sel">
                                   <option value="volvo">Выбрать</option>
                                   <option value="saab">Saab</option>
@@ -715,7 +730,7 @@ $('.datepicker').datepicker({
                                 </select>
 
                                
-                               </div> -->
+                               </div> 
                            <input type="text" class="input_01 ntbp datepicker st_02 " placeholder="14.07.16">
 
                        
@@ -745,6 +760,163 @@ $('.datepicker').datepicker({
                 <input class="bttn" type="submit" value="Редактировать">
                 <input class="bttn black" type="submit" value="Сохранить">
             </div>
+      </div>-->
+
+<div class="ctpop" id="edit_1">
+      
+        <div class="csstbl cnt tblpup b_01">
+                <div class="row">
+                 
+                    <h2 class="hs3">Выбор города</h2>
+                </div> 
+                
+                 <div class="row overfl">
+                         
+                        <div class="che4_mid">
+                            
+                             <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check12">
+                <label for="check12">Москва</label>
+                        </div>
+                    </div>
+                             <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check15">
+                <label for="check15">Санкт-Петербург</label>
+                        </div>
+                    </div>
+                             <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check16">
+                <label for="check16">Самара</label>
+                        </div>
+                    </div>
+                             <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check17">
+                <label for="check17">Казань</label>
+                        </div>
+                    </div>
+                              <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check0001">
+                <label for="check0001">Омск</label>
+                        </div>
+                    </div>
+                             
+                              <div class="cbsbox  vert ">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check0003">
+                <label for="check0003">Тюмень</label>
+                        </div>
+                    </div>
+                              <div class="cbsbox  vert ">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check20">
+                <label for="check20">Ярославль</label>
+                        </div>
+                    </div>
+                            
+                         
+                               <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check21">
+                <label for="check21">Москва</label>
+                        </div>
+                    </div>
+                             <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check22">
+                <label for="check22">Санкт-Петербург</label>
+                        </div>
+                    </div>
+                             <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check23">
+                <label for="check23">Самара</label>
+                        </div>
+                    </div>
+                             <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check24">
+                <label for="check24">Казань</label>
+                        </div>
+                    </div>
+                              <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check25">
+                <label for="check25">Омск</label>
+                        </div>
+                    </div>
+                             
+                              <div class="cbsbox  vert ">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check26">
+                <label for="check26">Тюмень</label>
+                        </div>
+                    </div>
+                              <div class="cbsbox  vert ">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check27">
+                <label for="check27">Ярославль</label>
+                        </div>
+                    </div>
+                           
+                            <!-- -->
+                               <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check28">
+                <label for="check28">Самара</label>
+                        </div>
+                    </div>
+                             <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check29">
+                <label for="check29">Казань</label>
+                        </div>
+                    </div>
+                              <div class="cbsbox vert">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check30">
+                <label for="check30">Омск</label>
+                        </div>
+                    </div>
+                             
+                              <div class="cbsbox  vert ">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check31">
+                <label for="check31">Тюмень</label>
+                        </div>
+                    </div>
+                              <div class="cbsbox  vert ">
+                        <div class="item">
+                <input type="checkbox" class="checkbox revert ic_2" checked="checked" id="check34">
+                <label for="check34">Ярославль</label>
+                        </div>
+                    </div>
+                       
+                       
+                    </div>
+                     
+                      <div class="buts alcenter mar_02">
+                <input class="bttn black" type="submit" value="Сохранить">
+            </div>
+                   
+                </div>
+                
+               
+                
+                
+               
+                
+                
+                
+                
+            </div>
+            
+            
+           
       </div>
 
 
